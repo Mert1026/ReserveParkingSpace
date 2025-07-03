@@ -5,7 +5,9 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:ReserveParkingSpace_Mobile_"
     Shell.FlyoutBehavior="Disabled"
-    Title="ReserveParkingSpace_Mobile_">
+    Title="ReserveParkingSpace_Mobile_"
+    BackgroundColor="White">
+
 
     <ShellContent
         Title="Home"
