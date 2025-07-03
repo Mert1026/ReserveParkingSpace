@@ -1,7 +1,11 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +13,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,6 +26,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\.gitignore",
+              "RelativeDocumentMoniker": "..\\.gitignore",
+              "ToolTip": "C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\.gitignore",
+              "RelativeToolTip": "..\\.gitignore",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-07-03T07:08:26.298Z",
+              "EditorCaption": ""
             }
           ]
         }
