@@ -9,8 +9,11 @@
     BackgroundColor="White">
 
     <ShellContent
-        Title="Home"
+     
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage"
-        Shell.NavBarIsVisible="False" />
+        Shell.NavBarIsVisible="False" 
+
+        />
+    
 </Shell>

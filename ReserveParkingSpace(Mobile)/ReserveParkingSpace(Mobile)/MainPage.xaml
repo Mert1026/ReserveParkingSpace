@@ -2,47 +2,176 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ReserveParkingSpace_Mobile_.MainPage"
-             BackgroundColor="White">
+             BackgroundColor="#f5f9ff">
 
 
-    <ScrollView>
-        <VerticalStackLayout x:Name="MainLayout" VerticalOptions="Fill" Spacing="20">
+    <Grid RowDefinitions="Auto,*">
 
-            <!-- User Data -->
-            <Grid ColumnSpacing="10" Padding="20">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="Auto" />
-                </Grid.ColumnDefinitions>
+        <!-- ✅ Custom Top Navigation Bar -->
+        <Grid BackgroundColor="#3a6bc8" Padding="10" Row="0" ColumnSpacing="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
 
-                <Label
-                Text="PlaceHolder Name"
-                FontSize="20"
-                FontFamily="Poppins"
-                Grid.Column="0"
-                TextColor="Black"
-                HorizontalTextAlignment="Start"
-                VerticalOptions="Center" />
+            <!-- Logo on the left -->
+            <Image Source="logo.png"
+                   HeightRequest="40"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Start" />
 
-                <Button
-                Text="Log Out"
-                Grid.Column="1"
-                HorizontalOptions="End"
-                VerticalOptions="Center"
-                BackgroundColor="#FF3B30"
-                TextColor="White"
-                FontAttributes="Bold"
-                WidthRequest="200"
-                CornerRadius="20"
-                Padding="10"
-                Clicked="OnCounterClicked" />
-            </Grid>
+            <!-- Title (optional) in center -->
+            <Label Text=""
+                   Grid.Column="1"
+                   FontSize="20"
+                   TextColor="White"
+                   HorizontalTextAlignment="Center"
+                   VerticalOptions="Center" />
 
-            <!-- Map Info -->
-            <Label Text="Map" TextColor="Black" HorizontalOptions="Center" FontFamily="Poppins-Medium" FontSize="31" />
+            <!-- Optional Info or Logout button on right -->
+            <Button Text="Info"
+                    Grid.Column="2"
+                    BackgroundColor="Transparent"
+                    TextColor="White"
+                    Clicked="OnInfoClicked" />
+        </Grid>
+
+
+        <Frame x:Name="InfoBox"
+       Grid.Row="1"
+       BackgroundColor="#e1f5fe"
+       BorderColor="Gray"
+       Padding="20"
+       CornerRadius="15"
+       Margin="90,5,0,0"
+       IsVisible="False"
+       HorizontalOptions="Center"
+       VerticalOptions="Start"
+       WidthRequest="300"
+       ZIndex="10">
 
             <VerticalStackLayout Spacing="15">
-                <Frame HeightRequest="670" Padding="0" VerticalOptions="Start" WidthRequest="370" BorderColor="Transparent" CornerRadius="25" BackgroundColor="White" Margin="0,0,0,10">
+                <Label Text="PlaceHolder Name" FontSize="18" TextColor="Black" HorizontalOptions="Center" />
+
+                <Grid ColumnSpacing="10" Padding="20">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                
+                    <Label
+                        Text="Language:"
+                        FontSize="18"
+                        FontFamily="Poppins"
+                        Grid.Column="0"
+                                 Grid.Row="0"
+                        TextColor="Black"
+                        HorizontalTextAlignment="Start"
+                        VerticalOptions="Center" />
+                    <Picker 
+                       Title="Select a language"
+                       Grid.Column="1"
+                       HorizontalOptions="End"
+                        TextColor="Black"
+                       VerticalOptions="Center"
+                       FontAttributes="Bold">
+                        <Picker.Items>
+                            <x:String>English</x:String>
+                            <x:String>Bulgarian</x:String>
+                        </Picker.Items>
+                    </Picker>
+
+                    <Label
+                            Text="Theme:"
+                            FontSize="20"
+                            FontFamily="Poppins"
+                            Grid.Column="0"
+                            Grid.Row="1"
+                            TextColor="Black"
+                            HorizontalTextAlignment="Start"
+                            VerticalOptions="Center" />
+                    <Picker 
+               Title="Select a theme"
+               Grid.Column="1"
+                        Grid.Row="2"
+               HorizontalOptions="End"
+                 TextColor="Black"
+               VerticalOptions="Center"
+               FontAttributes="Bold">
+                        <Picker.Items>
+                            <x:String>Dark</x:String>
+                            <x:String>Light</x:String>
+                        </Picker.Items>
+                    </Picker>
+                </Grid>
+                <Button
+                    Text="Log Out"
+                    Grid.Column="1"
+                    HorizontalOptions="End"
+                    VerticalOptions="Center"
+                    BackgroundColor="#FF3B30"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    WidthRequest="200"
+                    CornerRadius="20"
+                    Padding="10"
+                    Clicked="OnCounterClicked" />
+
+
+            </VerticalStackLayout>
+        </Frame>
+        <ScrollView Grid.Row="1">
+            <VerticalStackLayout x:Name="MainLayout" VerticalOptions="Fill" Spacing="20">
+
+            
+            <Label Text="Map" TextColor="Black" HorizontalOptions="Center" FontFamily="Poppins-Medium" FontSize="31" Margin="0,20,0,0"/>
+               
+                <!--Sortig info-->
+                <Frame HeightRequest="80" Padding="0" WidthRequest="370" CornerRadius="15" BackgroundColor="#3a6bc8" BorderColor="Transparent">
+                    <Grid ColumnSpacing="10" Padding="20">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Label 
+                                Text="Sort By:"
+                                Grid.Column="0"
+                            VerticalOptions="Center"/>
+                        <Button Text="First"
+                                Grid.Column="1"
+                                HeightRequest="50"
+                                WidthRequest="80"
+                                BackgroundColor="#4fc3f7"
+                                TextColor="White" />
+                        
+                        <Button 
+                            Text="Second"
+                            Grid.Column="2"
+                            HeightRequest="50"
+                             WidthRequest="80"
+                             BackgroundColor="#4fc3f7"
+                            TextColor="White" />
+                        
+                        <Button 
+                            Text="Third"
+                            Grid.Column="3"
+                            HeightRequest="50"
+                             WidthRequest="80"
+                             BackgroundColor="#4fc3f7"
+                            TextColor="White" />
+                    </Grid>
+                </Frame>
+                
+                <!-- Map Info -->
+                <VerticalStackLayout Spacing="5">
+                <Frame HeightRequest="670" Padding="0" VerticalOptions="Start" WidthRequest="370" BorderColor="Transparent" CornerRadius="25" BackgroundColor="Transparent" Margin="0,0,0,0">
                     <AbsoluteLayout VerticalOptions="FillAndExpand">
 
                         <!-- Background Image -->
@@ -135,37 +264,42 @@
                 </Frame>
             </VerticalStackLayout>
 
-            <!-- Buttons Row -->
-            <Grid ColumnSpacing="10" Padding="20">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="Auto" />
-                </Grid.ColumnDefinitions>
 
-                <Label
-        Text="Spot: PlaceHolder"
-        FontSize="18"
-        FontFamily="Poppins"
-        Grid.Column="0"
-        TextColor="Black"
-        HorizontalTextAlignment="Start"
-        VerticalOptions="Center"
-        />
 
-                <Button 
-        Text="Select"
-        Grid.Column="1"
-        HorizontalOptions="End"
-        VerticalOptions="Center"
-        BackgroundColor="Green"
-        TextColor="White"
-        FontAttributes="Bold"
-        WidthRequest="150"
-        CornerRadius="20"
-        Padding="10"
-        Clicked="OnCounterClicked"/>
-            </Grid>
-        </VerticalStackLayout>
+                <!-- Select options-->
+                <Frame HeightRequest="80" Padding="0" WidthRequest="370" CornerRadius="15" BackgroundColor="#3a6bc8" BorderColor="Transparent" Margin="0,0,0,20">
+                    <Grid ColumnSpacing="10" Padding="20">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Label
+                            Text="Spot: PlaceHolder"
+                            FontSize="18"
+                            FontFamily="Poppins"
+                            Grid.Column="0"
+                            TextColor="White"
+                            HorizontalTextAlignment="Start"
+                            VerticalOptions="Center"
+/>
+
+                        <Button 
+                            Text="Select"
+                            Grid.Column="1"
+                            HorizontalOptions="End"
+                            VerticalOptions="Center"
+                            BackgroundColor="#4fc3f7"
+                            TextColor="White"
+                            FontAttributes="Bold"
+                            HeightRequest="50"
+                            WidthRequest="150"
+                            CornerRadius="15"
+                            Padding="10"
+                            Clicked="OnCounterClicked"/>
+                    </Grid>
+                </Frame>
+            </VerticalStackLayout>
     </ScrollView>
 
+    </Grid>
 </ContentPage>

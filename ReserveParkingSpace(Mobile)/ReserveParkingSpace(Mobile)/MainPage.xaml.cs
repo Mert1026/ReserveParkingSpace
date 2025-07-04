@@ -1,4 +1,6 @@
-﻿namespace ReserveParkingSpace_Mobile_
+﻿
+
+namespace ReserveParkingSpace_Mobile_
 {
     public partial class MainPage : ContentPage
     {
@@ -12,6 +14,10 @@
         private void OnCounterClicked(object sender, EventArgs e)
         {
           
+        }
+        private void OnInfoClicked(object sender, EventArgs e)
+        {
+            InfoBox.IsVisible = !InfoBox.IsVisible;
         }
     }
 
