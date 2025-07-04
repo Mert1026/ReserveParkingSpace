@@ -205,11 +205,19 @@
                              StartRangeSelectionBackground="#3a6bc8" 
                             EndRangeSelectionBackground="#3a6bc8" 
                             SelectionBackground="#4fc3f7"
-                            TodayHighlightBrush="Blue"
+                            TodayHighlightBrush="#4fc3f7"
                             BackgroundColor="#e1f5fe">
-                            
+                            <control:SfCalendar.MonthView>
+                                <control:CalendarMonthView>
+                                    <control:CalendarMonthView.SelectionTextStyle>
+                                        <control:CalendarTextStyle TextColor="Blue" FontAttributes="Bold"/>
+                                    </control:CalendarMonthView.SelectionTextStyle>
+
+                                </control:CalendarMonthView>
+                            </control:SfCalendar.MonthView>
                            
                     </control:SfCalendar>
+
                     </StackLayout>
                 </Frame>
 
