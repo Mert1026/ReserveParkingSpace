@@ -23,11 +23,11 @@
                    HorizontalOptions="Start" />
 
             <!-- Title (optional) in center -->
-            <Label Text=""
+            <Label Text="Reserve Parking Space"
                    Grid.Column="1"
                    FontSize="20"
                    TextColor="White"
-                   HorizontalTextAlignment="Center"
+                   HorizontalTextAlignment="Start"
                    VerticalOptions="Center" />
 
             <!-- Optional Info or Logout button on right -->
@@ -44,7 +44,7 @@
 
         <Frame x:Name="InfoBox"
        Grid.Row="1"
-       BackgroundColor="#e1f5fe"
+       BackgroundColor="#f5f9ff"
        BorderColor="Gray"
        Padding="20"
        CornerRadius="15"
@@ -70,18 +70,21 @@
                 
                     <Label
                         Text="Language:"
-                        FontSize="18"
-                        FontFamily="Poppins"
+                        FontSize="17"
+                                   FontFamily="Poppins"
                         Grid.Column="0"
                                  Grid.Row="0"
                         TextColor="Black"
+                       
                         HorizontalTextAlignment="Start"
                         VerticalOptions="Center" />
                     <Picker 
                        Title="Select a language"
                        Grid.Column="1"
+
                        HorizontalOptions="End"
                         TextColor="Black"
+                        
                        VerticalOptions="Center"
                        FontAttributes="Bold">
                         <Picker.Items>
@@ -92,7 +95,7 @@
 
                     <Label
                             Text="Theme:"
-                            FontSize="20"
+                            FontSize="17"
                             FontFamily="Poppins"
                             Grid.Column="0"
                             Grid.Row="1"
@@ -116,13 +119,13 @@
                 <Button
                     Text="Log Out"
                     Grid.Column="1"
-                    HorizontalOptions="End"
+                    HorizontalOptions="Center"
                     VerticalOptions="Center"
                     BackgroundColor="#FF3B30"
                     TextColor="White"
                     FontAttributes="Bold"
                     WidthRequest="200"
-                    CornerRadius="20"
+                    CornerRadius="10"
                     Padding="10"
                     Clicked="OnCounterClicked" />
                     
@@ -152,6 +155,7 @@
                             <Label 
                                  Text="Choose a shift:"
                                  Grid.Column="0"
+                                FontFamily="Poppins"
                             
                                  VerticalOptions="Center"/>
                             <Picker 
@@ -170,9 +174,13 @@
                             <Label 
                                  Text="Choose date:"
                                  Grid.Column="2"
-                               
+                             
                                  VerticalOptions="Center"
-                                HorizontalOptions="Center"/>
+                                HorizontalOptions="Center">
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="ShowCalendar" NumberOfTapsRequired="1" />
+                                </Label.GestureRecognizers>
+                            </Label>
                             <ImageButton
                                 Source="calendar.png"
                                 Grid.Column="3"
