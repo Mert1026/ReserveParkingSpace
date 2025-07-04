@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
 using ReserveParkingSpace_Mobile_.Services;
 using ReserveParkingSpace_Mobile_.Services.IServices;
+using Syncfusion.Maui.Core.Hosting;
 
 namespace ReserveParkingSpace_Mobile_
 {
@@ -11,11 +12,12 @@ namespace ReserveParkingSpace_Mobile_
             var builder = MauiApp.CreateBuilder();
             builder
                 .UseMauiApp<App>()
+                .ConfigureSyncfusionCore()
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-                    fonts.AddFont("Poppins-Regular.ttf", "Poppins");
+                    fonts.AddFont("Poppins-Regular.ttf", "Poppinsv");
                 });
 
             builder.Services.AddScoped<IDataService, DataService>();

@@ -1,5 +1,7 @@
 ﻿
 
+using System.Globalization;
+
 namespace ReserveParkingSpace_Mobile_
 {
     public partial class MainPage : ContentPage
@@ -18,6 +20,10 @@ namespace ReserveParkingSpace_Mobile_
         private void OnInfoClicked(object sender, EventArgs e)
         {
             InfoBox.IsVisible = !InfoBox.IsVisible;
+        }
+        private void ShowCalendar(object sender, EventArgs e)
+        {
+            CalendarLayout.IsVisible = !CalendarLayout.IsVisible;
         }
     }
 

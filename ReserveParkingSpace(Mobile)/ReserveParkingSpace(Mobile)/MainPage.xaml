@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:control="clr-namespace:Syncfusion.Maui.Calendar;assembly=Syncfusion.Maui.Calendar"
              x:Class="ReserveParkingSpace_Mobile_.MainPage"
              BackgroundColor="#f5f9ff">
 
@@ -30,10 +31,13 @@
                    VerticalOptions="Center" />
 
             <!-- Optional Info or Logout button on right -->
-            <Button Text="Info"
+            <ImageButton Source="settings.png"
                     Grid.Column="2"
-                    BackgroundColor="Transparent"
-                    TextColor="White"
+                         HorizontalOptions="Center"
+                         VerticalOptions="Center"
+                    BackgroundColor="Transparent"   
+                         HeightRequest="30"
+                         WidthRequest="30"
                     Clicked="OnInfoClicked" />
         </Grid>
 
@@ -121,7 +125,7 @@
                     CornerRadius="20"
                     Padding="10"
                     Clicked="OnCounterClicked" />
-
+                    
 
             </VerticalStackLayout>
         </Frame>
@@ -132,7 +136,10 @@
             <Label Text="Map" TextColor="Black" HorizontalOptions="Center" FontFamily="Poppins-Medium" FontSize="31" Margin="0,20,0,0"/>
                
                 <!--Sortig info-->
-                <Frame HeightRequest="80" Padding="0" WidthRequest="370" CornerRadius="15" BackgroundColor="#3a6bc8" BorderColor="Transparent">
+                <Frame Padding="0" WidthRequest="370" CornerRadius="15" BackgroundColor="#3a6bc8" BorderColor="Transparent">
+                    <StackLayout>
+                        
+                   
                     <Grid ColumnSpacing="10" Padding="20">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*" />
@@ -140,35 +147,67 @@
                             <ColumnDefinition Width="Auto" />
                             <ColumnDefinition Width="Auto" />
                         </Grid.ColumnDefinitions>
-                        <Label 
-                                Text="Sort By:"
-                                Grid.Column="0"
-                            VerticalOptions="Center"/>
-                        <Button Text="First"
-                                Grid.Column="1"
-                                HeightRequest="50"
-                                WidthRequest="80"
-                                BackgroundColor="#4fc3f7"
-                                TextColor="White" />
-                        
-                        <Button 
-                            Text="Second"
-                            Grid.Column="2"
-                            HeightRequest="50"
-                             WidthRequest="80"
-                             BackgroundColor="#4fc3f7"
-                            TextColor="White" />
-                        
-                        <Button 
-                            Text="Third"
-                            Grid.Column="3"
-                            HeightRequest="50"
-                             WidthRequest="80"
-                             BackgroundColor="#4fc3f7"
-                            TextColor="White" />
-                    </Grid>
-                </Frame>
                 
+                           
+                            <Label 
+                                 Text="Choose a shift:"
+                                 Grid.Column="0"
+                            
+                                 VerticalOptions="Center"/>
+                            <Picker 
+                                 Title="Select a shift"
+                                 Grid.Column="1"
+                              
+                                 TextColor="White"
+                                 VerticalOptions="Center"
+                                 FontAttributes="Bold">
+                                <Picker.Items>
+                                    <x:String>First Shift</x:String>
+                                    <x:String>Second Shift</x:String>
+                                    <x:String>Full Shift</x:String>
+                                </Picker.Items>
+                            </Picker>
+                            <Label 
+                                 Text="Choose date:"
+                                 Grid.Column="2"
+                               
+                                 VerticalOptions="Center"
+                                HorizontalOptions="Center"/>
+                            <ImageButton
+                                Source="calendar.png"
+                                Grid.Column="3"
+                                Grid.Row="0"
+                                Margin="0"
+                                Clicked="ShowCalendar"
+                                WidthRequest="20"
+                                HeightRequest="20"
+                                VerticalOptions="Center"
+                                HorizontalOptions="Center"
+                                />
+                        
+                    </Grid>
+                        <!-- Calendar -->
+                        <control:SfCalendar
+                         x:Name="CalendarLayout"
+                         SelectionMode="Range"
+                         SelectedDates="{Binding MySelectedDates}"
+                         Grid.Row="2"      
+                         Margin="20,20,20,20"
+                         IsVisible="False"
+                             StartRangeSelectionBackground="#3a6bc8" 
+                            EndRangeSelectionBackground="#3a6bc8" 
+                            SelectionBackground="#4fc3f7"
+                            TodayHighlightBrush="Blue"
+                            BackgroundColor="#e1f5fe">
+                            
+                           
+                    </control:SfCalendar>
+                    </StackLayout>
+                </Frame>
+
+             
+               
+
                 <!-- Map Info -->
                 <VerticalStackLayout Spacing="5">
                 <Frame HeightRequest="670" Padding="0" VerticalOptions="Start" WidthRequest="370" BorderColor="Transparent" CornerRadius="25" BackgroundColor="Transparent" Margin="0,0,0,0">
