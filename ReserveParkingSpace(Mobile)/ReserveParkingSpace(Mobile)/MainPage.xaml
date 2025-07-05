@@ -8,7 +8,7 @@
 
     <Grid RowDefinitions="Auto,*">
 
-        <!-- ✅ Custom Top Navigation Bar -->
+        <!--Top Navigation Bar -->
         <Grid BackgroundColor="#3a6bc8" Padding="10" Row="0" ColumnSpacing="10">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto" />
@@ -16,13 +16,13 @@
                 <ColumnDefinition Width="Auto" />
             </Grid.ColumnDefinitions>
 
-            <!-- Logo on the left -->
+           
             <Image Source="logo.png"
                    HeightRequest="40"
                    VerticalOptions="Center"
                    HorizontalOptions="Start" />
 
-            <!-- Title (optional) in center -->
+           
             <Label Text="Reserve Parking Space"
                    Grid.Column="1"
                    FontSize="20"
@@ -30,7 +30,7 @@
                    HorizontalTextAlignment="Start"
                    VerticalOptions="Center" />
 
-            <!-- Optional Info or Logout button on right -->
+          
             <ImageButton Source="settings.png"
                     Grid.Column="2"
                          HorizontalOptions="Center"
@@ -136,7 +136,7 @@
             <VerticalStackLayout x:Name="MainLayout" VerticalOptions="Fill" Spacing="20">
 
                
-            <Label Text="Map" TextColor="Black" HorizontalOptions="Center" FontFamily="Poppins-Medium" FontSize="31" Margin="0,20,0,0"/>
+            <Label Text="Reserve" TextColor="Black" HorizontalOptions="Center" FontFamily="Poppins-Medium" FontSize="31" Margin="0,20,0,0"/>
                
                 <!--Sortig info-->
                 <Border
@@ -216,7 +216,11 @@
                          SelectedDates="{Binding MySelectedDates}"
                          Grid.Row="2"      
                          Margin="20,20,20,20"
-                         IsVisible="False"
+                            CornerRadius="15"
+                        
+                      
+                               IsVisible="False"
+                           
                              StartRangeSelectionBackground="#3a6bc8" 
                             EndRangeSelectionBackground="#3a6bc8" 
                             SelectionBackground="#4fc3f7"
@@ -267,23 +271,29 @@
                             <Label Text="Occupied:"
                                    WidthRequest="200"
                                    HeightRequest="200"
-                                   AbsoluteLayout.LayoutBounds="0, 0.38,400,-1080"
+                                   AbsoluteLayout.LayoutBounds="0, 0.38,408,-1080"
                                    AbsoluteLayout.LayoutFlags="PositionProportional" />
                             <Label Text="5"
                                    WidthRequest="200"
                                    HeightRequest="200"
-                                   AbsoluteLayout.LayoutBounds="0, 0.38,545,-1080"
+                                   AbsoluteLayout.LayoutBounds="0, 0.38,553,-1080"
                                    AbsoluteLayout.LayoutFlags="PositionProportional" />
                             <Label Text="Available:"
                                WidthRequest="200"
                                HeightRequest="200"
-                               AbsoluteLayout.LayoutBounds="0, 0.38,600,-1080"
+                               AbsoluteLayout.LayoutBounds="0, 0.38,608,-1080"
                                AbsoluteLayout.LayoutFlags="PositionProportional" />
                             <Label Text="5"
                                WidthRequest="200"
                                HeightRequest="200"
-                               AbsoluteLayout.LayoutBounds="0, 0.38,745,-1080"
-                               AbsoluteLayout.LayoutFlags="PositionProportional" />     
+                               AbsoluteLayout.LayoutBounds="0, 0.38,753,-1080"
+                               AbsoluteLayout.LayoutFlags="PositionProportional" />
+                            <BoxView
+                                WidthRequest="200"
+                                HeightRequest="1"
+                                BackgroundColor="White"
+                                AbsoluteLayout.LayoutBounds="0, 0,388,120"
+                                AbsoluteLayout.LayoutFlags="PositionProportional" />           
                             <!-- Car Buttons -->
                         <ImageButton Source="car1.png" HeightRequest="40" WidthRequest="80"
                                  AbsoluteLayout.LayoutBounds="0.12, 0.61,550,-1080"
@@ -371,26 +381,56 @@
 
 
                 <!-- Select options-->
-                <Frame HeightRequest="80" Padding="0" WidthRequest="370" CornerRadius="15" BackgroundColor="#3a6bc8" BorderColor="Transparent" Margin="0,0,0,20">
-                    <Grid ColumnSpacing="10" Padding="20">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="Auto" />
-                        </Grid.ColumnDefinitions>
+                <Border
+                 
+                    WidthRequest="370"
+                    StrokeThickness="0"
+                    Stroke="Transparent"
+                    BackgroundColor="#3a6bc8"
+                    StrokeShape="RoundRectangle 25"
+                    Padding="0"
+                    Margin="0,0,0,20">
+
+                    <Border.Shadow>
+                        <Shadow
+                                Brush="#80000000"  
+                                Offset="5,5"
+                                Radius="10"
+                                Opacity="0.6" />
+                    </Border.Shadow>
+
+                    <Grid Padding="20">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+
                         <Label
-                            Text="Spot: PlaceHolder"
+                            Text="Space (20) selected for (shift)"
                             FontSize="18"
                             FontFamily="Poppins"
-                            Grid.Column="0"
+                            Grid.Row="0"
                             TextColor="White"
-                            HorizontalTextAlignment="Start"
+                            HorizontalTextAlignment="Center"
+                            VerticalOptions="Center" 
+                            Margin="0,0,0,5"/>
+                        <Label
+                            Text="From (Date) To (Date)"
+                            FontSize="16"
+                            FontFamily="Poppins"
+                            Grid.Row="1"
+                            TextColor="LightGray"
+                            HorizontalTextAlignment="Center"
                             VerticalOptions="Center"
-/>
+                            Margin="0,0,0,20"/>
 
                         <Button 
-                            Text="Select"
-                            Grid.Column="1"
-                            HorizontalOptions="End"
+                            Text="Reserve"
+                            Grid.Row="2"
+                            FontFamily="Poppins"
+                            FontSize="20"
+                            HorizontalOptions="Center"
                             VerticalOptions="Center"
                             BackgroundColor="#4fc3f7"
                             TextColor="White"
@@ -399,10 +439,9 @@
                             WidthRequest="150"
                             CornerRadius="15"
                             Padding="10"
-                            Clicked="OnCounterClicked"/>
+                            Clicked="OnCounterClicked"/>            
                     </Grid>
-                </Frame>
-          
+                </Border>
             </VerticalStackLayout>
             
     </ScrollView>
