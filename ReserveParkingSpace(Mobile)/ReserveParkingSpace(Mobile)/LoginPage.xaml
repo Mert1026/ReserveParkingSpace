@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ReserveParkingSpace_Mobile_.LoginPage"
+             Title="LoginPage"
+             Background="White">
+    <Grid RowDefinitions="Auto,*">
+
+        <!-- ✅ Custom Top Navigation Bar -->
+        <Grid BackgroundColor="#3a6bc8" Padding="10" Row="0" ColumnSpacing="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <!-- Logo on the left -->
+            <Image Source="logo.png"
+                   HeightRequest="40"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Start" />
+
+            <!-- Title (optional) in center -->
+            <Label Text="Reserve Parking Space"
+                   Grid.Column="1"
+                   FontSize="20"
+                   Margin="0,10,0,0"
+                   TextColor="White"
+                   HorizontalTextAlignment="Start"
+                   FontFamily="Poppins"
+                   VerticalTextAlignment="Center"
+                   FontAttributes="Bold"
+                   VerticalOptions="Center" />
+
+            <!-- Optional Info or Logout button on right -->
+            <ImageButton Source="settings.png"
+                    Grid.Column="2"
+                         HorizontalOptions="Center"
+                         VerticalOptions="Center"
+                    BackgroundColor="Transparent"   
+                         HeightRequest="30"
+                         WidthRequest="30"
+                    Clicked="OnInfoClicked" />
+        </Grid>
+
+
+        <Frame x:Name="InfoBox"
+       Grid.Row="1"
+       BackgroundColor="#3a6bc8"
+       BorderColor="Transparent"
+       Padding="20"
+       CornerRadius="15"
+       Margin="85,5,0,0"
+       IsVisible="False"
+       HorizontalOptions="Center"
+       VerticalOptions="Start"
+       WidthRequest="300"
+       ZIndex="10">
+
+            <VerticalStackLayout Spacing="15">
+                
+
+                <Grid ColumnSpacing="10" Padding="20">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <Label
+                        Text="Language:"
+                        FontSize="17"
+                                   FontFamily="Poppins"
+                        
+                        Grid.Column="0"
+                                 Grid.Row="0"
+                        TextColor="White"
+                       
+                        HorizontalTextAlignment="Start"
+                        VerticalOptions="Center" />
+                    <Picker 
+                       Title="Select a language"
+                       Grid.Column="1"
+
+                       HorizontalOptions="End"
+                        TextColor="White"
+                        
+                       VerticalOptions="Center"
+                       FontAttributes="Bold">
+                        <Picker.Items>
+                            <x:String>English</x:String>
+                            <x:String>Bulgarian</x:String>
+                        </Picker.Items>
+                    </Picker>
+
+                    <Label
+                            Text="Theme:"
+                            FontSize="17"
+                            FontFamily="Poppins"
+                            Grid.Column="0"
+                            Grid.Row="1"
+                            TextColor="White"
+                            HorizontalTextAlignment="Start"
+                            VerticalOptions="Center" />
+                    <Picker 
+               Title="Select a theme"
+               Grid.Column="1"
+                        Grid.Row="2"
+               HorizontalOptions="End"
+                 TextColor="White"
+               VerticalOptions="Center"
+               FontAttributes="Bold">
+                        <Picker.Items>
+                            <x:String>Dark</x:String>
+                            <x:String>Light</x:String>
+                        </Picker.Items>
+                    </Picker>
+                </Grid>
+        
+
+            </VerticalStackLayout>
+
+        </Frame>
+        <!--Login Form-->
+        <Grid Grid.Row="1" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+            <ScrollView HorizontalOptions="Center" VerticalOptions="Center">
+                <VerticalStackLayout x:Name="MainLayout" Spacing="20" HorizontalOptions="Center">
+
+                    <Border Stroke="Transparent" 
+                    StrokeThickness="0"
+                    WidthRequest="370"
+                    HeightRequest="600"
+                    StrokeShape="RoundRectangle 15"
+                    Margin="0">
+
+                        <Border.Background>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                <GradientStop Color="#B23AC7" Offset="0.0" />
+                                <GradientStop Color="#1E90FF" Offset="1.0" />
+                            </LinearGradientBrush>
+                        </Border.Background>
+
+                        <VerticalStackLayout>
+                            <Label Text="Login"
+                           HorizontalOptions="Center"
+                           FontAttributes="Bold"
+                           FontSize="35"
+                           Margin="0,50,0,0"
+                                   FontFamily="Poppins"/>
+
+                            <Grid Margin="0,50,0,0" WidthRequest="300" HorizontalOptions="Center">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+
+                                <Label Text="Username: " Grid.Row="0" Grid.Column="0"    FontFamily="Poppins" />
+                                <Editor Grid.Row="1" Grid.Column="0"    FontFamily="Poppins"/>
+                                <Label Text="Password: " Grid.Row="2" Grid.Column="0"    FontFamily="Poppins"/>
+                                <Editor Grid.Row="3" Grid.Column="0"    FontFamily="Poppins"/>
+                            </Grid>
+
+                            <Label Text="Forgot password" HorizontalOptions="End" Margin="0,10,50,15"    FontFamily="Poppins"/>
+
+                            <Button Text="Login"
+                            WidthRequest="300"
+                            Margin="0,0,0,20"
+                            BackgroundColor="#f5f9ff"
+                            TextColor="Black"
+                            CornerRadius="25"
+                            FontAttributes="Bold"   FontFamily="Poppins" />
+
+                            <Label Text="Or, Register with" HorizontalOptions="Center" Margin="0,0,0,20"    FontFamily="Poppins"/>
+
+                            <Grid ColumnSpacing="50" HorizontalOptions="Center" Margin="0,0,0,20">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+                                <Button ImageSource="google.png" Grid.Column="0" BackgroundColor="#f5f9ff" WidthRequest="120" HeightRequest="70" CornerRadius="20"/>
+                                <Button ImageSource="facebook.png" Grid.Column="1" BackgroundColor="#f5f9ff" WidthRequest="120" HeightRequest="70" CornerRadius="20" />
+                            </Grid>
+
+                            <Label HorizontalOptions="Center"    FontFamily="Poppins">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Don't have an account yet? " TextColor="White" />
+                                        <Span Text="Register"
+                                      FontAttributes="Bold"
+                                      TextColor="White"
+                                      TextDecorations="Underline">
+                                            <Span.GestureRecognizers>
+                                                <TapGestureRecognizer Command="{Binding OpenUrlCommand}" />
+                                            </Span.GestureRecognizers>
+                                        </Span>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                        </VerticalStackLayout>
+
+                    </Border>
+                </VerticalStackLayout>
+            </ScrollView>
+        </Grid>
+    </Grid>
+
+</ContentPage>

@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -13,6 +21,22 @@
     {
       "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\selectpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\selectpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\reserveparkingspace(mobile).csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\reserveparkingspace(mobile).csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.154\\tools\\Xamarin.Android.Common.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
@@ -33,23 +57,7 @@
       "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\selectpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\selectpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\selectpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.154\\tools\\Xamarin.Android.Resource.Designer.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\reserveparkingspace(mobile).csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\reserveparkingspace(mobile).csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
@@ -62,29 +70,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 8,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "MainPage.xaml.cs",
               "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\MainPage.xaml.cs",
               "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\MainPage.xaml.cs",
               "ToolTip": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\MainPage.xaml.cs",
               "RelativeToolTip": "ReserveParkingSpace(Mobile)\\MainPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA+AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-03T07:44:01.05Z",
               "IsPinned": true,
@@ -92,13 +88,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainPage.xaml",
               "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\MainPage.xaml",
               "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\MainPage.xaml",
               "ToolTip": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\MainPage.xaml",
               "RelativeToolTip": "ReserveParkingSpace(Mobile)\\MainPage.xaml",
-              "ViewState": "AgIAAH0BAAAAAAAAAAAiwJMBAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAPEAAAAAAAAAAAAjwAMBAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-07-04T07:16:49.301Z",
               "IsPinned": true,
@@ -106,67 +102,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Xamarin.Android.Common.targets",
-              "DocumentMoniker": "C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.154\\tools\\Xamarin.Android.Common.targets",
-              "RelativeDocumentMoniker": "..\\..\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.154\\tools\\Xamarin.Android.Common.targets",
-              "ToolTip": "C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.154\\tools\\Xamarin.Android.Common.targets",
-              "RelativeToolTip": "..\\..\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.154\\tools\\Xamarin.Android.Common.targets",
-              "ViewState": "AgIAAAMKAAAAAAAAAAAEwB0KAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2025-07-04T11:53:36.403Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Microsoft.Maui.Resizetizer.After.targets",
-              "DocumentMoniker": "C:\\Users\\Todor\\.nuget\\packages\\microsoft.maui.resizetizer\\8.0.100\\buildTransitive\\Microsoft.Maui.Resizetizer.After.targets",
-              "RelativeDocumentMoniker": "..\\..\\Users\\Todor\\.nuget\\packages\\microsoft.maui.resizetizer\\8.0.100\\buildTransitive\\Microsoft.Maui.Resizetizer.After.targets",
-              "ToolTip": "C:\\Users\\Todor\\.nuget\\packages\\microsoft.maui.resizetizer\\8.0.100\\buildTransitive\\Microsoft.Maui.Resizetizer.After.targets",
-              "RelativeToolTip": "..\\..\\Users\\Todor\\.nuget\\packages\\microsoft.maui.resizetizer\\8.0.100\\buildTransitive\\Microsoft.Maui.Resizetizer.After.targets",
-              "ViewState": "AgIAAFUCAAAAAAAAAAAEwG8CAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2025-07-04T11:49:43.749Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DataService.cs",
-              "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\Services\\DataService.cs",
-              "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\Services\\DataService.cs",
-              "ToolTip": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\Services\\DataService.cs",
-              "RelativeToolTip": "ReserveParkingSpace(Mobile)\\Services\\DataService.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAApwEwAAAAXAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "LoginPage.xaml.cs",
+              "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\LoginPage.xaml.cs",
+              "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\LoginPage.xaml.cs",
+              "ToolTip": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\LoginPage.xaml.cs",
+              "RelativeToolTip": "ReserveParkingSpace(Mobile)\\LoginPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T11:29:57.696Z"
+              "WhenOpened": "2025-07-05T18:09:12.814Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Xamarin.Android.Resource.Designer.targets",
-              "DocumentMoniker": "C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.154\\tools\\Xamarin.Android.Resource.Designer.targets",
-              "RelativeDocumentMoniker": "..\\..\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.154\\tools\\Xamarin.Android.Resource.Designer.targets",
-              "ToolTip": "C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.154\\tools\\Xamarin.Android.Resource.Designer.targets",
-              "RelativeToolTip": "..\\..\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.154\\tools\\Xamarin.Android.Resource.Designer.targets",
-              "ViewState": "AgIAACYAAAAAAAAAAAAqwDkAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2025-07-04T08:55:06.68Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "SelectPage.xaml.cs",
-              "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\SelectPage.xaml.cs",
-              "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\SelectPage.xaml.cs",
-              "ToolTip": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\SelectPage.xaml.cs",
-              "RelativeToolTip": "ReserveParkingSpace(Mobile)\\SelectPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T08:51:33.54Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "SelectPage.xaml",
               "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\SelectPage.xaml",
               "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\SelectPage.xaml",
@@ -178,7 +127,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 8,
               "Title": "ReserveParkingSpace(Mobile).csproj",
               "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj",
               "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj",
@@ -190,43 +139,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MauiProgram.cs",
-              "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\MauiProgram.cs",
-              "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\MauiProgram.cs",
-              "ToolTip": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\MauiProgram.cs",
-              "RelativeToolTip": "ReserveParkingSpace(Mobile)\\MauiProgram.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T08:34:09.959Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AppShell.xaml.cs",
-              "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\AppShell.xaml.cs",
-              "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\AppShell.xaml.cs",
-              "ToolTip": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\AppShell.xaml.cs",
-              "RelativeToolTip": "ReserveParkingSpace(Mobile)\\AppShell.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAACrAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T07:16:48.957Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AppShell.xaml",
-              "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\AppShell.xaml",
-              "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\AppShell.xaml",
-              "ToolTip": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\AppShell.xaml",
-              "RelativeToolTip": "ReserveParkingSpace(Mobile)\\AppShell.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-04T07:17:41.162Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 7,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\App.xaml",
               "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\App.xaml",
@@ -238,7 +151,117 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 6,
+              "Title": "AppShell.xaml",
+              "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\AppShell.xaml",
+              "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\AppShell.xaml",
+              "ToolTip": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\AppShell.xaml",
+              "RelativeToolTip": "ReserveParkingSpace(Mobile)\\AppShell.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-04T07:17:41.162Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\MauiProgram.cs",
+              "ToolTip": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\MauiProgram.cs",
+              "RelativeToolTip": "ReserveParkingSpace(Mobile)\\MauiProgram.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T08:34:09.959Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginPage.xaml",
+              "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\LoginPage.xaml",
+              "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\LoginPage.xaml",
+              "ToolTip": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\LoginPage.xaml",
+              "RelativeToolTip": "ReserveParkingSpace(Mobile)\\LoginPage.xaml",
+              "ViewState": "AgIAAKAAAAAAAAAAAAApwLEAAABkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-05T17:55:33.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SelectPage.xaml.cs",
+              "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\SelectPage.xaml.cs",
+              "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\SelectPage.xaml.cs",
+              "ToolTip": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\SelectPage.xaml.cs",
+              "RelativeToolTip": "ReserveParkingSpace(Mobile)\\SelectPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T08:51:33.54Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Xamarin.Android.Resource.Designer.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.154\\tools\\Xamarin.Android.Resource.Designer.targets",
+              "RelativeDocumentMoniker": "..\\..\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.154\\tools\\Xamarin.Android.Resource.Designer.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.154\\tools\\Xamarin.Android.Resource.Designer.targets",
+              "RelativeToolTip": "..\\..\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.154\\tools\\Xamarin.Android.Resource.Designer.targets",
+              "ViewState": "AgIAACYAAAAAAAAAAAAqwDkAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-07-04T08:55:06.68Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DataService.cs",
+              "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\Services\\DataService.cs",
+              "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\Services\\DataService.cs",
+              "ToolTip": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\Services\\DataService.cs",
+              "RelativeToolTip": "ReserveParkingSpace(Mobile)\\Services\\DataService.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAApwEwAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T11:29:57.696Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Microsoft.Maui.Resizetizer.After.targets",
+              "DocumentMoniker": "C:\\Users\\Todor\\.nuget\\packages\\microsoft.maui.resizetizer\\8.0.100\\buildTransitive\\Microsoft.Maui.Resizetizer.After.targets",
+              "RelativeDocumentMoniker": "..\\..\\Users\\Todor\\.nuget\\packages\\microsoft.maui.resizetizer\\8.0.100\\buildTransitive\\Microsoft.Maui.Resizetizer.After.targets",
+              "ToolTip": "C:\\Users\\Todor\\.nuget\\packages\\microsoft.maui.resizetizer\\8.0.100\\buildTransitive\\Microsoft.Maui.Resizetizer.After.targets",
+              "RelativeToolTip": "..\\..\\Users\\Todor\\.nuget\\packages\\microsoft.maui.resizetizer\\8.0.100\\buildTransitive\\Microsoft.Maui.Resizetizer.After.targets",
+              "ViewState": "AgIAAFUCAAAAAAAAAAAEwG8CAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-07-04T11:49:43.749Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Xamarin.Android.Common.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.154\\tools\\Xamarin.Android.Common.targets",
+              "RelativeDocumentMoniker": "..\\..\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.154\\tools\\Xamarin.Android.Common.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.154\\tools\\Xamarin.Android.Common.targets",
+              "RelativeToolTip": "..\\..\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.154\\tools\\Xamarin.Android.Common.targets",
+              "ViewState": "AgIAAAMKAAAAAAAAAAAEwB0KAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-07-04T11:53:36.403Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AppShell.xaml.cs",
+              "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\AppShell.xaml.cs",
+              "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\AppShell.xaml.cs",
+              "ToolTip": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\AppShell.xaml.cs",
+              "RelativeToolTip": "ReserveParkingSpace(Mobile)\\AppShell.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAACrAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T07:16:48.957Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": ".gitignore",
               "DocumentMoniker": "C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\.gitignore",
               "RelativeDocumentMoniker": "..\\..\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\.gitignore",
