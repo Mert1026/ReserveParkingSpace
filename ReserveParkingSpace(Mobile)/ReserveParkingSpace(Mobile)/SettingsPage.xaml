@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ReserveParkingSpace_Mobile_.SettingsPage"
+             Title="SettingsPage"
+             BackgroundColor="White">
+    <VerticalStackLayout>
+        <Label 
+Text="Settings"
+VerticalOptions="Center" 
+HorizontalOptions="Start"
+TextColor="Black"/>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            
+            <Border Stroke="Transparent" Grid.Row="0">
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Image Source="dark_mode.png"  HeightRequest="30" WidthRequest="30" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start"/>
+                    <Label Text="Dark Mode" TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Start" FontSize="20" />
+                    <Switch Grid.Column="2" HorizontalOptions="End" VerticalOptions="Center" OnColor="Black" BackgroundColor="Transparent" ThumbColor="Blue"/>
+                </Grid>
+            </Border>
+            <Border Stroke="Transparent" Grid.Row="1">
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Image Source="account.png" 
+                           HeightRequest="30" 
+                           WidthRequest="30" 
+                           Grid.Column="0"
+                           VerticalOptions="Center" 
+                           HorizontalOptions="Start"/>
+                    <Label Text="Account" TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Start" FontSize="20" />
+                    <Switch Grid.Column="2" HorizontalOptions="End" VerticalOptions="Center" OnColor="Black" BackgroundColor="Transparent" ThumbColor="Blue"/>
+                </Grid>
+            </Border>
+            <Border Stroke="Transparent" Grid.Row="2">
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Image Source="language.png"  HeightRequest="30" WidthRequest="30" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start"/>
+                    <Label Text="Language" TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Start" FontSize="20" />
+                    <Switch Grid.Column="2" HorizontalOptions="End" VerticalOptions="Center" OnColor="Black" BackgroundColor="Transparent" ThumbColor="Blue"/>
+                </Grid>
+            </Border>
+        </Grid>
+      
+       
+       
+    </VerticalStackLayout>
+</ContentPage>

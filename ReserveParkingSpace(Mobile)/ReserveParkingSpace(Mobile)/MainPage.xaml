@@ -136,7 +136,7 @@
             <VerticalStackLayout x:Name="MainLayout" VerticalOptions="Fill" Spacing="20">
 
                
-            <Label Text="Reserve" TextColor="Black" HorizontalOptions="Center" FontFamily="Poppins-Medium" FontSize="31" Margin="0,20,0,0"/>
+            <Label Text="Let's Find Your Spot" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" FontFamily="Poppins" FontSize="31" Margin="0,20,0,0"/>
                
                 <!--Sortig info-->
                 <Border

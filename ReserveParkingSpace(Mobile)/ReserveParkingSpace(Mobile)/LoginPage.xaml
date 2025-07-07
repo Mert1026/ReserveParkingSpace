@@ -180,14 +180,6 @@
 
                             <Label Text="Or, Register with" HorizontalOptions="Center" Margin="0,0,0,20"    FontFamily="Poppins"/>
 
-                            <Grid ColumnSpacing="50" HorizontalOptions="Center" Margin="0,0,0,20">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="Auto" />
-                                    <ColumnDefinition Width="Auto" />
-                                </Grid.ColumnDefinitions>
-                                <Button ImageSource="google.png" Grid.Column="0" BackgroundColor="#f5f9ff" WidthRequest="120" HeightRequest="70" CornerRadius="20"/>
-                                <Button ImageSource="facebook.png" Grid.Column="1" BackgroundColor="#f5f9ff" WidthRequest="120" HeightRequest="70" CornerRadius="20" />
-                            </Grid>
 
                             <Label HorizontalOptions="Center"    FontFamily="Poppins">
                                 <Label.FormattedText>

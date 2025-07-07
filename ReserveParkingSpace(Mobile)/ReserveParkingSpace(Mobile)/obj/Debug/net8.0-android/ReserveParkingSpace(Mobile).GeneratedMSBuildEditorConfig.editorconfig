@@ -59,3 +59,9 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ReserveParkingSpace_Mobile_.SelectPage.xaml
 build_metadata.AdditionalFiles.TargetPath = SelectPage.xaml
 build_metadata.AdditionalFiles.RelativePath = SelectPage.xaml
+
+[C:/ReserveParkingSpace/ReserveParkingSpace(Mobile)/ReserveParkingSpace(Mobile)/SettingsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ReserveParkingSpace_Mobile_.SettingsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = SettingsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = SettingsPage.xaml
