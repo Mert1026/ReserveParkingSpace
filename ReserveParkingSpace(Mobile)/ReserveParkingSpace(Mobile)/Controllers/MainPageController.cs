@@ -1,6 +1,6 @@
 ﻿
 using ReserveParkingSpace_Mobile_.Controllers.IControllers;
-using ReserveParkingSpace_Mobile_.Data.Models;
+using ReserveParkingSpace_Mobile_.Data.Models.GetParkingSpaces_models;
 using ReserveParkingSpace_Mobile_.Services;
 using System;
 using System.Collections.Generic;
@@ -12,54 +12,18 @@ namespace ReserveParkingSpace_Mobile_.Controllers
 {
     public class MainPageController : IMainPageController
     {
-        public DataService DataService { get; set; }
+        public DataService DataService;
         public MainPageController(DataService _dataService)
         {
-            DataService = _dataService;
+            DataService = new DataService();
         }
 
-        public async Task<List<Reservation>> GetReservationsAsync()
+        public async Task<ParkingDashboardResponse> GetParkingDashboardAsync(string date)
         {
-            try
-            {
-                List<Reservation> UserReservations = await DataService.GetReservationsAsync();
-                if (UserReservations == null || UserReservations.Count == 0)
-                {
-                    await System.Console.Out.WriteLineAsync("No reservations found.");
-                    return new List<Reservation>();
-                }
-                await System.Console.Out.WriteLineAsync($"Found {UserReservations.Count} reservations.");
-                return UserReservations;
-            }
-            catch (Exception ex)
-            {
-                await System.Console.Out.WriteLineAsync($"Error: {ex.Message}");
-                return new List<Reservation>();
-
-            }
-        }
-
-        public async Task<LoginResponse>? LoginAsync(string email, string password)
-        {
-            try
-            {
-                var loginResult = await DataService.LoginAsync("john.doe@example.com", "Secure123!");
-
-                if (loginResult != null && loginResult.success)
-                {
-                    return loginResult;
-                }
-                else
-                {
-                    await Console.Out.WriteLineAsync("Login failed!");
-                    return null;
-                }
-            }
-            catch (Exception ex)
-            {
-                await Console.Out.WriteLineAsync($"Error during login: {ex.Message}");
-                return null;
-            }
+           
+            
+                return await DataService.GetParkingDashboardAsync(date);
+            
 
         }
     }

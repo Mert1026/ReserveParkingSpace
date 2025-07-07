@@ -127,7 +127,7 @@
                     WidthRequest="200"
                     CornerRadius="10"
                     Padding="10"
-                    Clicked="OnCounterClicked" />
+                    Clicked="Button_Clicked"/>
                     
 
             </VerticalStackLayout>
@@ -213,13 +213,14 @@
                         <control:SfCalendar
                          x:Name="CalendarLayout"
                          SelectionMode="Range"
-                         SelectedDates="{Binding MySelectedDates}"
-                         Grid.Row="2"      
+                         SelectedDates="{Binding MySelectedDates, Mode=TwoWay}"
+                         Grid.Row="2"     
                          Margin="20,20,20,20"
                             CornerRadius="15"
+                            SelectionChanged="CalendarLayout_SelectionChanged"
                         
                       
-                               IsVisible="False"
+                               IsVisible="True"
                            
                              StartRangeSelectionBackground="#3a6bc8" 
                             EndRangeSelectionBackground="#3a6bc8" 
@@ -439,7 +440,7 @@
                             WidthRequest="150"
                             CornerRadius="15"
                             Padding="10"
-                            Clicked="OnCounterClicked"/>            
+                            />            
                     </Grid>
                 </Border>
             </VerticalStackLayout>

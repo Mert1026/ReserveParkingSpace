@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ReserveParkingSpace(Mobile)")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+788635ba96c3a35432f0f890264338df0eb5cd60")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+0a42447a1e082f7aa1a56c34da0e1c1159d26298")]
 [assembly: System.Reflection.AssemblyProductAttribute("ReserveParkingSpace(Mobile)")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ReserveParkingSpace(Mobile)")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

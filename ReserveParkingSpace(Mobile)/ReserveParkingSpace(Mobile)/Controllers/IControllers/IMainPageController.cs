@@ -9,7 +9,6 @@ namespace ReserveParkingSpace_Mobile_.Controllers.IControllers
 {
     interface IMainPageController
     {
-        public Task<List<Reservation>> GetReservationsAsync();
-        public Task<LoginResponse>? LoginAsync(string email, string password);
+
     }
 }

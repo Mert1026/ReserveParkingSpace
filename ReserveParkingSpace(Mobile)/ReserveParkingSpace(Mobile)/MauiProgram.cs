@@ -1,4 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
+using ReserveParkingSpace_Mobile_.Controllers;
+using ReserveParkingSpace_Mobile_.Controllers.IControllers;
 using ReserveParkingSpace_Mobile_.Services;
 using ReserveParkingSpace_Mobile_.Services.IServices;
 using Syncfusion.Maui.Core.Hosting;
@@ -21,6 +23,10 @@ namespace ReserveParkingSpace_Mobile_
                 });
 
             builder.Services.AddScoped<IDataService, DataService>();
+            builder.Services.AddScoped<IMainPageController, MainPageController>();
+            builder.Services.AddHttpClient();
+            // Registers HttpClient + your service
+            builder.Services.AddLogging();                 // Optional, usually already there
 
 #if DEBUG
             builder.Logging.AddDebug();
