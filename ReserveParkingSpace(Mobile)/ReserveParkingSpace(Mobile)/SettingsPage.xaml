@@ -3,73 +3,106 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ReserveParkingSpace_Mobile_.SettingsPage"
              Title="SettingsPage"
-             BackgroundColor="White">
-    <VerticalStackLayout>
-        <Label 
-Text="Settings"
-VerticalOptions="Center" 
-HorizontalOptions="Start"
-TextColor="Black"/>
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
-            
-            <Border Stroke="Transparent" Grid.Row="0">
+             Shell.TitleColor="White"
+             Shell.ForegroundColor="White"
+               Shell.BackgroundColor="#3a6bc8"
+             BackgroundColor="White"
+             >
+    <Grid RowDefinitions="*,Auto">
+        <!-- Scrollable main content -->
+        <ScrollView Grid.Row="0">
+            <VerticalStackLayout Padding="10" Spacing="20">
 
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="50"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
+                <Grid Margin="0,0,10,0" RowSpacing="20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
 
-                    <Image Source="dark_mode.png"  HeightRequest="30" WidthRequest="30" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start"/>
-                    <Label Text="Dark Mode" TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Start" FontSize="20" />
-                    <Switch Grid.Column="2" HorizontalOptions="End" VerticalOptions="Center" OnColor="Black" BackgroundColor="Transparent" ThumbColor="Blue"/>
+                    <Border Stroke="Transparent" Grid.Row="0">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="50"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Image Source="dark_mode.png" HeightRequest="30" WidthRequest="30" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start"/>
+                            <Label Text="Theme" TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Start" FontSize="20" />
+                            <Picker Grid.Column="2"
+                                    Title="Select a Theme"
+                                    HorizontalOptions="End"
+                                    TextColor="Black"
+                                    VerticalOptions="Center"
+                                    FontAttributes="Bold"
+                                    WidthRequest="100"
+                                    VerticalTextAlignment="End"
+                                    HorizontalTextAlignment="End">
+                                <Picker.Items>
+                                    <x:String>Dark Mode</x:String>
+                                    <x:String>Light Mode</x:String>
+                                </Picker.Items>
+                            </Picker>
+                        </Grid>
+                    </Border>
+
+                    <Border Stroke="Transparent" Grid.Row="1">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="50"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Image Source="account.png" HeightRequest="30" WidthRequest="30" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start"/>
+                            <Label Text="Account" TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Start" FontSize="20" />
+                            <Label Text=">" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="End" TextColor="Black" FontSize="24">
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="OnAccountTapped" />
+                                </Label.GestureRecognizers>
+                            </Label>
+                        </Grid>
+                    </Border>
+
+                    <Border Stroke="Transparent" Grid.Row="2">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="50"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Image Source="language.png" HeightRequest="30" WidthRequest="30" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start"/>
+                            <Label Text="Language" TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Start" FontSize="20" />
+                            <Picker Grid.Column="2"
+                                    Title="Select a Language"
+                                    HorizontalOptions="End"
+                                    TextColor="Black"
+                                    WidthRequest="100"
+                                    VerticalTextAlignment="End"
+                                    HorizontalTextAlignment="End"
+                                    VerticalOptions="Center"
+                                    FontAttributes="Bold">
+                                <Picker.Items>
+                                    <x:String>English</x:String>
+                                    <x:String>Bulgarian</x:String>
+                                </Picker.Items>
+                            </Picker>
+                        </Grid>
+                    </Border>
                 </Grid>
-            </Border>
-            <Border Stroke="Transparent" Grid.Row="1">
 
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="50"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
+            </VerticalStackLayout>
+        </ScrollView>
 
-                    <Image Source="account.png" 
-                           HeightRequest="30" 
-                           WidthRequest="30" 
-                           Grid.Column="0"
-                           VerticalOptions="Center" 
-                           HorizontalOptions="Start"/>
-                    <Label Text="Account" TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Start" FontSize="20" />
-                    <Switch Grid.Column="2" HorizontalOptions="End" VerticalOptions="Center" OnColor="Black" BackgroundColor="Transparent" ThumbColor="Blue"/>
-                </Grid>
-            </Border>
-            <Border Stroke="Transparent" Grid.Row="2">
-
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="50"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Image Source="language.png"  HeightRequest="30" WidthRequest="30" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start"/>
-                    <Label Text="Language" TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Start" FontSize="20" />
-                    <Switch Grid.Column="2" HorizontalOptions="End" VerticalOptions="Center" OnColor="Black" BackgroundColor="Transparent" ThumbColor="Blue"/>
-                </Grid>
-            </Border>
-        </Grid>
-      
-       
-       
-    </VerticalStackLayout>
+        <!-- Log Out button fixed at the bottom -->
+        <Button Text="Log Out" 
+                Grid.Row="1"
+                Margin="20"
+                BackgroundColor="Red"
+                TextColor="White"
+                HorizontalOptions="Fill"
+                VerticalOptions="End"/>
+    </Grid>
 </ContentPage>

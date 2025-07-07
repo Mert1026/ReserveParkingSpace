@@ -6,4 +6,8 @@ public partial class SettingsPage : ContentPage
 	{
 		InitializeComponent();
 	}
+    private async void OnAccountTapped(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new AccountPage());
+    }
 }

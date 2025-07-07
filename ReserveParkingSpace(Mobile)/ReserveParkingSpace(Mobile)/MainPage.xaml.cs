@@ -18,9 +18,9 @@ namespace ReserveParkingSpace_Mobile_
         {
           
         }
-        private void OnInfoClicked(object sender, EventArgs e)
+        private async void OnInfoClicked(object sender, EventArgs e)
         {
-            InfoBox.IsVisible = !InfoBox.IsVisible;
+            await Navigation.PushAsync(new SettingsPage());
         }
         private void ShowCalendar(object sender, EventArgs e)
         {

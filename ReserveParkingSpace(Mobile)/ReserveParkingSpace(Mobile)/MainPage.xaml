@@ -237,6 +237,15 @@
                            
                     </control:SfCalendar>
 
+                        <Grid Margin="20">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Label Text="You need to upload your schedule if its more than two days" Grid.Row="0" HorizontalTextAlignment="Center" Margin="0,0,0,10" FontFamily="Poppins"/>
+                            <Button Text="Upload The PDF" Grid.Row="1" Background="#4fc3f7" TextColor="White" FontFamily="Poppins"/>
+                        </Grid>
+
                     </StackLayout>
                 </Border>
 

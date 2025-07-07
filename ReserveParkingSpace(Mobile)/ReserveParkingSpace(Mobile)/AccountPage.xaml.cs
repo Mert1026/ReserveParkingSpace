@@ -1,8 +1,8 @@
 namespace ReserveParkingSpace_Mobile_;
 
-public partial class SelectPage : ContentPage
+public partial class AccountPage : ContentPage
 {
-	public SelectPage()
+	public AccountPage()
 	{
 		InitializeComponent();
 	}

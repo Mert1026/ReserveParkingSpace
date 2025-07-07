@@ -132,7 +132,7 @@
                     <Border Stroke="Transparent" 
                     StrokeThickness="0"
                     WidthRequest="370"
-                    HeightRequest="600"
+                    HeightRequest="550"
                     StrokeShape="RoundRectangle 15"
                     Margin="0">
 

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ReserveParkingSpace_Mobile_.AccountPage"
+             Title="Account Page"
+                          Shell.TitleColor="White"
+             Shell.ForegroundColor="White"
+               Shell.BackgroundColor="#3a6bc8"
+             BackgroundColor="White">
+    <VerticalStackLayout>
+        <Border
+             WidthRequest="370"
+             StrokeThickness="1"
+             Stroke="Black"
+             StrokeShape="RoundRectangle 10"
+             Padding="0"
+             Margin="20,20,20,0">
+            <VerticalStackLayout>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+
+                        </Grid.RowDefinitions>
+
+                        <Label Text="UserName" Padding="10" TextColor="Black" Grid.Row="0"/>
+                        <Editor   FontFamily="Poppins" TextColor="Black" Placeholder="Placeholder" Grid.Row="1"/>
+                       
+                    </Grid>
+
+                    <Button Text="da" Grid.Column="1"/>
+                </Grid>
+                
+          
+               
+            </VerticalStackLayout>
+
+        </Border>
+        
+        
+    </VerticalStackLayout>
+</ContentPage>
