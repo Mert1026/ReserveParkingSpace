@@ -10,4 +10,13 @@ public partial class SettingsPage : ContentPage
     {
         await Navigation.PushAsync(new AccountPage());
     }
+    private async void OnThemeTapped(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new ThemePage());
+    }
+    private async void OnLanguageTapped(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new LanguagePage());
+    }
+
 }

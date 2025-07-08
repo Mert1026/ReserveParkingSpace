@@ -6,4 +6,9 @@ public partial class AccountPage : ContentPage
 	{
 		InitializeComponent();
 	}
+    private void OnSaveClicked(object sender, EventArgs e)
+    {
+        // Handle button click logic here
+        DisplayAlert("Saved", "Username saved successfully!", "OK");
+    }
 }

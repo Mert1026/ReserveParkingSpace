@@ -1,9 +1,12 @@
 ﻿
 using ReserveParkingSpace_Mobile_.Controllers.IControllers;
 using ReserveParkingSpace_Mobile_.Data.Models;
+using ReserveParkingSpace_Mobile_.Data.Models.GetParkingSpaces_Models;
+using ReserveParkingSpace_Mobile_.Data.Models.Login_Models;
 using ReserveParkingSpace_Mobile_.Services;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,55 +15,45 @@ namespace ReserveParkingSpace_Mobile_.Controllers
 {
     public class MainPageController : IMainPageController
     {
-        public DataService DataService { get; set; }
+
+        public DataService DataService;
         public MainPageController(DataService _dataService)
         {
-            DataService = _dataService;
+            DataService = new DataService();
         }
 
-        public async Task<List<Reservation>> GetReservationsAsync()
+        public async Task<ParkingDashboardResponse> GetParkingDashboardAsync(string date)
         {
-            try
-            {
-                List<Reservation> UserReservations = await DataService.GetReservationsAsync();
-                if (UserReservations == null || UserReservations.Count == 0)
-                {
-                    await System.Console.Out.WriteLineAsync("No reservations found.");
-                    return new List<Reservation>();
-                }
-                await System.Console.Out.WriteLineAsync($"Found {UserReservations.Count} reservations.");
-                return UserReservations;
-            }
-            catch (Exception ex)
-            {
-                await System.Console.Out.WriteLineAsync($"Error: {ex.Message}");
-                return new List<Reservation>();
-
-            }
+            return await DataService.GetParkingDashboardAsync(date); //TO DO: exception handlign problem(napravi try-catch!)
         }
 
-        public async Task<LoginResponse>? LoginAsync(string email, string password)
+        public async Task<bool> LoginAsync(string email, string password)
         {
+            if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password))
+            {
+                return false;
+            }
             try
             {
-                var loginResult = await DataService.LoginAsync("john.doe@example.com", "Secure123!");
-
-                if (loginResult != null && loginResult.success)
+                var dataService = new DataService();
+                var loginResponse = await dataService.LoginAsync(email, password);
+                if (loginResponse != null && loginResponse.success)
                 {
-                    return loginResult;
+                    // Navigate to the main page or dashboard
+                    //await Navigation.PushAsync(new MainPage());
+                    return true;
                 }
                 else
                 {
-                    await Console.Out.WriteLineAsync("Login failed!");
-                    return null;
+                    //await DisplayAlert("Login Failed", "Invalid credentials.", "OK"); - nz shto ne raboti
+                    return false;
                 }
             }
             catch (Exception ex)
             {
-                await Console.Out.WriteLineAsync($"Error during login: {ex.Message}");
-                return null;
+                //await DisplayAlert("Error", $"An error occurred: {ex.Message}", "OK"); - oshte nz
+                return false;
             }
-
         }
     }
 }

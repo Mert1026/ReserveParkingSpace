@@ -1,4 +1,6 @@
 ﻿using ReserveParkingSpace_Mobile_.Data.Models;
+using ReserveParkingSpace_Mobile_.Data.Models.GetParkingSpaces_Models;
+using ReserveParkingSpace_Mobile_.Data.Models.Login_Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +11,7 @@ namespace ReserveParkingSpace_Mobile_.Controllers.IControllers
 {
     interface IMainPageController
     {
-        public Task<List<Reservation>> GetReservationsAsync();
-        public Task<LoginResponse>? LoginAsync(string email, string password);
+        public Task<ParkingDashboardResponse> GetParkingDashboardAsync(string date);
+        public Task<bool> LoginAsync(string email, string password);
     }
 }

@@ -7,41 +7,179 @@
              Shell.ForegroundColor="White"
                Shell.BackgroundColor="#3a6bc8"
              BackgroundColor="White">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem 
+         Text="Save" 
+         IconImageSource="check.png" 
+         Priority="0"
+         Order="Primary"
+         Clicked="OnSaveClicked" />
+    </ContentPage.ToolbarItems>
     <VerticalStackLayout>
         <Border
-             WidthRequest="370"
-             StrokeThickness="1"
-             Stroke="Black"
-             StrokeShape="RoundRectangle 10"
-             Padding="0"
-             Margin="20,20,20,0">
+    WidthRequest="370"
+    StrokeThickness="1"
+    Stroke="Black"
+    StrokeShape="RoundRectangle 10"
+    Padding="0"
+    Margin="20,20,20,0">
+
             <VerticalStackLayout>
                 <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    <Grid>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="*"/>
-                            <RowDefinition Height="*"/>
-
-                        </Grid.RowDefinitions>
-
-                        <Label Text="UserName" Padding="10" TextColor="Black" Grid.Row="0"/>
-                        <Editor   FontFamily="Poppins" TextColor="Black" Placeholder="Placeholder" Grid.Row="1"/>
-                       
-                    </Grid>
-
-                    <Button Text="da" Grid.Column="1"/>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Label Text="Username" Margin="10,5,0,0" TextColor="Black" Grid.Row="0" FontFamily="Poppins" FontSize="14"/>
+                    <Entry Text="Placeholder" Margin="5,0,0,0" TextColor="Black" Grid.Row="1" FontFamily="Poppins" FontSize="16" FontAttributes="Bold">
+                        <Entry.Keyboard>
+                            <Keyboard x:FactoryMethod="Create">
+                                <x:Arguments>
+                                    <KeyboardFlags>CapitalizeWord</KeyboardFlags>
+                                </x:Arguments>
+                            </Keyboard>
+                        </Entry.Keyboard>
+                    </Entry>
                 </Grid>
-                
-          
-               
             </VerticalStackLayout>
+        </Border>
 
+        <Border
+WidthRequest="370"
+StrokeThickness="1"
+Stroke="Black"
+StrokeShape="RoundRectangle 10"
+Padding="0"
+Margin="20,20,20,0">
+
+            <VerticalStackLayout>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Label Text="First Name" Margin="10,5,0,0" TextColor="Black" Grid.Row="0" FontFamily="Poppins" FontSize="14"/>
+                    <Entry Text="Placeholder" Margin="5,0,0,0" TextColor="Black" Grid.Row="1" FontFamily="Poppins" FontSize="16" FontAttributes="Bold">
+                        <Entry.Keyboard>
+                            <Keyboard x:FactoryMethod="Create">
+                                <x:Arguments>
+                                    <KeyboardFlags>CapitalizeWord</KeyboardFlags>
+                                </x:Arguments>
+                            </Keyboard>
+                        </Entry.Keyboard>
+                    </Entry>
+                </Grid>
+            </VerticalStackLayout>
+        </Border>
+
+
+        <Border
+WidthRequest="370"
+StrokeThickness="1"
+Stroke="Black"
+StrokeShape="RoundRectangle 10"
+Padding="0"
+Margin="20,20,20,0">
+
+            <VerticalStackLayout>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Label Text="Surname" Margin="10,5,0,0" TextColor="Black" Grid.Row="0" FontFamily="Poppins" FontSize="14"/>
+                    <Entry Text="Placeholder" Margin="5,0,0,0" TextColor="Black" Grid.Row="1" FontFamily="Poppins" FontSize="16" FontAttributes="Bold">
+                        <Entry.Keyboard>
+                            <Keyboard x:FactoryMethod="Create">
+                                <x:Arguments>
+                                    <KeyboardFlags>CapitalizeWord</KeyboardFlags>
+                                </x:Arguments>
+                            </Keyboard>
+                        </Entry.Keyboard>
+                    </Entry>
+                </Grid>
+            </VerticalStackLayout>
+        </Border>
+
+
+        <Border
+            WidthRequest="370"
+            StrokeThickness="1"
+            Stroke="Black"
+            StrokeShape="RoundRectangle 10"
+            Padding="0"
+            Margin="20,20,20,0">
+
+            <VerticalStackLayout>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Label Text="Department" Margin="10,5,0,0" TextColor="Black" Grid.Row="0" FontFamily="Poppins" FontSize="14"/>
+                    <Picker 
+                        Title="Placeholder"
+                        Grid.Row="1"
+                        TitleColor="#000001"
+                        FontFamily="Poppins"
+                        FontSize="16"
+                        TextColor="Black"
+                        Margin="5,0,0,0"
+                        VerticalOptions="Center"
+                        FontAttributes="Bold">      
+                        <Picker.Items>
+                            <x:String>Frontend</x:String>
+                            <x:String>Backend</x:String>
+                            <x:String>Mobile</x:String>
+                            <x:String>QA</x:String>
+                        </Picker.Items>
+                    </Picker>
+                </Grid>
+            </VerticalStackLayout>
+        </Border>
+
+        <Border
+                 WidthRequest="370"
+                 StrokeThickness="1"
+                 Stroke="Black"
+                 StrokeShape="RoundRectangle 10"
+                 Padding="0"
+                 Margin="20,20,20,0">
+            <VerticalStackLayout>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Label Text="Member sinse" Margin="10,5,0,0" TextColor="Black" Grid.Row="0" FontFamily="Poppins" FontSize="14"/>
+                    <Label Text="7.07.2025" Margin="10,5,0,10"  Grid.Row="1" TextColor="Black" FontAttributes="Bold" FontFamily="Poppins" FontSize="16"/>
+                </Grid>
+            </VerticalStackLayout>
         </Border>
         
+        <Border
+         WidthRequest="370"
+         StrokeThickness="1"
+         Stroke="Black"
+         StrokeShape="RoundRectangle 10"
+         Padding="0"
+         Margin="20,20,20,0">
+            <VerticalStackLayout>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Label Text="Last changed" Margin="10,5,0,0" TextColor="Black" Grid.Row="0" FontFamily="Poppins" FontSize="14"/>
+                    <Label Text="7.07.2025" Margin="10,5,0,10"  Grid.Row="1" TextColor="Black" FontAttributes="Bold" FontFamily="Poppins" FontSize="16"/>
+                </Grid>
+            </VerticalStackLayout>
+        </Border>
         
+        <Button Text="Log Out" Background="Red" TextColor="White" FontFamily="Poppins" CornerRadius="10" WidthRequest="300" Margin="50"/> 
+
+
+
+
     </VerticalStackLayout>
 </ContentPage>

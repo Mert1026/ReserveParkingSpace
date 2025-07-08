@@ -1,4 +1,7 @@
-﻿using ReserveParkingSpace_Mobile_.Data.Models;
+﻿
+using ReserveParkingSpace_Mobile_.Data.Models;
+using ReserveParkingSpace_Mobile_.Data.Models.GetParkingSpaces_Models;
+using ReserveParkingSpace_Mobile_.Data.Models.Login_Models;
 using ReserveParkingSpace_Mobile_.Services.IServices;
 using System;
 using System.Collections.Generic;
@@ -12,79 +15,72 @@ namespace ReserveParkingSpace_Mobile_.Services
     public class DataService : IDataService
     {
         private readonly HttpClient _httpClient;
+        private readonly JsonSerializerOptions _jsonOptions;
 
-        public DataService(HttpClient httpClient)
+        public DataService()
         {
-            _httpClient = httpClient;
+            _httpClient = new HttpClient();
             _httpClient.DefaultRequestHeaders.Add("Authorization", "Bearer lp7APiOuP8ciT9e2TAhCePiJVi2");
             _httpClient.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
-        }
-        public async Task<List<Reservation>> GetReservationsAsync()
-        {
+            _jsonOptions = new JsonSerializerOptions
             {
-                try
-                {
-                    var request = new HttpRequestMessage(HttpMethod.Get,
-                        "https://reserve-parking-space-back-end.vercel.app/api/parking/reservations");
+                PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+                PropertyNameCaseInsensitive = true
+            };
+        }
 
-                    request.Headers.Add("Authorization", "Bearer lp7APiOuP8ciT9e2TAhCePiJVi2");
-                    request.Headers.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+        public async Task<ParkingDashboardResponse> GetParkingDashboardAsync(string date)
+        {
 
-                    var response = await _httpClient.SendAsync(request);
-                    response.EnsureSuccessStatusCode();
+            string url = $"https://reserve-parking-space.vercel.app/api/parking/dashboard?date={date}";
 
-                    var jsonString = await response.Content.ReadAsStringAsync();
-                    var reservations = JsonSerializer.Deserialize<List<Reservation>>(jsonString, new JsonSerializerOptions
-                    {
-                        PropertyNameCaseInsensitive = true
-                    });
+            HttpResponseMessage response = await _httpClient.GetAsync(url);
+            response.EnsureSuccessStatusCode();
 
-                    return reservations;
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine($"Error: {ex.Message}");
-                    throw;
-                }
-            }
+            string jsonString = await response.Content.ReadAsStringAsync();
+
+            var options = new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true
+            };
+
+            ParkingDashboardResponse result = JsonSerializer.Deserialize<ParkingDashboardResponse>(jsonString, options);
+            return result;
         }
 
         public async Task<LoginResponse> LoginAsync(string email, string password)
         {
             try
             {
+
+                 string url = "https://reserve-parking-space.vercel.app/api/auth/login";
                 var loginRequest = new LoginRequest
                 {
                     email = email,
                     password = password
                 };
 
-                var json = JsonSerializer.Serialize(loginRequest);
-                var content = new StringContent(json, Encoding.UTF8, "application/json");
+                // Serialize to JSON
+                var jsonContent = JsonSerializer.Serialize(loginRequest, _jsonOptions);
+                var content = new StringContent(jsonContent, Encoding.UTF8, "application/json");
 
-                var response = await _httpClient.PostAsync(
-                    "https://reserve-parking-space-back-end.vercel.app/api/auth/login",
-                    content);
+                // Send POST request
+                var response = await _httpClient.PostAsync(url, content);
 
-                response.EnsureSuccessStatusCode();
-
-                var responseJson = await response.Content.ReadAsStringAsync();
-                var loginResponse = JsonSerializer.Deserialize<LoginResponse>(responseJson, new JsonSerializerOptions
+                if (response.IsSuccessStatusCode)
                 {
-                    PropertyNameCaseInsensitive = true
-                });
-
-                return loginResponse;
-            }
-            catch (HttpRequestException ex)
-            {
-                Console.WriteLine($"HTTP Request Error: {ex.Message}");
-                throw;
+                    var responseContent = await response.Content.ReadAsStringAsync();
+                    var loginResponse = JsonSerializer.Deserialize<LoginResponse>(responseContent, _jsonOptions);
+                    return loginResponse;
+                }
+                else
+                {
+                    throw new HttpRequestException($"Login failed with status: {response.StatusCode}");
+                }
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error: {ex.Message}");
-                throw;
+                throw new Exception($"Error during login: {ex.Message}", ex);
             }
         }
     }
