@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:control="clr-namespace:Syncfusion.Maui.Calendar;assembly=Syncfusion.Maui.Calendar"
              x:Class="ReserveParkingSpace_Mobile_.MainPage"
-             BackgroundColor="#f5f9ff">
+             BackgroundColor="#f5f9ff"
+             Shell.NavBarIsVisible="False">
 
 
     <Grid RowDefinitions="Auto,*">
@@ -85,15 +86,16 @@
                                  VerticalOptions="Center"/>
                             <Picker 
                                  Title="Select a shift"
+                                x:Name="ShiftPicker"
                                  Grid.Column="1"
-                                
+                                TitleColor="#fffffa"
                                  TextColor="White"
                                  VerticalOptions="Center"
                                  FontAttributes="Bold">
                                 <Picker.Items>
-                                    <x:String>First Shift</x:String>
-                                    <x:String>Second Shift</x:String>
-                                    <x:String>Full Shift</x:String>
+                                    <x:String>morning</x:String>
+                                    <x:String>afternoon</x:String>
+                                    <x:String>full day</x:String>
                                 </Picker.Items>
                             </Picker>
                             <Label 
@@ -151,11 +153,12 @@
                                 <RowDefinition Height="Auto"/>
                             </Grid.RowDefinitions>
                             <Label Text="You need to upload your schedule if its more than two days" Grid.Row="0" HorizontalTextAlignment="Center" Margin="0,0,0,10" FontFamily="Poppins"/>
-                            <Button Text="Upload The PDF" Grid.Row="1" Background="#4fc3f7" TextColor="White" FontFamily="Poppins"/>
+                            <Button Text="Upload The PDF" Grid.Row="1" Background="#4fc3f7" TextColor="White" FontFamily="Poppins" FontAttributes="Bold"/>
                         </Grid>
 
                     </StackLayout>
                 </Border>
+                
                 <!-- Map Info -->
                 <VerticalStackLayout Spacing="5" Margin="20,0,20,0">
                     <Border
@@ -175,6 +178,16 @@
                                 Opacity="0.6" />
                         </Border.Shadow>
                         <AbsoluteLayout VerticalOptions="FillAndExpand">
+                            <!-- Loading Image -->
+                            <Image Source="loading.jpg"
+                                AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+                                   ZIndex="99"
+                                   IsVisible="False"
+                                AbsoluteLayout.LayoutFlags="All"
+                                Aspect="AspectFill" />
+
+
+
                             <!-- Background Image -->
                             <Image Source="empy_parking_lot.png"
                            AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
@@ -351,7 +364,7 @@ AbsoluteLayout.LayoutFlags="PositionProportional" />
                             WidthRequest="150"
                             CornerRadius="15"
                             Padding="10"
-                            Clicked="OnCounterClicked"/>
+                            Clicked="Button_Clicked"/>
                     </Grid>
                 </Border>
             </VerticalStackLayout>

@@ -9,7 +9,6 @@
              BackgroundColor="White"
              >
     <Grid RowDefinitions="*,Auto">
-        <!-- Scrollable main content -->
         <ScrollView Grid.Row="0">
             <VerticalStackLayout Padding="10" Spacing="20">
 
@@ -24,6 +23,7 @@
                     </Grid.RowDefinitions>
 
                     <Border Stroke="Transparent" Grid.Row="0">
+                        
                         <Border.GestureRecognizers>
                             <TapGestureRecognizer Tapped="OnThemeTapped" />
                         </Border.GestureRecognizers>
@@ -36,9 +36,7 @@
                             <Image Source="dark_mode.png" HeightRequest="30" WidthRequest="30" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start"/>
                             <Label Text="Dark Mode" TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Start" FontSize="20" />
                             <Label Text=">" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="End" TextColor="Black" FontSize="24">
-                                <Label.GestureRecognizers>
-                                    <TapGestureRecognizer Tapped="OnThemeTapped" />
-                                </Label.GestureRecognizers>
+                                
                             </Label>
                         </Grid>
                     </Border>
@@ -56,9 +54,7 @@
                             <Image Source="account.png" HeightRequest="30" WidthRequest="30" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start"/>
                             <Label Text="Account" TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Start" FontSize="20" />
                             <Label Text=">" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="End" TextColor="Black" FontSize="24">
-                                <Label.GestureRecognizers>
-                                    <TapGestureRecognizer Tapped="OnAccountTapped" />
-                                </Label.GestureRecognizers>
+                               
                             </Label>
                         </Grid>
                     </Border>
@@ -76,9 +72,27 @@
                             <Image Source="language.png" HeightRequest="30" WidthRequest="30" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start"/>
                             <Label Text="Language" TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Start" FontSize="20" />
                             <Label Text=">" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="End" TextColor="Black" FontSize="24">
-                                <Label.GestureRecognizers>
-                                    <TapGestureRecognizer Tapped="OnLanguageTapped" />
-                                </Label.GestureRecognizers>
+                                
+                            </Label>
+                        </Grid>
+                    </Border>
+                    
+                    
+                    
+                    <Border Stroke="Transparent" Grid.Row="3">
+                        <Border.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSpacesTapped" />
+                        </Border.GestureRecognizers>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="50"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Image Source="car_logo.png" HeightRequest="30" WidthRequest="30" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start"/>
+                            <Label Text="Your Spaces" TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Start" FontSize="20" />
+                            <Label Text=">" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="End" TextColor="Black" FontSize="24">
+                               
                             </Label>
                         </Grid>
                     </Border>

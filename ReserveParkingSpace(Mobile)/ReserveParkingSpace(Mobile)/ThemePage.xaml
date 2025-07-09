@@ -15,32 +15,49 @@
      Order="Primary"
      Clicked="OnSaveClicked" />
     </ContentPage.ToolbarItems>
-    <VerticalStackLayout Padding="20" Spacing="20">
-        <Grid>
-            <Grid.ColumnDefinitions>
-              
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="Auto"/>
-            </Grid.ColumnDefinitions>
-           
-            <Label Text="On" VerticalTextAlignment="Center" TextColor="Black" Grid.Column="0" FontFamily="Poppins" FontSize="20"/>
-            <CheckBox x:Name="EnglishCheckBox" CheckedChanged="OnEnglishCheckedChanged" Color="Black" Grid.Column="1" />
-        </Grid>
+    <VerticalStackLayout Padding="20">
 
-        <Grid>
-            <Grid.ColumnDefinitions>
-     
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="Auto"/>
-            </Grid.ColumnDefinitions>
-           
-            <Label Text="Off" VerticalTextAlignment="Center" TextColor="Black" Grid.Column="0" FontFamily="Poppins"  FontSize="20"/>
-            <CheckBox x:Name="BulgarianCheckBox" CheckedChanged="OnBulgarianCheckedChanged" Color="Black" Grid.Column="1"/>
+        <Border
+    WidthRequest="370"
+    StrokeThickness="1"
+    Stroke="Black"
+    StrokeShape="RoundRectangle 10"
+    Padding="10,0,10,0"
+    Margin="20,0,20,0">
 
-        </Grid>
+            <VerticalStackLayout>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
 
-        <HorizontalStackLayout Spacing="10" VerticalOptions="Center">
+                    <Label Text="On" VerticalTextAlignment="Center" TextColor="Black" Grid.Column="0" FontFamily="Poppins" FontSize="20"/>
+                    <CheckBox x:Name="EnableCheckBox" CheckedChanged="OnEnableCheckedChanged" Color="Black" Grid.Column="1" />
+                </Grid>
+            </VerticalStackLayout>
+        </Border>
 
-        </HorizontalStackLayout>
+        <Border
+    WidthRequest="370"
+    StrokeThickness="1"
+    Stroke="Black"
+    StrokeShape="RoundRectangle 10"
+    Padding="10,0,10,0"
+    Margin="20,20,20,0">
+
+            <VerticalStackLayout>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label Text="Off" VerticalTextAlignment="Center" TextColor="Black" Grid.Column="0" FontFamily="Poppins"  FontSize="20"/>
+                    <CheckBox x:Name="DisableCheckBox" CheckedChanged="OnDisableCheckedChanged" Color="Black" Grid.Column="1"/>
+                </Grid>
+            </VerticalStackLayout>
+        </Border>
+
     </VerticalStackLayout>
 </ContentPage>

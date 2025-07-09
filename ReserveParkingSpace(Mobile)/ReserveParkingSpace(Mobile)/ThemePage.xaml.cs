@@ -6,19 +6,23 @@ public partial class ThemePage : ContentPage
 	{
 		InitializeComponent();
 	}
-    private void OnEnglishCheckedChanged(object sender, CheckedChangedEventArgs e)
+    private void OnEnableCheckedChanged(object sender, CheckedChangedEventArgs e)
     {
-        if (e.Value)
+        if (e.Value) // Enable checkbox checked
         {
-            BulgarianCheckBox.IsChecked = false;
+            DisableCheckBox.CheckedChanged -= OnDisableCheckedChanged;
+            DisableCheckBox.IsChecked = false;
+            DisableCheckBox.CheckedChanged += OnDisableCheckedChanged;
         }
     }
 
-    private void OnBulgarianCheckedChanged(object sender, CheckedChangedEventArgs e)
+    private void OnDisableCheckedChanged(object sender, CheckedChangedEventArgs e)
     {
-        if (e.Value)
+        if (e.Value) // Disable checkbox checked
         {
-            EnglishCheckBox.IsChecked = false;
+            EnableCheckBox.CheckedChanged -= OnEnableCheckedChanged;
+            EnableCheckBox.IsChecked = false;
+            EnableCheckBox.CheckedChanged += OnEnableCheckedChanged;
         }
     }
     private void OnSaveClicked(object sender, EventArgs e)

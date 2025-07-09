@@ -10,7 +10,7 @@
 
     <ShellContent
      
-        ContentTemplate="{DataTemplate local:LoginPage}"
+        ContentTemplate="{DataTemplate local:IntroductionPage}"
         Route="MainPage"
         Shell.NavBarIsVisible="False" 
 

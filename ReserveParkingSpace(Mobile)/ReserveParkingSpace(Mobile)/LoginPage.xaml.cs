@@ -23,6 +23,7 @@ public partial class LoginPage : ContentPage
         bool check = await _controller.LoginAsync(email, password);
         if(check)
         {
+
             await Navigation.PushAsync(new MainPage());
         }
         else

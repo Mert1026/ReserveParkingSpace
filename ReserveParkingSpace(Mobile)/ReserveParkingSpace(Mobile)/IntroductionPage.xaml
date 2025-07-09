@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ReserveParkingSpace_Mobile_.IntroductionPage"
+             Title="IntroductionPage"
+             BackgroundColor="#3a6bc8">
+
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#3a6bc8" Offset=".1"/>
+            <GradientStop Color="#B23AC7" Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <Grid>
+        <VerticalStackLayout 
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            Margin="20"
+            Spacing="30">
+
+            <Image Source="logo.png" WidthRequest="200"/>
+
+            <Label 
+                Text="Reserve Parking Space"
+                TextColor="White"
+                FontSize="30"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"/>
+
+            <Label 
+                Text="Tired of driving in circles, hoping to find a place to park? With the Reserve Parking Space app, you’ll never have to worry again. This app is designed specifically for a single, dedicated parking location — your reliable, always-available solution for secure and stress-free parking."
+                FontSize="20"
+                HorizontalTextAlignment="Center"
+                TextColor="White"
+                FontFamily="Poppins"/>
+
+            <Button 
+                Text="Get Started"
+                WidthRequest="250"
+                CornerRadius="20"
+                FontSize="20"
+                BackgroundColor="#f5f9ff"
+                TextColor="Black"
+                HeightRequest="70"
+                FontFamily="Poppins"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                Clicked="OnButtonClicked"/>
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>
