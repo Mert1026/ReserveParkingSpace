@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ReserveParkingSpace_Mobile_.IntroductionPage"
              Title="IntroductionPage"
-             BackgroundColor="#3a6bc8">
+             BackgroundColor="#3a6bc8"
+Shell.NavBarIsVisible="False">
 
     <ContentPage.Background>
         <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">

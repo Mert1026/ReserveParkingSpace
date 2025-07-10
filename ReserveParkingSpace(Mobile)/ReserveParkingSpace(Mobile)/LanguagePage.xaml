@@ -15,18 +15,16 @@
      Order="Primary"
      Clicked="OnSaveClicked" />
     </ContentPage.ToolbarItems>
-    <VerticalStackLayout Padding="20" Spacing="20">
+    <VerticalStackLayout Margin="0,20,0,0" Spacing="20">
 
 
-
-
+        <!--English-->
         <Border
- WidthRequest="370"
- StrokeThickness="1"
- Stroke="Black"
- StrokeShape="RoundRectangle 10"
- Padding="10,0,10,0"
- Margin="20,0,20,0">
+             StrokeThickness="1"
+             Stroke="Black"
+             StrokeShape="RoundRectangle 10"
+             Padding="10,0,10,0"
+             Margin="20,0,20,0">
 
             <VerticalStackLayout>
                 <Grid>
@@ -41,14 +39,14 @@
                 </Grid>
             </VerticalStackLayout>
         </Border>
-
+        
+        <!--Bugarian-->
         <Border
- WidthRequest="370"
- StrokeThickness="1"
- Stroke="Black"
- StrokeShape="RoundRectangle 10"
- Padding="10,0,10,0"
- Margin="20,0,20,0">
+             StrokeThickness="1"
+             Stroke="Black"
+             StrokeShape="RoundRectangle 10"
+             Padding="10,0,10,0"
+             Margin="20,0,20,0">
 
             <VerticalStackLayout>
                 <Grid>
@@ -66,8 +64,6 @@
         </Border>
        
 
-        <HorizontalStackLayout Spacing="10" VerticalOptions="Center">
-           
-        </HorizontalStackLayout>
+        
     </VerticalStackLayout>
 </ContentPage>

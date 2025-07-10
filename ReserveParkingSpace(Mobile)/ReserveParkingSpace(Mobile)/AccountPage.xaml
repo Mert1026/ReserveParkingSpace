@@ -16,13 +16,13 @@
          Clicked="OnSaveClicked" />
     </ContentPage.ToolbarItems>
     <VerticalStackLayout>
+            <!--UserName-->
         <Border
-    WidthRequest="370"
-    StrokeThickness="1"
-    Stroke="Black"
-    StrokeShape="RoundRectangle 10"
-    Padding="0"
-    Margin="20,20,20,0">
+        StrokeThickness="1"
+        Stroke="Black"
+        StrokeShape="RoundRectangle 10"
+        Padding="0"
+        Margin="20,20,20,0">    
 
             <VerticalStackLayout>
                 <Grid>
@@ -43,14 +43,13 @@
                 </Grid>
             </VerticalStackLayout>
         </Border>
-
+        <!--First Name-->
         <Border
-WidthRequest="370"
-StrokeThickness="1"
-Stroke="Black"
-StrokeShape="RoundRectangle 10"
-Padding="0"
-Margin="20,20,20,0">
+            StrokeThickness="1"
+            Stroke="Black"
+            StrokeShape="RoundRectangle 10"
+            Padding="0"
+            Margin="20,20,20,0">
 
             <VerticalStackLayout>
                 <Grid>
@@ -72,14 +71,13 @@ Margin="20,20,20,0">
             </VerticalStackLayout>
         </Border>
 
-
+        <!--Surname-->
         <Border
-WidthRequest="370"
-StrokeThickness="1"
-Stroke="Black"
-StrokeShape="RoundRectangle 10"
-Padding="0"
-Margin="20,20,20,0">
+            StrokeThickness="1"
+            Stroke="Black"
+            StrokeShape="RoundRectangle 10"
+            Padding="0"
+            Margin="20,20,20,0">
 
             <VerticalStackLayout>
                 <Grid>
@@ -101,9 +99,8 @@ Margin="20,20,20,0">
             </VerticalStackLayout>
         </Border>
 
-
+        <!--Department-->
         <Border
-            WidthRequest="370"
             StrokeThickness="1"
             Stroke="Black"
             StrokeShape="RoundRectangle 10"
@@ -138,9 +135,8 @@ Margin="20,20,20,0">
                 </Grid>
             </VerticalStackLayout>
         </Border>
-
+        <!--Member since-->
         <Border
-                 WidthRequest="370"
                  StrokeThickness="1"
                  Stroke="Black"
                  StrokeShape="RoundRectangle 10"
@@ -157,14 +153,13 @@ Margin="20,20,20,0">
                 </Grid>
             </VerticalStackLayout>
         </Border>
-        
+        <!--Last Changed-->
         <Border
-         WidthRequest="370"
-         StrokeThickness="1"
-         Stroke="Black"
-         StrokeShape="RoundRectangle 10"
-         Padding="0"
-         Margin="20,20,20,0">
+             StrokeThickness="1"
+             Stroke="Black"
+             StrokeShape="RoundRectangle 10"
+             Padding="0"
+             Margin="20,20,20,0">
             <VerticalStackLayout>
                 <Grid>
                     <Grid.RowDefinitions>
@@ -176,8 +171,9 @@ Margin="20,20,20,0">
                 </Grid>
             </VerticalStackLayout>
         </Border>
+
         
-        <Button Text="Log Out" Background="Red" TextColor="White" FontFamily="Poppins" CornerRadius="10" WidthRequest="300" Margin="50"/> 
+        <Button Text="Log Out" Background="#FB1230" FontAttributes="Bold" TextColor="White" FontFamily="Poppins" CornerRadius="10"  Margin="50"/> 
 
 
 

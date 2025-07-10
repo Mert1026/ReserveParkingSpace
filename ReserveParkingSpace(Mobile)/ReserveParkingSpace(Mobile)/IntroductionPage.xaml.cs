@@ -5,9 +5,14 @@ public partial class IntroductionPage : ContentPage
 	public IntroductionPage()
 	{
 		InitializeComponent();
+     
 	}
     private async void OnButtonClicked(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new LoginPage());
+
+        Application.Current.MainPage = new NavigationPage(new LoginPage());
+
     }
+
+
 }

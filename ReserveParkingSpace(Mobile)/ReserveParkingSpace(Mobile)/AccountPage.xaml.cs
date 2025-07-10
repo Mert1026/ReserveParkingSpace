@@ -1,4 +1,5 @@
 using ReserveParkingSpace_Mobile_.Controllers;
+using ReserveParkingSpace_Mobile_.Data.Models.Login_Models;
 using ReserveParkingSpace_Mobile_.Data.Models.UserCredintalsChange_Models;
 using ReserveParkingSpace_Mobile_.Services;
 using System.Threading.Tasks;
@@ -12,6 +13,7 @@ public partial class AccountPage : ContentPage
 	{
 		InitializeComponent();
         _controller = new MainPageController(new DataService());
+        EntriesFill();
     }
     private async void OnSaveClicked(object sender, EventArgs e)
     {
@@ -25,6 +27,7 @@ public partial class AccountPage : ContentPage
             Department = Departmnet_Picker.SelectedItem.ToString(),//TO DO
             Surname = Surname_Entry.Text != null
             ? Surname_Entry.Text : "no name",
+            
 
         };
         string token = await SecureStorage.GetAsync("token");
@@ -34,7 +37,38 @@ public partial class AccountPage : ContentPage
             await DisplayAlert("Error", "Failed to save username. Please try again.", "OK");//navigacviq kum err page!!
             return;
         }
+        string pass = await SecureStorage.GetAsync("password");
+        string email = Preferences.Get("email", null);
+        await _controller.LoginAsync(email, pass);//bavnicko e i nema error-handling
+        await DisplayAlert("Saved", "User updated successfully!", "OK");
+    }
 
-        await DisplayAlert("Saved", "Username saved successfully!", "OK");
+    private async void EntriesFill()
+    {
+        UserName_Entry.Text =  Preferences.Get("Username", null);
+        FirstName_Entry.Text = Preferences.Get("FirstName", null);
+        Surname_Entry.Text = Preferences.Get("Surname", null);
+        Departmnet_Picker.SelectedItem = Preferences.Get("Department", null);//TC TC TC mnogo greshno
+        string dp = Preferences.Get("Department", null);
+        if(dp == "frontend")
+        {
+            Departmnet_Picker.SelectedIndex = 0;
+        }
+        else if(dp == "backend")
+        {
+            Departmnet_Picker.SelectedIndex = 1;
+        }
+        else if(dp == "mobile")
+        {
+            Departmnet_Picker.SelectedIndex = 2;
+        }
+        else if (dp == "qa")
+        {
+            Departmnet_Picker.SelectedIndex = 3;
+        }
+        else
+        {
+            Departmnet_Picker.SelectedIndex = -1; // No selection
+        }
     }
 }

@@ -8,6 +8,7 @@
                Shell.BackgroundColor="#3a6bc8"
              BackgroundColor="White"
              >
+ 
     <Grid RowDefinitions="*,Auto">
         <ScrollView Grid.Row="0">
             <VerticalStackLayout Padding="10" Spacing="20">
@@ -23,7 +24,7 @@
                     </Grid.RowDefinitions>
 
                     <Border Stroke="Transparent" Grid.Row="0">
-                        
+                        <!--Dark Mode-->
                         <Border.GestureRecognizers>
                             <TapGestureRecognizer Tapped="OnThemeTapped" />
                         </Border.GestureRecognizers>
@@ -36,11 +37,12 @@
                             <Image Source="dark_mode.png" HeightRequest="30" WidthRequest="30" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start"/>
                             <Label Text="Dark Mode" TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Start" FontSize="20" />
                             <Label Text=">" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="End" TextColor="Black" FontSize="24">
-                                
                             </Label>
                         </Grid>
                     </Border>
-
+                    
+                    
+                    <!--Account-->
                     <Border Stroke="Transparent" Grid.Row="1">
                         <Border.GestureRecognizers>
                             <TapGestureRecognizer Tapped="OnAccountTapped" />
@@ -58,7 +60,7 @@
                             </Label>
                         </Grid>
                     </Border>
-
+                    <!--Language-->
                     <Border Stroke="Transparent" Grid.Row="2">
                         <Border.GestureRecognizers>
                             <TapGestureRecognizer Tapped="OnLanguageTapped" />
@@ -76,9 +78,9 @@
                             </Label>
                         </Grid>
                     </Border>
-                    
-                    
-                    
+
+
+                    <!--Your Spaces-->
                     <Border Stroke="Transparent" Grid.Row="3">
                         <Border.GestureRecognizers>
                             <TapGestureRecognizer Tapped="OnSpacesTapped" />
@@ -92,7 +94,6 @@
                             <Image Source="car_logo.png" HeightRequest="30" WidthRequest="30" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start"/>
                             <Label Text="Your Spaces" TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Start" FontSize="20" />
                             <Label Text=">" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="End" TextColor="Black" FontSize="24">
-                               
                             </Label>
                         </Grid>
                     </Border>

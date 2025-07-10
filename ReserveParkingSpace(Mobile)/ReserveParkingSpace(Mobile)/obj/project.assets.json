@@ -35719,24 +35719,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Todor\\.nuget\\packages\\": {},
+    "C:\\Users\\Mert\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj",
+      "projectUniqueName": "C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj",
       "projectName": "ReserveParkingSpace(Mobile)",
-      "projectPath": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj",
-      "packagesPath": "C:\\Users\\Todor\\.nuget\\packages\\",
-      "outputPath": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\obj\\",
+      "projectPath": "C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj",
+      "packagesPath": "C:\\Users\\Mert\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Todor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Mert\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

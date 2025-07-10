@@ -41,11 +41,32 @@ namespace ReserveParkingSpace_Mobile_.Controllers
 
         public async Task<ApiResponse> CreateParkingReservationAsync(ParkingReservationRequest reservation, string bearerToken)
         {
-            return await DataService.CreateParkingReservationAsync(reservation, bearerToken);
+            if(reservation == null
+                || bearerToken == "")
+            {
+                return new ApiResponse
+                {
+                    IsSuccess = false,
+                    Content = "Invalid reservation data or token.",
+                };
+            }
+            return await DataService.CreateParkingReservationAsync(reservation, bearerToken); // oshte error handling moje bi
+            
         }
 
         public async Task<ParkingDashboardResponse> GetParkingDashboardAsync(string date)
         {
+            DateTime? parsedDate = DateTime.TryParse(date, out var tempDate) 
+                ? tempDate : (DateTime?)null;
+            if (parsedDate == null)
+            {
+                return new ParkingDashboardResponse
+                {
+                    Date = date,//opa
+                    Success = false,
+                    Spaces = new List<ParkingSpace>(),
+                };
+            }
             return await DataService.GetParkingDashboardAsync(date); //TO DO: exception handlign problem(napravi try-catch!)
         }
 
@@ -61,20 +82,26 @@ namespace ReserveParkingSpace_Mobile_.Controllers
                 LoginResponse loginResponse = await dataService.LoginAsync(email, password);
                 if (loginResponse != null && loginResponse.success)
                 {
-                    // Navigate to the main page or dashboard
                     //await Navigation.PushAsync(new MainPage());
                     await SecureStorage.SetAsync("token", loginResponse.token);
+                    await SecureStorage.SetAsync("password", password);
+                    Preferences.Set("email", email);    
+                    Preferences.Set("Username", loginResponse.user.username);
+                    Preferences.Set("FirstName", loginResponse.user.firstName);
+                    Preferences.Set("Surname", loginResponse.user.lastName); //TC TC TC mnogo greshno
+                    Preferences.Set("Department", loginResponse.user.department.ToLower());
+           
                     return true;
                 }
                 else
                 {
-                    //await DisplayAlert("Login Failed", "Invalid credentials.", "OK"); - nz shto ne raboti
+                    //await DisplayAlert("Login Failed", "Invalid credentials.", "OK"); - nz shto ne raboti. vece razbarh
                     return false;
                 }
             }
             catch (Exception ex)
             {
-                //await DisplayAlert("Error", $"An error occurred: {ex.Message}", "OK"); - oshte nz
+                //await DisplayAlert("Error", $"An error occurred: {ex.Message}", "OK"); - oshte nz. naistina ne moje
                 return false;
             }
         }

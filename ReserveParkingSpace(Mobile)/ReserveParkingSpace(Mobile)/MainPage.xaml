@@ -4,43 +4,37 @@
              xmlns:control="clr-namespace:Syncfusion.Maui.Calendar;assembly=Syncfusion.Maui.Calendar"
              x:Class="ReserveParkingSpace_Mobile_.MainPage"
              BackgroundColor="#f5f9ff"
-             Shell.NavBarIsVisible="False">
-
+             Title="Reserve Parking Space">
+    <NavigationPage.TitleView>
+        <Grid ColumnDefinitions="Auto, *" VerticalOptions="Center" Padding="0,0,10,0">
+            <Image Source="logo.png"
+                   HeightRequest="40"
+                   WidthRequest="40"
+                   VerticalOptions="Center"
+                   Grid.Column="0"
+                   HorizontalOptions="Start"
+                   Margin="0,0,10,0"/>
+            <Label Text="Reserve Parking Space"
+                   FontSize="20"
+                   Grid.Column="1"
+                   VerticalOptions="Center"
+                   TextColor="White"
+                   FontFamily="Poppins"
+                   FontAttributes="Bold"/>
+        </Grid>
+    </NavigationPage.TitleView>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem 
+  Text="Save" 
+  IconImageSource="settings.png" 
+  Priority="0"
+  Order="Primary"
+    Clicked="OnInfoClicked"  />
+    </ContentPage.ToolbarItems>
 
     <Grid RowDefinitions="Auto,*">
 
-        <!--Top Navigation Bar -->
-        <Grid BackgroundColor="#3a6bc8" Padding="10" Row="0" ColumnSpacing="10">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="Auto" />
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="Auto" />
-            </Grid.ColumnDefinitions>
-
-
-            <Image Source="logo.png"
-                   HeightRequest="40"
-                   VerticalOptions="Center"
-                   HorizontalOptions="Start" />
-
-
-            <Label Text="Reserve Parking Space"
-                   Grid.Column="1"
-                   FontSize="20"
-                   TextColor="White"
-                   HorizontalTextAlignment="Start"
-                   VerticalOptions="Center" />
-
-
-            <ImageButton Source="settings.png"
-                    Grid.Column="2"
-                         HorizontalOptions="Center"
-                         VerticalOptions="Center"
-                    BackgroundColor="Transparent"   
-                         HeightRequest="30"
-                         WidthRequest="30"
-                    Clicked="OnInfoClicked" />
-        </Grid>
+      
 
 
         <ScrollView Grid.Row="1">
@@ -55,7 +49,7 @@
                             Stroke="Transparent"
                             Background="#3a6bc8"
                             StrokeThickness="0"
-                            WidthRequest="370"
+                            Margin="20,0,20,0"
                             StrokeShape="RoundRectangle 15">
 
                     <Border.Shadow>
@@ -82,14 +76,16 @@
                                  Text="Choose a shift:"
                                  Grid.Column="0"
                                 FontFamily="Poppins"
+                                TextColor="#f5f9ff"
                             
                                  VerticalOptions="Center"/>
                             <Picker 
                                  Title="Select a shift"
                                 x:Name="ShiftPicker"
+                                SelectedIndex="0"
                                  Grid.Column="1"
                                 TitleColor="#fffffa"
-                                 TextColor="White"
+                                 TextColor="#f5f9ff"
                                  VerticalOptions="Center"
                                  FontAttributes="Bold">
                                 <Picker.Items>
@@ -102,6 +98,7 @@
                                  Text="Choose date:"
                                  Grid.Column="2"
                                FontFamily="Poppins"
+                                TextColor="#f5f9ff"
                                  VerticalOptions="Center"
                                 HorizontalOptions="Center">
                                 <Label.GestureRecognizers>
@@ -152,14 +149,14 @@
                                 <RowDefinition Height="Auto"/>
                                 <RowDefinition Height="Auto"/>
                             </Grid.RowDefinitions>
-                            <Label Text="You need to upload your schedule if its more than two days" Grid.Row="0" HorizontalTextAlignment="Center" Margin="0,0,0,10" FontFamily="Poppins"/>
-                            <Button Text="Upload The PDF" Grid.Row="1" Background="#4fc3f7" TextColor="White" FontFamily="Poppins" FontAttributes="Bold"/>
+                            <Label x:Name="PDF_Label" IsVisible="False" Text="You need to upload your schedule if its more than two days" Grid.Row="0" HorizontalTextAlignment="Center" Margin="0,0,0,10" FontFamily="Poppins" TextColor="#f5f9ff"/>
+                            <Button x:Name="PDF_Button" Clicked="PDFButton_Clicked" IsVisible="False" Text="Upload The PDF" Grid.Row="1" Background="#4fc3f7" TextColor="#f5f9ff" FontFamily="Poppins" FontAttributes="Bold"/>
                         </Grid>
 
                     </StackLayout>
                 </Border>
                 
-                <!-- Map Info -->
+                <!-- Parking Lot LayOut Info -->
                 <VerticalStackLayout Spacing="5" Margin="20,0,20,0">
                     <Border
                         HeightRequest="670"
@@ -178,13 +175,25 @@
                                 Opacity="0.6" />
                         </Border.Shadow>
                         <AbsoluteLayout VerticalOptions="FillAndExpand">
-                            <!-- Loading Image -->
-                            <Image Source="loading.jpg"
+                            <!-- Loading -->
+                            <Border x:Name="Loading_Border"
+                                BackgroundColor="#3a6bc8"
                                 AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
                                    ZIndex="99"
                                    IsVisible="False"
                                 AbsoluteLayout.LayoutFlags="All"
-                                Aspect="AspectFill" />
+                              >
+                                <VerticalStackLayout>
+                                    <ActivityIndicator 
+                                        IsRunning="True" 
+                                        Color="#4fc3f7" 
+                                        WidthRequest="50" 
+                                        HeightRequest="50" 
+                                         Margin="0,250,0,10" />
+                                    <Label Text="Loading...." FontSize="20" TextColor="White" HorizontalOptions="Center" FontFamily="Poppins"/>
+                                </VerticalStackLayout>
+                                
+                            </Border>
 
 
 
@@ -193,112 +202,104 @@
                            AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
                            AbsoluteLayout.LayoutFlags="All"
                            Aspect="AspectFill" />
-                            <Label Text="Occupied:"
+                            <Label x:Name="Occupied_Label" Text="Occupied:"
                                    WidthRequest="200"
                                    HeightRequest="200"
+                                   TextColor="#f5f9ff"
                                    AbsoluteLayout.LayoutBounds="0, 0.38,408,-1080"
                                    AbsoluteLayout.LayoutFlags="PositionProportional" />
-                            <Label Text="5"
-                                   WidthRequest="200"
-                                   HeightRequest="200"
-                                   AbsoluteLayout.LayoutBounds="0, 0.38,553,-1080"
-                                   AbsoluteLayout.LayoutFlags="PositionProportional" />
-                            <Label Text="Available:"
+                            <Label  x:Name="Avaible_Label" Text="Available:"
                                WidthRequest="200"
                                HeightRequest="200"
+                                   TextColor="#f5f9ff"
                                AbsoluteLayout.LayoutBounds="0, 0.38,608,-1080"
                                AbsoluteLayout.LayoutFlags="PositionProportional" />
-                            <Label Text="5"
-                               WidthRequest="200"
-                               HeightRequest="200"
-                               AbsoluteLayout.LayoutBounds="0, 0.38,753,-1080"
-                               AbsoluteLayout.LayoutFlags="PositionProportional" />
+
                             <BoxView
                                 WidthRequest="200"
                                 HeightRequest="1"
-                                BackgroundColor="White"
+                                BackgroundColor="#f5f9ff"
                                 AbsoluteLayout.LayoutBounds="0, 0,388,120"
                                 AbsoluteLayout.LayoutFlags="PositionProportional" />
                             <!-- Car Buttons -->
-                            <ImageButton x:Name="car1" Source="car1.png" HeightRequest="40" WidthRequest="80"
+                            <ImageButton x:Name="car1" ClassId="1" Source="car1.png" HeightRequest="40" WidthRequest="80" Clicked="Car_Clicked"
       AbsoluteLayout.LayoutBounds="0.12, 0.61,550,-1080"
       AbsoluteLayout.LayoutFlags="PositionProportional" />
 
-                            <ImageButton x:Name="car2" Source="car2.png" HeightRequest="40" WidthRequest="80"
+                            <ImageButton x:Name="car2" ClassId="2" Source="car2.png" HeightRequest="40" WidthRequest="80" Clicked="Car_Clicked"
       AbsoluteLayout.LayoutBounds="0.12, 0.61,550,-700"
       AbsoluteLayout.LayoutFlags="PositionProportional" />
-
-                            <ImageButton x:Name="car3" Source="car3.png" HeightRequest="40" WidthRequest="80"
+                            <ImageButton x:Name="car3" ClassId="3" Source="car3.png" HeightRequest="40" WidthRequest="80" Clicked="Car_Clicked"
       AbsoluteLayout.LayoutBounds="0.12, 0.61,550,-320"
       AbsoluteLayout.LayoutFlags="PositionProportional" />
 
-                            <ImageButton x:Name="car4" Source="car4.png" HeightRequest="40" WidthRequest="80"
+                            <ImageButton x:Name="car4" ClassId="4" Source="car4.png" HeightRequest="40" WidthRequest="80" Clicked="Car_Clicked"
       AbsoluteLayout.LayoutBounds="0.12, 0.61,550,50"
       AbsoluteLayout.LayoutFlags="PositionProportional" />
 
-                            <ImageButton x:Name="car5" Source="car5.png" HeightRequest="40" WidthRequest="80"
+                            <ImageButton x:Name="car5" ClassId="5" Source="car5.png" HeightRequest="40" WidthRequest="80" Clicked="Car_Clicked"
       AbsoluteLayout.LayoutBounds="0.12, 0.61,550,410"
       AbsoluteLayout.LayoutFlags="PositionProportional" />
 
-                            <ImageButton x:Name="car6" Source="car6.png" HeightRequest="40" WidthRequest="80"
+                            <ImageButton x:Name="car6" ClassId="6" Source="car6.png" HeightRequest="40" WidthRequest="80" Clicked="Car_Clicked"
       AbsoluteLayout.LayoutBounds="0.12, 0.61,550,790"
       AbsoluteLayout.LayoutFlags="PositionProportional" />
 
-                            <ImageButton x:Name="car7" Source="car7.png" HeightRequest="40" WidthRequest="80"
+                            <ImageButton x:Name="car7" ClassId="7" Source="car7.png" HeightRequest="40" WidthRequest="80" Clicked="Car_Clicked"
       AbsoluteLayout.LayoutBounds="0.12, 0.61,550,1200"
       AbsoluteLayout.LayoutFlags="PositionProportional" />
 
-                            <ImageButton x:Name="car8" Source="car8.png" HeightRequest="40" WidthRequest="80"
+                            <ImageButton x:Name="car8" ClassId="8" Source="car8.png" HeightRequest="40" WidthRequest="80" Clicked="Car_Clicked"
       AbsoluteLayout.LayoutBounds="0.12, 0.61,550,1550"
       AbsoluteLayout.LayoutFlags="PositionProportional" />
 
-                            <ImageButton x:Name="car9" Source="car9.png" HeightRequest="40" WidthRequest="80"
+                            <ImageButton x:Name="car9" ClassId="9" Source="car9.png" HeightRequest="40" WidthRequest="80" Clicked="Car_Clicked"
       AbsoluteLayout.LayoutBounds="0.12, 0.61,550,1950"
       AbsoluteLayout.LayoutFlags="PositionProportional" />
 
-                            <ImageButton x:Name="car10" Source="car10.png" HeightRequest="40" WidthRequest="80"
+                            <ImageButton x:Name="car10" ClassId="10" Source="car10.png" HeightRequest="40" WidthRequest="80" Clicked="Car_Clicked"
       AbsoluteLayout.LayoutBounds="0.12, 0.61,550,2320"
       AbsoluteLayout.LayoutFlags="PositionProportional" />
 
-                            <ImageButton x:Name="car11" Source="car11.png" HeightRequest="40" WidthRequest="80" Rotation="0"
+                            <ImageButton x:Name="car11" ClassId="11" Source="car11.png" HeightRequest="40" WidthRequest="80" Rotation="0" Clicked="Car_Clicked"
       AbsoluteLayout.LayoutBounds="0.12, 0.61,235,-1080"
       AbsoluteLayout.LayoutFlags="PositionProportional" />
 
-                            <ImageButton x:Name="car12" Source="car12.png" HeightRequest="40" WidthRequest="80" Rotation="0"
+                            <ImageButton x:Name="car12" ClassId="12" Source="car12.png" HeightRequest="40" WidthRequest="80" Rotation="0"  Clicked="Car_Clicked"
        AbsoluteLayout.LayoutBounds="0.12, 0.61,235,-700"
       AbsoluteLayout.LayoutFlags="PositionProportional" />
 
-                            <ImageButton x:Name="car13" Source="car13.png" HeightRequest="40" WidthRequest="80"
+                            <ImageButton x:Name="car13" ClassId="13" Source="car13.png" HeightRequest="40" WidthRequest="80" Clicked="Car_Clicked"
   AbsoluteLayout.LayoutBounds="0.12, 0.61,235,-320"
 AbsoluteLayout.LayoutFlags="PositionProportional" />
 
-                            <ImageButton x:Name="car14" Source="car14.png" HeightRequest="40" WidthRequest="80"
+                            <ImageButton x:Name="car14" ClassId="14" Source="car14.png" HeightRequest="40" WidthRequest="80" Clicked="Car_Clicked"
        AbsoluteLayout.LayoutBounds="0.12, 0.61,235,50"
       AbsoluteLayout.LayoutFlags="PositionProportional" />
 
-                            <ImageButton x:Name="car15" Source="car15.png" HeightRequest="40" WidthRequest="80" Rotation="0"
+                            <ImageButton x:Name="car15" ClassId="15" Source="car15.png" HeightRequest="40" WidthRequest="80" Rotation="0" Clicked="Car_Clicked"
       AbsoluteLayout.LayoutBounds="0.12, 0.61,235,410"
       AbsoluteLayout.LayoutFlags="PositionProportional" />
 
-                            <ImageButton x:Name="car16" Source="car16.png" HeightRequest="40" WidthRequest="80" Rotation="0"
+                            <ImageButton x:Name="car16" ClassId="16" Source="car16.png" HeightRequest="40" WidthRequest="80" Rotation="0" Clicked="Car_Clicked"
       AbsoluteLayout.LayoutBounds="0.12, 0.61,235,820"
       AbsoluteLayout.LayoutFlags="PositionProportional" />
 
-                            <ImageButton x:Name="car17" Source="car17.png" HeightRequest="40" WidthRequest="80" Rotation="0"
+                            <ImageButton x:Name="car17" ClassId="17" Source="car17.png" HeightRequest="40" WidthRequest="80" Rotation="0" Clicked="Car_Clicked"
          AbsoluteLayout.LayoutBounds="0.12, 0.61,235,1200"
       AbsoluteLayout.LayoutFlags="PositionProportional" />
 
-                            <ImageButton x:Name="car18" Source="car18.png" HeightRequest="40" WidthRequest="80" Rotation="0"
+                            <ImageButton x:Name="car18" ClassId="18" Source="car18.png" HeightRequest="40" WidthRequest="80" Rotation="0" Clicked="Car_Clicked"
       AbsoluteLayout.LayoutBounds="0.12, 0.61,235,1580"
       AbsoluteLayout.LayoutFlags="PositionProportional" />
 
-                            <ImageButton x:Name="car19" Source="car19.png" HeightRequest="40" WidthRequest="80" Rotation="0"
+                            <ImageButton x:Name="car19" ClassId="19" Source="car19.png" HeightRequest="40" WidthRequest="80" Rotation="0" Clicked="Car_Clicked"
       AbsoluteLayout.LayoutBounds="0.12, 0.61,235,1950"
       AbsoluteLayout.LayoutFlags="PositionProportional" />
 
-                            <ImageButton x:Name="car20" Source="car20.png" HeightRequest="40" WidthRequest="80" Rotation="0"
-       AbsoluteLayout.LayoutBounds="0.12, 0.61,235,2320"
-      AbsoluteLayout.LayoutFlags="PositionProportional" />
+                            <ImageButton x:Name="car20" ClassId="20" Source="car20.png" HeightRequest="40" WidthRequest="80" Rotation="0" Clicked="Car_Clicked"
+                                         AbsoluteLayout.LayoutBounds="0.12, 0.61,235,2320"
+                                         AbsoluteLayout.LayoutFlags="PositionProportional"/>
                         </AbsoluteLayout>
                     </Border>
                 </VerticalStackLayout>
@@ -308,13 +309,13 @@ AbsoluteLayout.LayoutFlags="PositionProportional" />
                 <!-- Select options-->
                 <Border
                  
-                    WidthRequest="370"
+                   
                     StrokeThickness="0"
                     Stroke="Transparent"
                     BackgroundColor="#3a6bc8"
                     StrokeShape="RoundRectangle 25"
                     Padding="0"
-                    Margin="0,0,0,20">
+                    Margin="20,0,20,20">
 
                     <Border.Shadow>
                         <Shadow
@@ -331,16 +332,16 @@ AbsoluteLayout.LayoutFlags="PositionProportional" />
                             <RowDefinition Height="*"/>
                         </Grid.RowDefinitions>
 
-                        <Label
+                        <Label x:Name="SelectedShiftAndPosition_Label"
                             Text="Space (20) selected for (shift)"
                             FontSize="18"
                             FontFamily="Poppins"
                             Grid.Row="0"
-                            TextColor="White"
+                            TextColor="#f5f9ff"
                             HorizontalTextAlignment="Center"
                             VerticalOptions="Center" 
                             Margin="0,0,0,5"/>
-                        <Label
+                        <Label x:Name="SelectedDates_Label"
                             Text="From (Date) To (Date)"
                             FontSize="16"
                             FontFamily="Poppins"
@@ -358,13 +359,13 @@ AbsoluteLayout.LayoutFlags="PositionProportional" />
                             HorizontalOptions="Center"
                             VerticalOptions="Center"
                             BackgroundColor="#4fc3f7"
-                            TextColor="White"
+                            TextColor="#f5f9ff"
                             FontAttributes="Bold"
                             HeightRequest="50"
                             WidthRequest="150"
                             CornerRadius="15"
                             Padding="10"
-                            Clicked="Button_Clicked"/>
+                            Clicked="ReserveButton_Clicked"/>
                     </Grid>
                 </Border>
             </VerticalStackLayout>

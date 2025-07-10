@@ -13,6 +13,7 @@ public partial class ThemePage : ContentPage
             DisableCheckBox.CheckedChanged -= OnDisableCheckedChanged;
             DisableCheckBox.IsChecked = false;
             DisableCheckBox.CheckedChanged += OnDisableCheckedChanged;
+            Preferences.Set("Color", "#222831");
         }
     }
 
@@ -23,11 +24,12 @@ public partial class ThemePage : ContentPage
             EnableCheckBox.CheckedChanged -= OnEnableCheckedChanged;
             EnableCheckBox.IsChecked = false;
             EnableCheckBox.CheckedChanged += OnEnableCheckedChanged;
+            Preferences.Set("Color", "#FFFCFB");
         }
     }
     private void OnSaveClicked(object sender, EventArgs e)
     {
         // Handle button click logic here
-        DisplayAlert("Saved", "Username saved successfully!", "OK");
+        DisplayAlert("Saved", "Success!", "OK");
     }
 }

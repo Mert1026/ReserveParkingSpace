@@ -8,6 +8,7 @@ using ReserveParkingSpace_Mobile_.Services.IServices;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
@@ -211,5 +212,9 @@ namespace ReserveParkingSpace_Mobile_.Services
             formDataContent.AddRange(fileData);
             formDataContent.AddRange(System.Text.Encoding.UTF8.GetBytes("\r\n"));
         }
+
+
+
+        
     }
 }

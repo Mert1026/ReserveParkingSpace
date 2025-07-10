@@ -31,7 +31,7 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Border
-            WidthRequest="370"
+        
             StrokeThickness="1"
             Stroke="Black"
             Grid.Row="0"
