@@ -7,6 +7,7 @@
         <ResourceDictionary>
             <Style TargetType="NavigationPage">
                 <Setter Property="BarBackgroundColor" Value="#3a6bc8" />
+                <!--Value="#035151" dark mode-a-->
                 <Setter Property="BarTextColor" Value="White" />
             </Style>
             <ResourceDictionary.MergedDictionaries>

@@ -6,6 +6,6 @@
              BackgroundColor="#3a6bc8">
     <VerticalStackLayout Margin="10" VerticalOptions="Center">
         <Image Source="broken_car.jpg"/>
-        <Label Text="Your phone ran into a problem and needs  to restart the app. We're just collecting some error info, and then we'll restart it for you." FontSize="30" FontAttributes="Bold" HorizontalTextAlignment="Center" FontFamily="Poppins"/>
+        <Label x:Name="MainText_Label" Text="Your phone ran into a problem and needs  to restart the app. We're just collecting some error info, and then we'll restart it for you." FontSize="30" FontAttributes="Bold" HorizontalTextAlignment="Center" FontFamily="Poppins"/>
     </VerticalStackLayout>
 </ContentPage>

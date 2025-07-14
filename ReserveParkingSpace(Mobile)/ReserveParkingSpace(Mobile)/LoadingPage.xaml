@@ -5,7 +5,7 @@
              Title="LoadingPage"
              BackgroundColor="White">
     <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
-        <ActivityIndicator IsRunning="True" Color="#3a6bc8" WidthRequest="50" HeightRequest="50"/>
-        <Label Text="You're almost done!" FontSize="20" TextColor="Black" HorizontalOptions="Center" FontFamily="Poppins"/>
+        <ActivityIndicator x:Name="ActivityIndicator_Main" IsRunning="True" Color="#3a6bc8" WidthRequest="50" HeightRequest="50"/>
+        <Label x:Name="MainText_Label" Text="You're almost done!" FontSize="20" TextColor="Black" HorizontalOptions="Center" FontFamily="Poppins"/>
     </StackLayout>
 </ContentPage>

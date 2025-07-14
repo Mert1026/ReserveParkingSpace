@@ -19,7 +19,7 @@
 
 
         <!--English-->
-        <Border
+        <Border x:Name="Border_1"
              StrokeThickness="1"
              Stroke="Black"
              StrokeShape="RoundRectangle 10"
@@ -34,14 +34,14 @@
                         <ColumnDefinition Width="Auto"/>
                     </Grid.ColumnDefinitions>
                     <Image Source="uk.png" Grid.Column="0" Margin="0,0,5,0"/>
-                    <Label Text="English" VerticalTextAlignment="Center" TextColor="Black" Grid.Column="1" FontFamily="Poppins" FontSize="20"/>
+                    <Label x:Name="English_Label" Text="English" VerticalTextAlignment="Center" TextColor="Black" Grid.Column="1" FontFamily="Poppins" FontSize="20"/>
                     <CheckBox x:Name="EnglishCheckBox" CheckedChanged="OnEnglishCheckedChanged" Color="Black" Grid.Column="2" />
                 </Grid>
             </VerticalStackLayout>
         </Border>
         
         <!--Bugarian-->
-        <Border
+        <Border x:Name="Border_2"
              StrokeThickness="1"
              Stroke="Black"
              StrokeShape="RoundRectangle 10"
@@ -56,7 +56,7 @@
                         <ColumnDefinition Width="Auto"/>
                     </Grid.ColumnDefinitions>
                     <Image Source="bulgaria.png" Grid.Column="0" Margin="0,0,5,0"/>
-                    <Label Text="Bulgarian" VerticalTextAlignment="Center" TextColor="Black" Grid.Column="1" FontFamily="Poppins"  FontSize="20"/>
+                    <Label x:Name="Bulgarian_Label" Text="Bulgarian" VerticalTextAlignment="Center" TextColor="Black" Grid.Column="1" FontFamily="Poppins"  FontSize="20"/>
                     <CheckBox x:Name="BulgarianCheckBox" CheckedChanged="OnBulgarianCheckedChanged" Color="Black" Grid.Column="2"/>
 
                 </Grid>

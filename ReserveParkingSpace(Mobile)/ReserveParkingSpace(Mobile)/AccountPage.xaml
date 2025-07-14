@@ -8,7 +8,7 @@
                Shell.BackgroundColor="#3a6bc8"
              BackgroundColor="White">
     <ContentPage.ToolbarItems>
-        <ToolbarItem 
+        <ToolbarItem
          Text="Save" 
          IconImageSource="check.png" 
          Priority="0"
@@ -30,7 +30,7 @@
                         <RowDefinition Height="*"/>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
-                    <Label Text="Username" Margin="10,5,0,0" TextColor="Black" Grid.Row="0" FontFamily="Poppins" FontSize="14"/>
+                    <Label x:Name="UserName_Label" Text="Username" Margin="10,5,0,0" TextColor="Black" Grid.Row="0" FontFamily="Poppins" FontSize="14"/>
                     <Entry x:Name="UserName_Entry" Placeholder="Username" Margin="5,0,0,0" TextColor="Black" Grid.Row="1" FontFamily="Poppins" FontSize="16" FontAttributes="Bold">
                         <Entry.Keyboard>
                             <Keyboard x:FactoryMethod="Create">
@@ -57,7 +57,7 @@
                         <RowDefinition Height="*"/>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
-                    <Label Text="First Name" Margin="10,5,0,0" TextColor="Black" Grid.Row="0" FontFamily="Poppins" FontSize="14"/>
+                    <Label x:Name="FirstName_Label" Text="First Name" Margin="10,5,0,0" TextColor="Black" Grid.Row="0" FontFamily="Poppins" FontSize="14"/>
                     <Entry x:Name="FirstName_Entry" Placeholder="First Name" Margin="5,0,0,0" TextColor="Black" Grid.Row="1" FontFamily="Poppins" FontSize="16" FontAttributes="Bold">
                         <Entry.Keyboard>
                             <Keyboard x:FactoryMethod="Create">
@@ -85,7 +85,7 @@
                         <RowDefinition Height="*"/>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
-                    <Label Text="Surname" Margin="10,5,0,0" TextColor="Black" Grid.Row="0" FontFamily="Poppins" FontSize="14"/>
+                    <Label x:Name="Surname_Label" Text="Surname" Margin="10,5,0,0" TextColor="Black" Grid.Row="0" FontFamily="Poppins" FontSize="14"/>
                     <Entry x:Name="Surname_Entry" Placeholder="Surname" Margin="5,0,0,0" TextColor="Black" Grid.Row="1" FontFamily="Poppins" FontSize="16" FontAttributes="Bold">
                         <Entry.Keyboard>
                             <Keyboard x:FactoryMethod="Create">
@@ -113,7 +113,7 @@
                         <RowDefinition Height="*"/>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
-                    <Label Text="Department" Margin="10,5,0,0" TextColor="Black" Grid.Row="0" FontFamily="Poppins" FontSize="14"/>
+                    <Label x:Name="Department_Label" Text="Department" Margin="10,5,0,0" TextColor="Black" Grid.Row="0" FontFamily="Poppins" FontSize="14"/>
                     <Picker 
                         x:Name="Departmnet_Picker"
                         SelectedIndex="1"
@@ -148,7 +148,7 @@
                         <RowDefinition Height="*"/>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
-                    <Label Text="Member since" Margin="10,5,0,0" TextColor="Black" Grid.Row="0" FontFamily="Poppins" FontSize="14"/>
+                    <Label x:Name="MemberSinceTitle_Label" Text="Member since" Margin="10,5,0,0" TextColor="Black" Grid.Row="0" FontFamily="Poppins" FontSize="14"/>
                     <Label x:Name="MemberSince_Label" Text="7.07.2025" Margin="10,5,0,10"  Grid.Row="1" TextColor="Black" FontAttributes="Bold" FontFamily="Poppins" FontSize="16"/>
                 </Grid>
             </VerticalStackLayout>
@@ -166,14 +166,14 @@
                         <RowDefinition Height="*"/>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
-                    <Label Text="Last changed" Margin="10,5,0,0" TextColor="Black" Grid.Row="0" FontFamily="Poppins" FontSize="14"/>
+                    <Label x:Name="LastChangedTitle_Label" Text="Last changed" Margin="10,5,0,0" TextColor="Black" Grid.Row="0" FontFamily="Poppins" FontSize="14"/>
                     <Label x:Name="LastChanged_Label" Text="7.07.2025" Margin="10,5,0,10"  Grid.Row="1" TextColor="Black" FontAttributes="Bold" FontFamily="Poppins" FontSize="16"/>
                 </Grid>
             </VerticalStackLayout>
         </Border>
 
         
-        <Button Text="Log Out" Background="#FB1230" FontAttributes="Bold" TextColor="White" FontFamily="Poppins" CornerRadius="10"  Margin="50"/> 
+        <Button Text="Log Out" Background="#FB1230" FontAttributes="Bold" TextColor="White" FontFamily="Poppins" CornerRadius="10"  Margin="50" Clicked="Button_Clicked"/> 
 
 
 

@@ -1,4 +1,6 @@
+using Microsoft.Extensions.Logging;
 using ReserveParkingSpace_Mobile_.Controllers;
+using ReserveParkingSpace_Mobile_.Data.Customazations;
 using ReserveParkingSpace_Mobile_.Data.Models.Login_Models;
 using ReserveParkingSpace_Mobile_.Data.Models.UserCredintalsChange_Models;
 using ReserveParkingSpace_Mobile_.Services;
@@ -8,12 +10,14 @@ namespace ReserveParkingSpace_Mobile_;
 
 public partial class AccountPage : ContentPage
 {
+    private Translation _translation;
     private MainPageController _controller { get; set; }
     public AccountPage()
 	{
 		InitializeComponent();
         _controller = new MainPageController(new DataService());
         EntriesFill();
+        LanguageApply();
     }
     private async void OnSaveClicked(object sender, EventArgs e)
     {
@@ -70,5 +74,27 @@ public partial class AccountPage : ContentPage
         {
             Departmnet_Picker.SelectedIndex = -1; // No selection
         }
+    }
+
+    private void LanguageApply()
+    {
+        string lang = Preferences.Get("Language", null);
+        _translation = new Translation(lang);
+        if (!string.IsNullOrEmpty(lang))
+        {
+            UserName_Label.Text = _translation.AccountPageUsername;
+            FirstName_Label.Text = _translation.AccountPageFirstName;
+            Surname_Label.Text = _translation.AccountPageSurname;
+            Department_Label.Text = _translation.AccountPageDepartment;
+            LastChangedTitle_Label.Text = _translation.AccountPageLastChanged;
+            MemberSinceTitle_Label.Text = _translation.AccountPageMemberSince;
+            //this.Title = _translation.AccountPageTitle; // Uncomment if you have a title 
+        }
+    }
+
+    private void Button_Clicked(object sender, EventArgs e)
+    {
+        Preferences.Set("RememberMe", "False");
+        Application.Current.MainPage = new IntroductionPage();
     }
 }

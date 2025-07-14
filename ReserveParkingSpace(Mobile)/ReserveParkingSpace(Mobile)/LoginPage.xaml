@@ -13,7 +13,7 @@
                  Grid.Column="0"
                  HorizontalOptions="Start"
                  Margin="0,0,10,0"/>
-            <Label Text="Reserve Parking Space"
+            <Label x:Name="MainText_Label" Text="Reserve Parking Space"
                  FontSize="20"
                  Grid.Column="1"
                  VerticalOptions="Center"
@@ -22,16 +22,8 @@
                  FontAttributes="Bold"/>
         </Grid>
     </NavigationPage.TitleView>
-  
-
-   
-        
-
-        
-
-         
     
-        <!--Login Form-->
+    <!--Login Form-->
         <Grid Grid.Row="1" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
             <ScrollView HorizontalOptions="Center" VerticalOptions="Center">
                 <VerticalStackLayout x:Name="MainLayout" Spacing="20">
@@ -58,7 +50,7 @@
                         </Border.Background>
 
                         <VerticalStackLayout>
-                            <Label Text="Login"
+                            <Label x:Name="Login_Label" Text="Login"
                            HorizontalOptions="Center"
                            FontAttributes="Bold"
                            FontSize="35"
@@ -79,9 +71,9 @@
                                     <RowDefinition Height="Auto" />
                                 </Grid.RowDefinitions>
 
-                                <Label Text="Email" Grid.Row="0" Grid.Column="0"    FontFamily="Poppins" TextColor="White" />
+                                <Label x:Name="Email_Label" Text="Email" Grid.Row="0" Grid.Column="0"    FontFamily="Poppins" TextColor="White" />
                                 <Entry x:Name="EmailEntry" Grid.Row="1" Grid.Column="0"    FontFamily="Poppins" TextColor="White"/>
-                                <Label Text="Password: " Grid.Row="2" Grid.Column="0"    FontFamily="Poppins" TextColor="White"/>
+                                <Label x:Name="Password_Label"  Text="Password: " Grid.Row="2" Grid.Column="0"    FontFamily="Poppins" TextColor="White"/>
                                 <Entry x:Name="PasswordEntry" Grid.Row="3" Grid.Column="0"    FontFamily="Poppins" IsPassword="True" TextColor="White"/>
                             </Grid>
 
@@ -92,7 +84,7 @@
                                     <ColumnDefinition Width="*" />
                                 </Grid.ColumnDefinitions>
                                 
-                                <CheckBox Grid.Column="0"></CheckBox>
+                                <CheckBox x:Name="CheckBox_Main" Grid.Column="0"></CheckBox>
                                 <Label Text="Remember me" Grid.Column="1"  VerticalTextAlignment="Center" HorizontalOptions="Start" FontFamily="Poppins" TextColor="White" />
                                 
                             </Grid>
@@ -111,8 +103,8 @@
                         <Label HorizontalOptions="Center" FontFamily="Poppins">
                             <Label.FormattedText>
                                 <FormattedString>
-                                    <Span Text="Don't have an account yet? " TextColor="White" />
-                                    <Span Text="Register"
+                                    <Span x:Name="DontHaveAcc_Span" Text="Don't have an account yet? " TextColor="White" />
+                                    <Span x:Name="Register_Span" Text="Register"
                                         FontAttributes="Bold"
                                         TextColor="White"
                                         TextDecorations="Underline">

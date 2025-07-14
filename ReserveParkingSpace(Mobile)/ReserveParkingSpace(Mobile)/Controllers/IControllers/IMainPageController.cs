@@ -14,7 +14,7 @@ namespace ReserveParkingSpace_Mobile_.Controllers.IControllers
     interface IMainPageController
     {
         public Task<ParkingDashboardResponse> GetParkingDashboardAsync(string date);
-        public Task<bool> LoginAsync(string email, string password);
+        public Task<bool> LoginAsync(string email, string password, bool tokenSet = false);
         public Task<bool> ChangeUserCredidentialsAsync(UserProfile profile, string token);
         public Task<ApiResponse> CreateParkingReservationAsync(ParkingReservationRequest reservation, string bearerToken);
     }

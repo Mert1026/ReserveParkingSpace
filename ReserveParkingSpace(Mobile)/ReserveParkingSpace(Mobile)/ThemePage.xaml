@@ -17,7 +17,7 @@
     </ContentPage.ToolbarItems>
     <VerticalStackLayout Margin="0,20,0,20">
         <!--On-->
-        <Border
+        <Border x:Name="On_Border"
     Margin="20,0,20,0"
     StrokeThickness="1"
     Stroke="Black"
@@ -31,13 +31,13 @@
                         <ColumnDefinition Width="Auto"/>
                     </Grid.ColumnDefinitions>
 
-                    <Label Text="On" VerticalTextAlignment="Center" TextColor="Black" Grid.Column="0" FontFamily="Poppins" FontSize="20"/>
+                    <Label x:Name="On_Label" Text="On" VerticalTextAlignment="Center" TextColor="Black" Grid.Column="0" FontFamily="Poppins" FontSize="20"/>
                     <CheckBox x:Name="EnableCheckBox" CheckedChanged="OnEnableCheckedChanged" Color="Black" Grid.Column="1" />
                 </Grid>
             </VerticalStackLayout>
         </Border>
         <!--Off-->
-        <Border
+        <Border x:Name="Off_Border"
     StrokeThickness="1"
     Stroke="Black"
     StrokeShape="RoundRectangle 10"
@@ -49,7 +49,7 @@
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="Auto"/>
                     </Grid.ColumnDefinitions>
-                    <Label Text="Off" VerticalTextAlignment="Center" TextColor="Black" Grid.Column="0" FontFamily="Poppins"  FontSize="20"/>
+                    <Label x:Name="Off_Label" Text="Off" VerticalTextAlignment="Center" TextColor="Black" Grid.Column="0" FontFamily="Poppins"  FontSize="20"/>
                     <CheckBox x:Name="DisableCheckBox" CheckedChanged="OnDisableCheckedChanged" Color="Black" Grid.Column="1"/>
                 </Grid>
             </VerticalStackLayout>

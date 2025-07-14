@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:control="clr-namespace:Syncfusion.Maui.Calendar;assembly=Syncfusion.Maui.Calendar"
              x:Class="ReserveParkingSpace_Mobile_.MainPage"
-             BackgroundColor="#f5f9ff"
+             BackgroundColor="#023232"
              Title="Reserve Parking Space">
     <NavigationPage.TitleView>
         <Grid ColumnDefinitions="Auto, *" VerticalOptions="Center" Padding="0,0,10,0">
@@ -24,6 +24,7 @@
         </Grid>
     </NavigationPage.TitleView>
     <ContentPage.ToolbarItems>
+        <!--nz kide e tva: ot Mert-->
         <ToolbarItem 
   Text="Save" 
   IconImageSource="settings.png" 
@@ -34,14 +35,11 @@
 
     <Grid RowDefinitions="Auto,*">
 
-      
-
-
         <ScrollView Grid.Row="1">
             <VerticalStackLayout VerticalOptions="Fill" Spacing="20">
 
 
-                <Label Text="Let's Find Your Spot" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" FontFamily="Poppins" FontSize="31" Margin="0,20,0,10"/>
+                <Label x:Name="MainText_Label" Text="Let's Find Your Spot" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" FontFamily="Poppins" FontSize="31" Margin="0,20,0,10"/>
 
                 <!--Sortig info-->
                 <Border
@@ -72,14 +70,14 @@
                             </Grid.ColumnDefinitions>
 
 
-                            <Label 
+                            <Label x:Name="ChooseShift_Label"
                                  Text="Choose a shift:"
                                  Grid.Column="0"
                                 FontFamily="Poppins"
                                 TextColor="#f5f9ff"
                             
                                  VerticalOptions="Center"/>
-                            <Picker 
+                            <Picker
                                  Title="Select a shift"
                                 x:Name="ShiftPicker"
                                 SelectedIndex="0"
@@ -94,7 +92,7 @@
                                     <x:String>full day</x:String>
                                 </Picker.Items>
                             </Picker>
-                            <Label 
+                            <Label x:Name="ChooseDate_Label"
                                  Text="Choose date:"
                                  Grid.Column="2"
                                FontFamily="Poppins"
@@ -309,7 +307,7 @@ AbsoluteLayout.LayoutFlags="PositionProportional" />
                 <!-- Select options-->
                 <Border
                  
-                   
+                    x:Name="Reserve_Border"
                     StrokeThickness="0"
                     Stroke="Transparent"
                     BackgroundColor="#3a6bc8"
@@ -351,7 +349,7 @@ AbsoluteLayout.LayoutFlags="PositionProportional" />
                             VerticalOptions="Center"
                             Margin="0,0,0,20"/>
 
-                        <Button 
+                        <Button x:Name="ReserveBtn"
                             Text="Reserve"
                             Grid.Row="2"
                             FontFamily="Poppins"

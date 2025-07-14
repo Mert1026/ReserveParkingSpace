@@ -3,6 +3,7 @@ using ReserveParkingSpace_Mobile_.Data.Models.GetParkingSpaces_Models;
 using ReserveParkingSpace_Mobile_.Data.Models.AddingReservation_Models;
 using ReserveParkingSpace_Mobile_.Services;
 using ReserveParkingSpace_Mobile_.Services.IServices;
+using ReserveParkingSpace_Mobile_.Data.Customazations;
 using System.Globalization;
 using System.Threading.Tasks;
 using ReserveParkingSpace_Mobile_.Data.Models;
@@ -18,16 +19,44 @@ namespace ReserveParkingSpace_Mobile_
         private MainPageController _controller;
         private byte[]? _pdfFile;
         private string? _pdfFileName;
-
+        private Translation _translation;
+        
 
         public MainPage()
         {
             InitializeComponent();
             _controller = new MainPageController(new DataService());
             ShiftPicker.SelectedIndex = 0;
-            //ThemeChanging();
+            LanguageApply();
+            ChangeAllTextToBlackAlternative();
+
+            ThemeChanging();
         }
 
+        private void LanguageApply()
+        {
+            string lang = Preferences.Get("Language", null);
+            _translation = new Translation(lang);
+            if (!string.IsNullOrEmpty(lang))
+            {
+                    MainText_Label.Text = _translation.MainPageTitle;
+                    SelectedDates_Label.Text = _translation.MainPageChooseDate;
+                    ShiftPicker.Title = _translation.MainPageChooseShift;
+                    Occupied_Label.Text = _translation.MainPageOccupiedLabel;
+                    Avaible_Label.Text = _translation.MainPageAvailableLabel;
+                    ReserveBtn.Text = _translation.MainPageReserveButton;
+                    SelectedShiftAndPosition_Label.Text = _translation.MainPageSelectedSpace;
+                    SelectedDates_Label.Text = _translation.MainPageSelectedDate;
+                    PDF_Label.Text = _translation.MainPageUploadButton;
+                    PDF_Button.Text = _translation.MainPageUploadButton;
+                    ChooseDate_Label.Text = _translation.MainPageChooseDate;
+                    ChooseShift_Label.Text = _translation.MainPageChooseShift;
+                    ShiftPicker.Items[0] = _translation.MainPageMorningShift;
+                    ShiftPicker.Items[1] = _translation.MainPageAfternoonShift;
+                    ShiftPicker.Items[2] = _translation.MainPageAllDayShift;
+                    
+            }
+        }
         private void OnCounterClicked(object sender, EventArgs e)
         {
 
@@ -62,6 +91,7 @@ namespace ReserveParkingSpace_Mobile_
         private async Task AsyncParkingArangement(DateTime? startDate, DateTime? endDate)
         {
             Loading_Border.IsVisible = true;
+            string lang = Preferences.Get("Language", null);
             if (startDate == null || endDate == null)
             {
                 await DisplayAlert("Error", "Please select a valid date range.", "OK");
@@ -69,13 +99,29 @@ namespace ReserveParkingSpace_Mobile_
             }
             else
             {
-                if (startDate == endDate)
+                if (startDate == endDate && !String.IsNullOrEmpty(lang))
                 {
-                    SelectedDates_Label.Text = $"Selected Date: {startDate.Value.ToString("yyyy-MM-dd")}";
+                    if(lang == "en")
+                    {
+                        SelectedDates_Label.Text = $"Selected Date: {startDate.Value.ToString("yyyy-MM-dd")}";
+                    }
+                    else if (lang == "bg")
+                    {
+                        SelectedDates_Label.Text = $"Избрана дата: {startDate.Value.ToString("yyyy-MM-dd")}";
+                    }
+                       
                 }
                 else
                 {
-                    SelectedDates_Label.Text = $"Selected Range: {startDate.Value.ToString("yyyy-MM-dd")} - {endDate.Value.ToString("yyyy-MM-dd")}";
+                    if (lang == "en")
+                    {
+                        SelectedDates_Label.Text = $"Selected Range: {startDate.Value.ToString("yyyy-MM-dd")} - {endDate.Value.ToString("yyyy-MM-dd")}";
+                    }
+                    else if (lang == "bg")
+                    {
+                        SelectedDates_Label.Text = $"Избрани дати: {startDate.Value.ToString("yyyy-MM-dd")} - {endDate.Value.ToString("yyyy-MM-dd")}";
+                    }
+                    
                 }
 
                 if(endDate.Value.Day - startDate.Value.Day > 2)
@@ -104,7 +150,7 @@ namespace ReserveParkingSpace_Mobile_
                     //Vsicki API call-ove na edno - uj e po birzo
                     var results = await Task.WhenAll(tasks);
 
-                    string shift = await ShiftPickerString(ShiftPicker.SelectedItem?.ToString());
+                    string shift = await ShiftPickerString(ShiftPicker.SelectedItem?.ToString().ToLower());
                     _shift = shift;
 
                     for (int dateIndex = 0; dateIndex < results.Length; dateIndex++)
@@ -143,49 +189,49 @@ namespace ReserveParkingSpace_Mobile_
             for (int i = 0; i < cars.Count; i++)
             {
                 var space = reservedSpaces.Spaces[i];
+                string _shift = shift.ToLower();
 
-                switch (shift)
+                if (_shift == "morning" || _shift == "сутрин")
                 {
-                    case "morning":
-                        bool morningAvailable = space.IsAvailable.Morning && space.IsAvailable.FullDay;
+                    bool morningAvailable = space.IsAvailable.Morning && space.IsAvailable.FullDay;
 
-                        if (morningAvailable && startDate == currentDate)
-                        {
-                            cars[i].Source = ""; // todo brt
-                            carsHidden[i] = true;
-                        }
-                        else if (carsHidden[i] == false)
-                        {
-                            cars[i].Source = $"car{i + 1}.png";
-                        }
-                        break;
-
-                    case "afternoon":
-                        bool afternoonAvailable = space.IsAvailable.Afternoon && space.IsAvailable.FullDay;
-
-                        if (afternoonAvailable && startDate == currentDate)
-                        {
-                            cars[i].Source = ""; // todo brt
-                            carsHidden[i] = true;
-                        }
-                        else if (carsHidden[i] == false)
-                        {
-                            cars[i].Source = $"car{i + 1}.png";
-                        }
-                        break;
-
-                    case "full day":
-                        if (startDate == currentDate)
-                        {
-                            cars[i].Source = ""; // todo brt
-                            carsHidden[i] = true;
-                        }
-                        else if (carsHidden[i] == false)
-                        {
-                            cars[i].Source = $"car{i + 1}.png";
-                        }
-                        break;
+                    if (morningAvailable && startDate == currentDate)
+                    {
+                        cars[i].Source = ""; // todo brt
+                        carsHidden[i] = true;
+                    }
+                    else if (carsHidden[i] == false)
+                    {
+                        cars[i].Source = $"car{i + 1}.png";
+                    }
                 }
+                else if (_shift == "afternoon" || _shift == "обед")
+                {
+                    bool afternoonAvailable = space.IsAvailable.Afternoon && space.IsAvailable.FullDay;
+
+                    if (afternoonAvailable && startDate == currentDate)
+                    {
+                        cars[i].Source = ""; // todo brt
+                        carsHidden[i] = true;
+                    }
+                    else if (carsHidden[i] == false)
+                    {
+                        cars[i].Source = $"car{i + 1}.png";
+                    }
+                }
+                else if(_shift == "full day" || _shift == "цял ден")
+                {
+                    if (startDate == currentDate)
+                    {
+                        cars[i].Source = ""; // todo brt
+                        carsHidden[i] = true;
+                    }
+                    else if (carsHidden[i] == false)
+                    {
+                        cars[i].Source = $"car{i + 1}.png";
+                    }
+                }
+
             }
         }
 
@@ -263,21 +309,21 @@ namespace ReserveParkingSpace_Mobile_
 
         private async void ShiftPicker_HandlerChanged(object sender, EventArgs e)
         {
-            _shift = await ShiftPickerString(ShiftPicker.SelectedItem?.ToString());
+            _shift = await ShiftPickerString(ShiftPicker.SelectedItem?.ToString().ToLower());
             SelectedShiftAndPosition_Label.Text = $"Selected space: {_selectedSpace}, Shift: {_shift}";
         }
 
         private async Task<string> ShiftPickerString(string shift)
         {
-            if (shift == "morning")
+            if (shift == "morning" || shift == "сутрин")
             {
                 return "8:00-14:00";
             }
-            else if (shift == "afternoon")
+            else if (shift == "afternoon" || shift == "обед")
             {
                 return "14:00-21:00";
             }
-            else if (shift == "full day")
+            else if (shift == "full day" || shift == "цял ден")
             {
                 return "9:30-18:30";
             }
@@ -292,19 +338,35 @@ namespace ReserveParkingSpace_Mobile_
         //TODO: minor, ne e tolkova vajno za sega
          private void ThemeChanging()
          {
-            Preferences.Set("Color", "#222831");
             string color = Preferences.Get("Color", null);
-            if (color == "#222831")
+            if (Application.Current.Resources.TryGetValue(typeof(NavigationPage).ToString(), out var resource) 
+                && resource is Style navigationPageStyle
+                && color != null)
             {
-                this.BackgroundColor = Color.FromHex(color);
-            }
-            else if (color == "#FFFCFB")
-            {
-                this.BackgroundColor = Color.FromHex(color);
-            }
-            else
-            {
-                //to do: bukvite i tekstovete da se promenat
+                // Find the BarBackgroundColor setter
+                var barBackgroundSetter = navigationPageStyle.Setters
+                    .FirstOrDefault(s => s.Property == NavigationPage.BarBackgroundColorProperty);
+
+                if (barBackgroundSetter != null)
+                {
+                    if (color == "black")
+                    {
+                        this.BackgroundColor = Color.FromHex("#222831");//tuk e za cherno BC
+                        barBackgroundSetter.Value = Color.FromHex("#222831");//tuk e za bara gore
+                        MainText_Label.TextColor = Color.FromHex("#FFFCFB");//tuk e za glavniq tekst
+                        MainBorder.BackgroundColor = Color.FromHex("#222831");//tuk e za tva s shifta i kalendara kvadrata
+                        Reserve_Border.BackgroundColor = Color.FromHex("#FFFCFB");//tuk e za kavadrata na rezervaciqta
+                    }
+                    else if (color == "white")
+                    {
+                        this.BackgroundColor = Color.FromHex("#222831");//tuk za byalo BC
+                        barBackgroundSetter.Value = Color.FromHex("#FFFCFB");//tuk e za bara gore
+                        MainText_Label.TextColor = Color.FromHex("#FFFCFB");//tuk e za glavniq tekst
+                        MainBorder.BackgroundColor = Color.FromHex("#222831");//tuk e za tva s shifta i kalendara kvadrata
+                        Reserve_Border.BackgroundColor = Color.FromHex("#FFFCFB");//tuk e za kavadrata na rezervaciqta
+                    }
+                }
+                
             }
          }
 
@@ -329,6 +391,67 @@ namespace ReserveParkingSpace_Mobile_
             PDF_Button.Text = "Uploaded";
 
         }
+
+        private void ChangeAllTextToBlackAlternative()
+        {
+            var blackColor = Colors.White;
+            var allElements = GetAllElements(this.Content).ToList();
+
+            foreach (var element in allElements)
+            {
+                switch (element)
+                {
+                    case Label label:
+                        label.TextColor = blackColor;
+                        break;
+                    case Button button:
+                        button.TextColor = blackColor;
+                        break;
+                    case Picker picker:
+                        picker.TextColor = blackColor;
+                        picker.TitleColor = blackColor;
+                        break;
+                    case ActivityIndicator indicator:
+                        indicator.Color = blackColor;
+                        break;
+                }
+            }
+        }
+
+        private IEnumerable<Element> GetAllElements(Element parent)
+        {
+            var elements = new List<Element>();
+            var toProcess = new Queue<Element>();
+            toProcess.Enqueue(parent);
+
+            while (toProcess.Count > 0)
+            {
+                var current = toProcess.Dequeue();
+                elements.Add(current);
+
+                // Add children to queue
+                if (current is Layout layout)
+                {
+                    foreach (var child in layout.Children)
+                        toProcess.Enqueue((Element)child);
+                }
+                else if (current is ContentView contentView && contentView.Content != null)
+                {
+                    toProcess.Enqueue(contentView.Content);
+                }
+                else if (current is Border border && border.Content != null)
+                {
+                    toProcess.Enqueue(border.Content);
+                }
+                else if (current is ScrollView scrollView && scrollView.Content != null)
+                {
+                    toProcess.Enqueue(scrollView.Content);
+                }
+            }
+
+            return elements;
+        }
+
 
     }
 }
