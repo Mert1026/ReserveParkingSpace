@@ -1,93 +1,101 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\",
+  "WorkspaceRootPath": "C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\spacespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\spacespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\settingspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\settingspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\spacespage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\spacespage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\languagepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\languagepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\loadingpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\loadingpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\loadingpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\loadingpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\introductionpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\introductionpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\introductionpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\introductionpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\languagepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\languagepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\accountpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\accountpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\accountpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\accountpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\settingspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\settingspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\themepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\themepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\themepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\themepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\controllers\\mainpagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\users\\mert\\desktop\\reserveparkingspace_valtech\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\controllers\\mainpagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\controllers\\mainpagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\data\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\users\\mert\\desktop\\reserveparkingspace_valtech\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\users\\mert\\desktop\\reserveparkingspace_valtech\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\accountpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\accountpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\users\\mert\\desktop\\reserveparkingspace_valtech\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\users\\mert\\desktop\\reserveparkingspace_valtech\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\introductionpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\introductionpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\users\\mert\\desktop\\reserveparkingspace_valtech\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\services\\dataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\services\\dataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\users\\mert\\desktop\\reserveparkingspace_valtech\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\languagepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\languagepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\users\\mert\\desktop\\reserveparkingspace_valtech\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\loadingpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\loadingpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\users\\mert\\desktop\\reserveparkingspace_valtech\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\loadingpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\loadingpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\users\\mert\\desktop\\reserveparkingspace_valtech\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\settingspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\settingspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\users\\mert\\desktop\\reserveparkingspace_valtech\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\spacespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\spacespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\users\\mert\\desktop\\reserveparkingspace_valtech\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\spacespage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\spacespage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\users\\mert\\desktop\\reserveparkingspace_valtech\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\introductionpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\introductionpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\users\\mert\\desktop\\reserveparkingspace_valtech\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\users\\mert\\desktop\\reserveparkingspace_valtech\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\users\\mert\\desktop\\reserveparkingspace_valtech\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\languagepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\languagepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\users\\mert\\desktop\\reserveparkingspace_valtech\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\accountpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\accountpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\users\\mert\\desktop\\reserveparkingspace_valtech\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\users\\mert\\desktop\\reserveparkingspace_valtech\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\settingspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\settingspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\users\\mert\\desktop\\reserveparkingspace_valtech\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\themepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\themepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\users\\mert\\desktop\\reserveparkingspace_valtech\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\users\\mert\\desktop\\reserveparkingspace_valtech\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\themepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\themepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\users\\mert\\desktop\\reserveparkingspace_valtech\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\data\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\data\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\obj\\Debug\\net8.0-android\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\obj\\Debug\\net8.0-android\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ReserveParkingSpace(Mobile)\\obj\\Debug\\net8.0-android\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -98,15 +106,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": ".NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
-              "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\obj\\Debug\\net8.0-android\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+              "DocumentMoniker": "C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\obj\\Debug\\net8.0-android\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
               "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\obj\\Debug\\net8.0-android\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
-              "ToolTip": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\obj\\Debug\\net8.0-android\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+              "ToolTip": "C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\obj\\Debug\\net8.0-android\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
               "RelativeToolTip": "ReserveParkingSpace(Mobile)\\obj\\Debug\\net8.0-android\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -115,13 +123,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "LoadingPage.xaml.cs",
-              "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\LoadingPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\LoadingPage.xaml.cs",
               "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\LoadingPage.xaml.cs",
-              "ToolTip": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\LoadingPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\LoadingPage.xaml.cs",
               "RelativeToolTip": "ReserveParkingSpace(Mobile)\\LoadingPage.xaml.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAAC8AAABBAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAcwC8AAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-12T10:58:57.699Z",
               "IsPinned": true,
@@ -129,17 +137,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "AccountPage.xaml",
-              "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\AccountPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\AccountPage.xaml",
               "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\AccountPage.xaml",
-              "ToolTip": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\AccountPage.xaml",
+              "ToolTip": "C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\AccountPage.xaml",
               "RelativeToolTip": "ReserveParkingSpace(Mobile)\\AccountPage.xaml",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAACIAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-07-07T07:30:07.436Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -150,59 +157,123 @@
               "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\LoginPage.xaml.cs",
+              "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\LoginPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\LoginPage.xaml.cs",
+              "RelativeToolTip": "ReserveParkingSpace(Mobile)\\LoginPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T21:40:50.867Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\MainPage.xaml.cs",
+              "RelativeToolTip": "ReserveParkingSpace(Mobile)\\MainPage.xaml.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB4AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T18:27:01.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IntroductionPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\IntroductionPage.xaml",
+              "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\IntroductionPage.xaml",
+              "ToolTip": "C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\IntroductionPage.xaml",
+              "RelativeToolTip": "ReserveParkingSpace(Mobile)\\IntroductionPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-14T21:06:47.239Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AccountPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\AccountPage.xaml.cs",
+              "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\AccountPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\AccountPage.xaml.cs",
+              "RelativeToolTip": "ReserveParkingSpace(Mobile)\\AccountPage.xaml.cs",
+              "ViewState": "AgIAAIUAAAAAAAAAAAAwwHEAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T20:32:10.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainPageController.cs",
+              "DocumentMoniker": "C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\Controllers\\MainPageController.cs",
+              "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\Controllers\\MainPageController.cs",
+              "ToolTip": "C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\Controllers\\MainPageController.cs",
+              "RelativeToolTip": "ReserveParkingSpace(Mobile)\\Controllers\\MainPageController.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAArwGEAAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T07:32:53.013Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IntroductionPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\IntroductionPage.xaml.cs",
+              "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\IntroductionPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\IntroductionPage.xaml.cs",
+              "RelativeToolTip": "ReserveParkingSpace(Mobile)\\IntroductionPage.xaml.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAgwBsAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T21:08:30.589Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SpacesPage.xaml.cs",
-              "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\SpacesPage.xaml.cs",
-              "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\SpacesPage.xaml.cs",
-              "ToolTip": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\SpacesPage.xaml.cs",
-              "RelativeToolTip": "ReserveParkingSpace(Mobile)\\SpacesPage.xaml.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAACYAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-14T21:17:47.92Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IntroductionPage.xaml.cs",
-              "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\IntroductionPage.xaml.cs",
-              "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\IntroductionPage.xaml.cs",
-              "ToolTip": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\IntroductionPage.xaml.cs",
-              "RelativeToolTip": "ReserveParkingSpace(Mobile)\\IntroductionPage.xaml.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAABsAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-14T21:08:30.589Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IntroductionPage.xaml",
-              "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\IntroductionPage.xaml",
-              "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\IntroductionPage.xaml",
-              "ToolTip": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\IntroductionPage.xaml",
-              "RelativeToolTip": "ReserveParkingSpace(Mobile)\\IntroductionPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-14T21:06:47.239Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "DataService.cs",
+              "DocumentMoniker": "C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\Services\\DataService.cs",
+              "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\Services\\DataService.cs",
+              "ToolTip": "C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\Services\\DataService.cs",
+              "RelativeToolTip": "ReserveParkingSpace(Mobile)\\Services\\DataService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T21:44:42.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SettingsPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\SettingsPage.xaml.cs",
+              "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\SettingsPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\SettingsPage.xaml.cs",
+              "RelativeToolTip": "ReserveParkingSpace(Mobile)\\SettingsPage.xaml.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAqwG4AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T19:12:56.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "LoadingPage.xaml",
-              "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\LoadingPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\LoadingPage.xaml",
               "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\LoadingPage.xaml",
-              "ToolTip": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\LoadingPage.xaml",
+              "ToolTip": "C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\LoadingPage.xaml",
               "RelativeToolTip": "ReserveParkingSpace(Mobile)\\LoadingPage.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
@@ -211,24 +282,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "LoginPage.xaml",
-              "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\LoginPage.xaml",
-              "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\LoginPage.xaml",
-              "ToolTip": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\LoginPage.xaml",
-              "RelativeToolTip": "ReserveParkingSpace(Mobile)\\LoginPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-14T21:05:54.507Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "LanguagePage.xaml.cs",
-              "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\LanguagePage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\LanguagePage.xaml.cs",
               "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\LanguagePage.xaml.cs",
-              "ToolTip": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\LanguagePage.xaml.cs",
+              "ToolTip": "C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\LanguagePage.xaml.cs",
               "RelativeToolTip": "ReserveParkingSpace(Mobile)\\LanguagePage.xaml.cs",
               "ViewState": "AgIAAFsAAAAAAAAAAAAAAGcAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -237,167 +295,132 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "AccountPage.xaml.cs",
-              "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\AccountPage.xaml.cs",
-              "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\AccountPage.xaml.cs",
-              "ToolTip": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\AccountPage.xaml.cs",
-              "RelativeToolTip": "ReserveParkingSpace(Mobile)\\AccountPage.xaml.cs",
-              "ViewState": "AgIAAGQAAAAAAAAAAAAwwHEAAABLAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "SpacesPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\SpacesPage.xaml.cs",
+              "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\SpacesPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\SpacesPage.xaml.cs",
+              "RelativeToolTip": "ReserveParkingSpace(Mobile)\\SpacesPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-14T20:32:10.727Z",
+              "WhenOpened": "2025-07-14T21:17:47.92Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\App.xaml",
-              "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\App.xaml",
-              "ToolTip": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\App.xaml",
-              "RelativeToolTip": "ReserveParkingSpace(Mobile)\\App.xaml",
+              "DocumentIndex": 13,
+              "Title": "LoginPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\LoginPage.xaml",
+              "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\LoginPage.xaml",
+              "ToolTip": "C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\LoginPage.xaml",
+              "RelativeToolTip": "ReserveParkingSpace(Mobile)\\LoginPage.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-14T19:31:11.101Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "SettingsPage.xaml",
-              "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\SettingsPage.xaml",
-              "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\SettingsPage.xaml",
-              "ToolTip": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\SettingsPage.xaml",
-              "RelativeToolTip": "ReserveParkingSpace(Mobile)\\SettingsPage.xaml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAF4AAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-14T19:19:03.298Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SpacesPage.xaml",
-              "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\SpacesPage.xaml",
-              "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\SpacesPage.xaml",
-              "ToolTip": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\SpacesPage.xaml",
-              "RelativeToolTip": "ReserveParkingSpace(Mobile)\\SpacesPage.xaml",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAACAAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-14T19:13:11.181Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SettingsPage.xaml.cs",
-              "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\SettingsPage.xaml.cs",
-              "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\SettingsPage.xaml.cs",
-              "ToolTip": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\SettingsPage.xaml.cs",
-              "RelativeToolTip": "ReserveParkingSpace(Mobile)\\SettingsPage.xaml.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAAAEsAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-14T19:12:56.932Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "ThemePage.xaml",
-              "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\ThemePage.xaml",
-              "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\ThemePage.xaml",
-              "ToolTip": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\ThemePage.xaml",
-              "RelativeToolTip": "ReserveParkingSpace(Mobile)\\ThemePage.xaml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAADQAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-14T19:00:59.605Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-14T21:05:54.507Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "AppShell.xaml",
-              "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\AppShell.xaml",
-              "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\AppShell.xaml",
-              "ToolTip": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\AppShell.xaml",
-              "RelativeToolTip": "ReserveParkingSpace(Mobile)\\AppShell.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA9AAAAAAAAAA==",
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\App.xaml",
+              "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\App.xaml",
+              "ToolTip": "C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\App.xaml",
+              "RelativeToolTip": "ReserveParkingSpace(Mobile)\\App.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-14T18:59:04.017Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-14T19:31:11.101Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "MainPage.xaml.cs",
-              "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\MainPage.xaml.cs",
-              "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\MainPage.xaml.cs",
-              "ToolTip": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\MainPage.xaml.cs",
-              "RelativeToolTip": "ReserveParkingSpace(Mobile)\\MainPage.xaml.cs",
-              "ViewState": "AgIAAHEBAAAAAAAAAADgv3cBAABLAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-14T18:27:01.72Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "MainPage.xaml",
-              "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\MainPage.xaml",
-              "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\MainPage.xaml",
-              "ToolTip": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\MainPage.xaml",
-              "RelativeToolTip": "ReserveParkingSpace(Mobile)\\MainPage.xaml",
-              "ViewState": "AgIAADEBAAAAAAAAAAAAADwBAAAxAAAAAAAAAA==",
+              "DocumentIndex": 18,
+              "Title": "SettingsPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\SettingsPage.xaml",
+              "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\SettingsPage.xaml",
+              "ToolTip": "C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\SettingsPage.xaml",
+              "RelativeToolTip": "ReserveParkingSpace(Mobile)\\SettingsPage.xaml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAF4AAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-14T18:40:10.027Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ThemePage.xaml.cs",
-              "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\ThemePage.xaml.cs",
-              "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\ThemePage.xaml.cs",
-              "ToolTip": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\ThemePage.xaml.cs",
-              "RelativeToolTip": "ReserveParkingSpace(Mobile)\\ThemePage.xaml.cs",
-              "ViewState": "AgIAAJgAAAAAAAAAAAAUwK0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T10:28:09.349Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "MainPageController.cs",
-              "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\Controllers\\MainPageController.cs",
-              "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\Controllers\\MainPageController.cs",
-              "ToolTip": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\Controllers\\MainPageController.cs",
-              "RelativeToolTip": "ReserveParkingSpace(Mobile)\\Controllers\\MainPageController.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAnwEIAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T07:32:53.013Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-14T19:19:03.298Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "LanguagePage.xaml",
-              "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\LanguagePage.xaml",
-              "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\LanguagePage.xaml",
-              "ToolTip": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\LanguagePage.xaml",
-              "RelativeToolTip": "ReserveParkingSpace(Mobile)\\LanguagePage.xaml",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACUAAAA1AAAAAAAAAA==",
+              "Title": "SpacesPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\SpacesPage.xaml",
+              "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\SpacesPage.xaml",
+              "ToolTip": "C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\SpacesPage.xaml",
+              "RelativeToolTip": "ReserveParkingSpace(Mobile)\\SpacesPage.xaml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACAAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-08T12:53:44.259Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-14T19:13:11.181Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ThemePage.xaml",
+              "DocumentMoniker": "C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\ThemePage.xaml",
+              "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\ThemePage.xaml",
+              "ToolTip": "C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\ThemePage.xaml",
+              "RelativeToolTip": "ReserveParkingSpace(Mobile)\\ThemePage.xaml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAADQAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-14T19:00:59.605Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 20,
+              "Title": "AppShell.xaml",
+              "DocumentMoniker": "C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\AppShell.xaml",
+              "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\AppShell.xaml",
+              "ToolTip": "C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\AppShell.xaml",
+              "RelativeToolTip": "ReserveParkingSpace(Mobile)\\AppShell.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-14T18:59:04.017Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\MainPage.xaml",
+              "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\MainPage.xaml",
+              "RelativeToolTip": "ReserveParkingSpace(Mobile)\\MainPage.xaml",
+              "ViewState": "AgIAADEBAAAAAAAAAAAAADwBAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-14T18:40:10.027Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ThemePage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\ThemePage.xaml.cs",
+              "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\ThemePage.xaml.cs",
+              "ToolTip": "C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\ThemePage.xaml.cs",
+              "RelativeToolTip": "ReserveParkingSpace(Mobile)\\ThemePage.xaml.cs",
+              "ViewState": "AgIAAJgAAAAAAAAAAAAUwK0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T10:28:09.349Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "LanguagePage.xaml",
+              "DocumentMoniker": "C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\LanguagePage.xaml",
+              "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\LanguagePage.xaml",
+              "ToolTip": "C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\LanguagePage.xaml",
+              "RelativeToolTip": "ReserveParkingSpace(Mobile)\\LanguagePage.xaml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACUAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-08T12:53:44.259Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
               "Title": "User.cs",
-              "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\Data\\Models\\User.cs",
+              "DocumentMoniker": "C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\Data\\Models\\User.cs",
               "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\Data\\Models\\User.cs",
-              "ToolTip": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\Data\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\Mert\\Desktop\\ReserveParkingSpace_Valtech\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\Data\\Models\\User.cs",
               "RelativeToolTip": "ReserveParkingSpace(Mobile)\\Data\\Models\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwBEAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

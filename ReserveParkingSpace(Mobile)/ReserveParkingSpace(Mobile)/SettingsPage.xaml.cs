@@ -73,14 +73,7 @@ public partial class SettingsPage : ContentPage
                     {
                         navPage.BarBackgroundColor = Color.FromHex("#294D91");
                     }
-                    Border_1.BackgroundColor = Color.FromHex("#222831");
-                    Border_2.BackgroundColor = Color.FromHex("#222831");
-                    Border_3.BackgroundColor = Color.FromHex("#222831");
-                    Border_4.BackgroundColor = Color.FromHex("#222831");
-                    Border_1.Stroke = Color.FromHex("#222831");
-                    Border_2.Stroke = Color.FromHex("#222831");
-                    Border_3.Stroke = Color.FromHex("#222831");
-                    Border_4.Stroke = Color.FromHex("#222831");
+                    
                     Arrow_Label1.TextColor = Color.FromHex("#FFFFFF");
                     Arrow_Label2.TextColor = Color.FromHex("#FFFFFF");
                     Arrow_Label3.TextColor = Color.FromHex("#FFFFFF");
@@ -94,6 +87,14 @@ public partial class SettingsPage : ContentPage
                     Image2.Source = "account_dark.png";
                     Image3.Source = "language_dark.png";
                     Image4.Source = "car_dark.png";
+                    Border_1.BackgroundColor = Color.FromHex("#222831");
+                    Border_2.BackgroundColor = Color.FromHex("#222831");
+                    Border_3.BackgroundColor = Color.FromHex("#222831");
+                    Border_4.BackgroundColor = Color.FromHex("#222831");
+                    Border_1.Stroke = Color.FromHex("#222831");
+                    Border_2.Stroke = Color.FromHex("#222831");
+                    Border_3.Stroke = Color.FromHex("#222831");
+                    Border_4.Stroke = Color.FromHex("#222831");
 
 
                 }
@@ -105,9 +106,9 @@ public partial class SettingsPage : ContentPage
                         navPage.BarBackgroundColor = Color.FromHex("#3a6bc8");
                     }
                     Border_1.BackgroundColor = Color.FromHex("#f5f9ff");
-                    Border_1.BackgroundColor = Color.FromHex("#f5f9ff");
-                    Border_1.BackgroundColor = Color.FromHex("#f5f9ff");
-                    Border_1.BackgroundColor = Color.FromHex("#f5f9ff");
+                    Border_2.BackgroundColor = Color.FromHex("#f5f9ff");
+                    Border_3.BackgroundColor = Color.FromHex("#f5f9ff");
+                    Border_4.BackgroundColor = Color.FromHex("#f5f9ff");
                     Border_1.Stroke = Color.FromHex("#f5f9ff");
                     Border_2.Stroke = Color.FromHex("#f5f9ff");
                     Border_3.Stroke = Color.FromHex("#f5f9ff");

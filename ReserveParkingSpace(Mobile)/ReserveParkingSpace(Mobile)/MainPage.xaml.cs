@@ -28,9 +28,7 @@ namespace ReserveParkingSpace_Mobile_
             _controller = new MainPageController(new DataService());
             ShiftPicker.SelectedIndex = 0;
             LanguageApply();
-            ChangeAllTextToBlackAlternative();
-            
-            
+            ChangeAllTextToBlackAlternative();      
             ThemeChanging();
         }
         protected override async void OnAppearing()

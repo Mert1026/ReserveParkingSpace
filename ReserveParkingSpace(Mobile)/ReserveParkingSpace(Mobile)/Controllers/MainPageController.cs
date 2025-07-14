@@ -92,8 +92,16 @@ namespace ReserveParkingSpace_Mobile_.Controllers
                     Preferences.Set("FirstName", loginResponse.user.firstName);
                     Preferences.Set("Surname", loginResponse.user.lastName); //TC TC TC mnogo greshno
                     Preferences.Set("Department", loginResponse.user.department.ToLower());
-                    Preferences.Set("Language", "en");// en-bg
-                    Preferences.Set("Color", "white");
+
+                    string langCheck = Preferences.Get("Language", null);
+                    string colorCheck = Preferences.Get("Color", null);
+                    if (string.IsNullOrEmpty(langCheck) || string.IsNullOrEmpty(colorCheck))
+                    {
+                        Preferences.Set("Language", "en");//en-bg
+                        Preferences.Set("Color", "white");//white-black
+
+                    };
+                    
 
                     return true;
                 }

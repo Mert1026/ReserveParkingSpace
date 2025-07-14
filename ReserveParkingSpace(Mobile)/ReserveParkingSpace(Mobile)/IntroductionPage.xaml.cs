@@ -19,17 +19,20 @@ public partial class IntroductionPage : ContentPage
 
     private async void CheckIfUserIsLogged()
     {
+        
         string LoggedIn = Preferences.Get("RememberMe", null);
         if (LoggedIn != null)
         {
             if (LoggedIn == "True")
             {
+                await Navigation.PushAsync(new LoadingPage());
                 string? email = Preferences.Get("email", null);
                 string? password = await SecureStorage.GetAsync("password");
                 if (email != null && password != null)
                 {
                     
                      bool check = await _controller.LoginAsync(email, password, true);//setvane na token
+                    
                     _check = check;
                     if (_check)
                     {
