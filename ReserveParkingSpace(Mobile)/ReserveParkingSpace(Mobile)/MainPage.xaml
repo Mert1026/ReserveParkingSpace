@@ -4,6 +4,8 @@
              xmlns:control="clr-namespace:Syncfusion.Maui.Calendar;assembly=Syncfusion.Maui.Calendar"
              x:Class="ReserveParkingSpace_Mobile_.MainPage"
              BackgroundColor="#023232"
+             Shell.ForegroundColor="White"
+             Shell.BackgroundColor="#294D91"
              Title="Reserve Parking Space">
     <NavigationPage.TitleView>
         <Grid ColumnDefinitions="Auto, *" VerticalOptions="Center" Padding="0,0,10,0">
@@ -47,7 +49,7 @@
                             Stroke="Transparent"
                             Background="#3a6bc8"
                             StrokeThickness="0"
-                            Margin="20,0,20,0"
+                            Margin="10,0,10,0"
                             StrokeShape="RoundRectangle 15">
 
                     <Border.Shadow>
@@ -74,6 +76,7 @@
                                  Text="Choose a shift:"
                                  Grid.Column="0"
                                 FontFamily="Poppins"
+                                
                                 TextColor="#f5f9ff"
                             
                                  VerticalOptions="Center"/>
@@ -163,7 +166,7 @@
                         StrokeThickness="0"
                         Background="Transparent"
                         Margin="0"
-                        StrokeShape="RoundRectangle 25">
+                        StrokeShape="RoundRectangle 15">
 
                         <Border.Shadow>
                             <Shadow
@@ -311,9 +314,9 @@ AbsoluteLayout.LayoutFlags="PositionProportional" />
                     StrokeThickness="0"
                     Stroke="Transparent"
                     BackgroundColor="#3a6bc8"
-                    StrokeShape="RoundRectangle 25"
+                    StrokeShape="RoundRectangle 15"
                     Padding="0"
-                    Margin="20,0,20,20">
+                    Margin="10,0,10,20">
 
                     <Border.Shadow>
                         <Shadow

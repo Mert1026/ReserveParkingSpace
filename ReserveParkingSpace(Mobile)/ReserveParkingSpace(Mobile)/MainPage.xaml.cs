@@ -29,8 +29,20 @@ namespace ReserveParkingSpace_Mobile_
             ShiftPicker.SelectedIndex = 0;
             LanguageApply();
             ChangeAllTextToBlackAlternative();
-
+            
+            
             ThemeChanging();
+        }
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+
+            // Re-apply theme or language if needed
+            LanguageApply();
+            ThemeChanging();
+
+            // Re-fetch or refresh data
+            await AsyncParkingArangement(_startDate, _endDate);
         }
 
         private void LanguageApply()
@@ -54,7 +66,9 @@ namespace ReserveParkingSpace_Mobile_
                     ShiftPicker.Items[0] = _translation.MainPageMorningShift;
                     ShiftPicker.Items[1] = _translation.MainPageAfternoonShift;
                     ShiftPicker.Items[2] = _translation.MainPageAllDayShift;
-                    
+                MainText_Label.FontSize = 25;
+
+
             }
         }
         private void OnCounterClicked(object sender, EventArgs e)
@@ -336,39 +350,56 @@ namespace ReserveParkingSpace_Mobile_
 
        
         //TODO: minor, ne e tolkova vajno za sega
-         private void ThemeChanging()
-         {
-            string color = Preferences.Get("Color", null);
-            if (Application.Current.Resources.TryGetValue(typeof(NavigationPage).ToString(), out var resource) 
-                && resource is Style navigationPageStyle
-                && color != null)
-            {
-                // Find the BarBackgroundColor setter
-                var barBackgroundSetter = navigationPageStyle.Setters
-                    .FirstOrDefault(s => s.Property == NavigationPage.BarBackgroundColorProperty);
-
-                if (barBackgroundSetter != null)
+             private void ThemeChanging()
+             {
+                string color = Preferences.Get("Color", null);
+                if (Application.Current.Resources.TryGetValue(typeof(NavigationPage).ToString(), out var resource) 
+                    && resource is Style navigationPageStyle
+                    && color != null)
                 {
-                    if (color == "black")
+                    // Find the BarBackgroundColor setter
+                    var barBackgroundSetter = navigationPageStyle.Setters
+                        .FirstOrDefault(s => s.Property == NavigationPage.BarBackgroundColorProperty);
+
+                    if (barBackgroundSetter != null)
                     {
-                        this.BackgroundColor = Color.FromHex("#222831");//tuk e za cherno BC
-                        barBackgroundSetter.Value = Color.FromHex("#222831");//tuk e za bara gore
-                        MainText_Label.TextColor = Color.FromHex("#FFFCFB");//tuk e za glavniq tekst
-                        MainBorder.BackgroundColor = Color.FromHex("#222831");//tuk e za tva s shifta i kalendara kvadrata
-                        Reserve_Border.BackgroundColor = Color.FromHex("#FFFCFB");//tuk e za kavadrata na rezervaciqta
+                        if (color == "black")
+                        {
+                            this.BackgroundColor = Color.FromHex("#222831");//tuk e za cherno BC
+                            barBackgroundSetter.Value = Color.FromHex("#3a6bc8");//tuk e za bara gore
+                            MainText_Label.TextColor = Color.FromHex("#FFFCFB");//tuk e za glavniq tekst
+                            MainBorder.Background = new SolidColorBrush(Color.FromArgb("#294D91"));
+                            //tuk e za tva s shifta i kalendara kvadrata
+                            Reserve_Border.BackgroundColor = Color.FromHex("#294D91");
+                            Shell.SetBackgroundColor(this, Color.FromArgb("#294D91"));
+                            Loading_Border.Background = Color.FromHex("#294D91");
+                        ReserveBtn.BackgroundColor = Color.FromHex("#098CC8");
+                        if (this.Parent is NavigationPage navPage)
+                        {
+                            navPage.BarBackgroundColor = Color.FromHex("#294D91");
+                        }
+
+
                     }
-                    else if (color == "white")
-                    {
-                        this.BackgroundColor = Color.FromHex("#222831");//tuk za byalo BC
-                        barBackgroundSetter.Value = Color.FromHex("#FFFCFB");//tuk e za bara gore
-                        MainText_Label.TextColor = Color.FromHex("#FFFCFB");//tuk e za glavniq tekst
-                        MainBorder.BackgroundColor = Color.FromHex("#222831");//tuk e za tva s shifta i kalendara kvadrata
-                        Reserve_Border.BackgroundColor = Color.FromHex("#FFFCFB");//tuk e za kavadrata na rezervaciqta
+                        else if (color == "white")
+                        {
+                            this.BackgroundColor = Color.FromHex("#f5f9ff");//tuk za byalo BC
+                            barBackgroundSetter.Value = Color.FromHex("#3a6bc8");//tuk e za bara gore
+                            MainText_Label.TextColor = Color.FromHex("000000");//tuk e za glavniq tekst
+                            MainBorder.Background = new SolidColorBrush(Color.FromArgb("#3a6bc8"));
+                            Reserve_Border.BackgroundColor = Color.FromHex("#3a6bc8");
+                            Loading_Border.Background = Color.FromHex("#3a6bc8");
+                        ReserveBtn.BackgroundColor = Color.FromHex("#4FC3F7");
+                        if (this.Parent is NavigationPage navPage)
+                        {
+                            navPage.BarBackgroundColor = Color.FromHex("#3a6bc8");
+                        }
+                        //tuk e za kavadrata na rezervaciqta
                     }
-                }
+                    }
                 
-            }
-         }
+                }
+             }
 
         private async void PDFButton_Clicked(object sender, EventArgs e)
         {

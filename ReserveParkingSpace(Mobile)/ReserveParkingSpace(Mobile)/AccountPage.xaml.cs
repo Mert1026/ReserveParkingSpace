@@ -1,3 +1,4 @@
+using Java.Lang;
 using Microsoft.Extensions.Logging;
 using ReserveParkingSpace_Mobile_.Controllers;
 using ReserveParkingSpace_Mobile_.Data.Customazations;
@@ -18,7 +19,9 @@ public partial class AccountPage : ContentPage
         _controller = new MainPageController(new DataService());
         EntriesFill();
         LanguageApply();
+        ThemeChanging();
     }
+
     private async void OnSaveClicked(object sender, EventArgs e)
     {
         // Handle button click logic here
@@ -75,7 +78,72 @@ public partial class AccountPage : ContentPage
             Departmnet_Picker.SelectedIndex = -1; // No selection
         }
     }
+    private void ThemeChanging()
+    {
+        string color = Preferences.Get("Color", null);
+        if (Application.Current.Resources.TryGetValue(typeof(NavigationPage).ToString(), out var resource)
+            && resource is Style navigationPageStyle
+            && color != null)
+        {
+            var barBackgroundSetter = navigationPageStyle.Setters
+                .FirstOrDefault(s => s.Property == NavigationPage.BarBackgroundColorProperty);
 
+            if (barBackgroundSetter != null)
+            {
+                if (color == "black")
+                {
+                    this.BackgroundColor = Color.FromHex("#222831");
+                    if (this.Parent is NavigationPage navPage)
+                    {
+                        navPage.BarBackgroundColor = Color.FromHex("#294D91");
+                    }
+                    Shell.SetBackgroundColor(this, Color.FromArgb("#192E57"));
+
+                    // OPTIONAL: Dark mode customization
+                    UserName_Label.TextColor = Color.FromHex("#FFFFFF");
+                    FirstName_Label.TextColor = Color.FromHex("#FFFFFF");
+                    Surname_Label.TextColor = Color.FromHex("#FFFFFF");
+                    Department_Label.TextColor = Color.FromHex("#FFFFFF");
+                    LastChangedTitle_Label.TextColor = Color.FromHex("#FFFFFF");
+                    MemberSinceTitle_Label.TextColor = Color.FromHex("#FFFFFF");
+                    UserName_Entry.TextColor = Color.FromHex("#FFFFFF");
+                    FirstName_Entry.TextColor = Color.FromHex("#FFFFFF");
+                    Surname_Entry.TextColor = Color.FromHex("#FFFFFF");
+                    Departmnet_Picker.TextColor = Color.FromHex("#FFFFFF");
+                    MemberSince_Label.TextColor = Color.FromHex("#FFFFFF");
+                    LastChanged_Label.TextColor = Color.FromHex("#FFFFFF");
+                    Border1.Stroke = Color.FromHex("#FFFFFF");
+                    Border2.Stroke = Color.FromHex("#FFFFFF");
+                    Border3.Stroke = Color.FromHex("#FFFFFF");
+                    Border4.Stroke = Color.FromHex("#FFFFFF");
+                    Border5.Stroke = Color.FromHex("#FFFFFF");
+                    Border6.Stroke = Color.FromHex("#FFFFFF");
+
+
+                    // If you have images:
+                    // Profile_Icon.Source = "profile_dark.png";
+                }
+                else if (color == "white")
+                {
+                    this.BackgroundColor = Color.FromHex("#f5f9ff");
+                    if (this.Parent is NavigationPage navPage)
+                    {
+                        navPage.BarBackgroundColor = Color.FromHex("#3a6bc8");
+                    }
+
+                    // OPTIONAL: Light mode customization
+                    UserName_Label.TextColor = Color.FromHex("#000000");
+                    FirstName_Label.TextColor = Color.FromHex("#000000");
+                    Surname_Label.TextColor = Color.FromHex("#000000");
+                    Department_Label.TextColor = Color.FromHex("#000000");
+                    LastChangedTitle_Label.TextColor = Color.FromHex("#000000");
+                    MemberSinceTitle_Label.TextColor = Color.FromHex("#000000");
+             
+                    // Profile_Icon.Source = "profile_light.png";
+                }
+            }
+        }
+    }
     private void LanguageApply()
     {
         string lang = Preferences.Get("Language", null);
@@ -97,4 +165,5 @@ public partial class AccountPage : ContentPage
         Preferences.Set("RememberMe", "False");
         Application.Current.MainPage = new IntroductionPage();
     }
+
 }

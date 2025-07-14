@@ -18,6 +18,7 @@
     <VerticalStackLayout>
             <!--UserName-->
         <Border
+            x:Name="Border1"
         StrokeThickness="1"
         Stroke="Black"
         StrokeShape="RoundRectangle 10"
@@ -45,6 +46,7 @@
         </Border>
         <!--First Name-->
         <Border
+                 x:Name="Border2"
             StrokeThickness="1"
             Stroke="Black"
             StrokeShape="RoundRectangle 10"
@@ -73,6 +75,7 @@
 
         <!--Surname-->
         <Border
+                 x:Name="Border3"
             StrokeThickness="1"
             Stroke="Black"
             StrokeShape="RoundRectangle 10"
@@ -101,6 +104,7 @@
 
         <!--Department-->
         <Border
+                 x:Name="Border4"
             StrokeThickness="1"
             Stroke="Black"
             StrokeShape="RoundRectangle 10"
@@ -137,6 +141,7 @@
         </Border>
         <!--Member since-->
         <Border
+                 x:Name="Border5"
                  StrokeThickness="1"
                  Stroke="Black"
                  StrokeShape="RoundRectangle 10"
@@ -155,6 +160,7 @@
         </Border>
         <!--Last Changed-->
         <Border
+                 x:Name="Border6"
              StrokeThickness="1"
              Stroke="Black"
              StrokeShape="RoundRectangle 10"

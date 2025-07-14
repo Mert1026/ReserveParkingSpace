@@ -80,25 +80,29 @@ public partial class LanguagePage : ContentPage
                 if (color == "black")
                 {
                     this.BackgroundColor = Color.FromHex("#222831");//tuk e za cherno BC
-                    barBackgroundSetter.Value = Color.FromHex("#222831");//tuk e za bara gore
-                    Border_1.BackgroundColor = Color.FromHex("#FFFCFB");
-                    Border_2.BackgroundColor = Color.FromHex("#FFFCFB");
-                    Border_1.Stroke = Color.FromHex("#FFFCFB");
-                    Border_2.Stroke = Color.FromHex("#FFFCFB");
-                    Bulgarian_Label.TextColor = Color.FromHex("#FFFCFB");
-                    English_Label.TextColor = Color.FromHex("#FFFCFB");
+                    Border_1.BackgroundColor = Color.FromHex("#222831");
+                    Border_2.BackgroundColor = Color.FromHex("#222831");
+                    Border_1.Stroke = Color.FromHex("#FFFFFF");
+                    Border_2.Stroke = Color.FromHex("#FFFFFF");
+                    Bulgarian_Label.TextColor = Color.FromHex("#FFFFFF");
+                    English_Label.TextColor = Color.FromHex("#FFFFFF");
+                    EnglishCheckBox.Color = Color.FromHex("FFFFFF");
+                    BulgarianCheckBox.Color = Color.FromHex("FFFFFF");
 
                 }
                 else if (color == "white")
                 {
-                    this.BackgroundColor = Color.FromHex("#222831");//tuk za byalo BC
-                    barBackgroundSetter.Value = Color.FromHex("#FFFCFB");//tuk e za bara gore
-                    Border_1.BackgroundColor = Color.FromHex("#FFFCFB");
-                    Border_2.BackgroundColor = Color.FromHex("#FFFCFB");
-                    Border_1.Stroke = Color.FromHex("#FFFCFB");
-                    Border_2.Stroke = Color.FromHex("#FFFCFB");
-                    Bulgarian_Label.TextColor = Color.FromHex("#FFFCFB");
-                    English_Label.TextColor = Color.FromHex("#FFFCFB");
+                    this.BackgroundColor = Color.FromHex("#f5f9ff");//tuk za byalo BC
+                  
+                    Border_1.BackgroundColor = Color.FromHex("#f5f9ff");
+                    Border_2.BackgroundColor = Color.FromHex("#f5f9ff");
+                    Border_1.Stroke = Color.FromHex("#000000");
+                    Border_2.Stroke = Color.FromHex("#000000");
+                    Bulgarian_Label.TextColor = Color.FromHex("#000000");
+                    English_Label.TextColor = Color.FromHex("#000000");
+                    EnglishCheckBox.Color = Color.FromHex("000000");
+                    BulgarianCheckBox.Color = Color.FromHex("000000");
+
                 }
             }
 

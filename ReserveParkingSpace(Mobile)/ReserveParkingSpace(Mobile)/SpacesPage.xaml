@@ -30,7 +30,7 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Border
+        <Border x:Name="Border1"
         
             StrokeThickness="1"
             Stroke="Black"
@@ -48,8 +48,8 @@
                             <RowDefinition Height="*"/>
                             <RowDefinition Height="*"/>
                         </Grid.RowDefinitions>
-                        <Label Text="Space (18)" Margin="10,5,0,0" TextColor="Black" Grid.Row="0" FontFamily="Poppins" FontSize="18"/>
-                        <Label Text="From (date) To (date)" Margin="10,5,0,10" TextColor="Gray" Grid.Row="1" FontFamily="Poppins" FontSize="16"/>
+                        <Label x:Name="Label1"  Text="Space (18)" Margin="10,5,0,0" TextColor="Black" Grid.Row="0" FontFamily="Poppins" FontSize="18"/>
+                        <Label x:Name="Label2" Text="From (date) To (date)" Margin="10,5,0,10" TextColor="Gray" Grid.Row="1" FontFamily="Poppins" FontSize="16"/>
                     </Grid>
                     <ImageButton Source="bin.png" BackgroundColor="#FB1230" Grid.Column="1" WidthRequest="70" HeightRequest="70"/>
                 </Grid>

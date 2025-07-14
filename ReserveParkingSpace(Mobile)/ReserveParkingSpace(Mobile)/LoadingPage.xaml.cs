@@ -11,7 +11,11 @@ public partial class LoadingPage : ContentPage
         LanguageApply();
         ThemeChanging();
     }
-
+    protected override void OnAppearing()
+    {
+        base.OnAppearing();
+        ThemeChanging();
+    }
     private void LanguageApply()
     {
         string lang = Preferences.Get("Language", null);
@@ -38,17 +42,17 @@ public partial class LoadingPage : ContentPage
             {
                 if (color == "black")
                 {
-                    this.BackgroundColor = Color.FromHex("#222831");//tuk e za cherno BC
+                    this.BackgroundColor = Color.FromHex("#000000");//tuk e za cherno BC
                     barBackgroundSetter.Value = Color.FromHex("#222831");//tuk e za bara gore
-                    ActivityIndicator_Main.Color = Color.FromHex("#FFFCFB");//tuk e za zarajdaneto
-                    MainText_Label.TextColor = Color.FromHex("#FFFCFB");//tuk e za texta
+                    ActivityIndicator_Main.Color = Color.FromHex("#FFFFFF");//tuk e za zarajdaneto
+                    MainText_Label.TextColor = Color.FromHex("#FFFFFF");//tuk e za texta
                 }
                 else if (color == "white")
                 {
-                    this.BackgroundColor = Color.FromHex("#222831");//tuk za byalo BC
+                    this.BackgroundColor = Color.FromHex("#ffffff");//tuk za byalo BC
                     barBackgroundSetter.Value = Color.FromHex("#FFFCFB");//tuk e za bara gore
-                    ActivityIndicator_Main.Color = Color.FromHex("#FFFCFB");//tuk e za zarajdaneto
-                    MainText_Label.TextColor = Color.FromHex("#FFFCFB");//tuk e za texta
+                    ActivityIndicator_Main.Color = Color.FromHex("#000000");//tuk e za zarajdaneto
+                    MainText_Label.TextColor = Color.FromHex("#000000");//tuk e za texta
                 }
             }
 

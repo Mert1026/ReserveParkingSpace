@@ -7,6 +7,7 @@
              Shell.ForegroundColor="White"
                Shell.BackgroundColor="#3a6bc8"
              BackgroundColor="White"
+             x:Name="NavBar"
              >
  
     <Grid RowDefinitions="*,Auto">
@@ -34,7 +35,7 @@
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
-                            <Image Source="dark_mode.png" HeightRequest="30" WidthRequest="30" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start"/>
+                            <Image x:Name="Image1"  Source="dark_mode.png" HeightRequest="30" WidthRequest="30" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start"/>
                             <Label x:Name="DarkMode_Label" Text="Dark Mode" TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Start" FontSize="20" />
                             <Label x:Name="Arrow_Label1" Text=">" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="End" TextColor="Black" FontSize="24">
                             </Label>
@@ -53,7 +54,7 @@
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
-                            <Image Source="account.png" HeightRequest="30" WidthRequest="30" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start"/>
+                            <Image x:Name="Image2" Source="account.png" HeightRequest="30" WidthRequest="30" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start"/>
                             <Label x:Name="Account_Label"  Text="Account" TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Start" FontSize="20" />
                             <Label x:Name="Arrow_Label2" Text=">" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="End" TextColor="Black" FontSize="24">
                                
@@ -71,7 +72,7 @@
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
-                            <Image Source="language.png" HeightRequest="30" WidthRequest="30" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start"/>
+                            <Image x:Name="Image3" Source="language.png" HeightRequest="30" WidthRequest="30" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start"/>
                             <Label x:Name="Language_Label" Text="Language" TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Start" FontSize="20" />
                             <Label x:Name="Arrow_Label3" Text=">" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="End" TextColor="Black" FontSize="24">
                                 
@@ -91,7 +92,7 @@
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
-                            <Image Source="car_logo.png" HeightRequest="30" WidthRequest="30" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start"/>
+                            <Image x:Name="Image4" Source="car_logo.png" HeightRequest="30" WidthRequest="30" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start"/>
                             <Label x:Name="YourSpaces_Label" Text="Your Spaces" TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Start" FontSize="20" />
                             <Label x:Name="Arrow_Label4" Text=">" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="End" TextColor="Black" FontSize="24">
                             </Label>
