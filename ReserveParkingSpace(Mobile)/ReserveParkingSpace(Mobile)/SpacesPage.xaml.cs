@@ -37,10 +37,11 @@ public partial class SpacesPage : ContentPage
             {
                 if (color == "black")
                 {
-                    this.BackgroundColor = Color.FromHex("#000000");//tuk e za cherno BC
+                    this.BackgroundColor = Color.FromHex("#222831");//tuk e za cherno BC
                     barBackgroundSetter.Value = Color.FromHex("#222831");
                     Border1.Stroke = Color.FromHex("#FFFFFF");//tuk e za bara gore
                     Label1.BackgroundColor = Color.FromHex("#FFFFFF");
+                    Border1.Stroke = Color.FromHex("#222831");
                     Label2.BackgroundColor = Color.FromHex("#FFFFFF");
 
                 }
@@ -48,7 +49,8 @@ public partial class SpacesPage : ContentPage
                 {
                     this.BackgroundColor = Color.FromHex("#FFFFFF");//tuk za byalo BC
                     barBackgroundSetter.Value = Color.FromHex("#FFFCFB");//tuk e za bara gore
-                    Border1.Stroke = Color.FromHex("#000000");//tuk e za bara gore
+                    Border1.Stroke = Color.FromHex("#000000");
+                    Border1.BackgroundColor = Color.FromHex("#fffffff");//tuk e za bara gore
                     Label1.BackgroundColor = Color.FromHex("#000000");
                     Label2.BackgroundColor = Color.FromHex("#000000");
                 }

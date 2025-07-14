@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\spacespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\spacespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\spacespage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\spacespage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\settingspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\settingspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\languagepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\languagepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\loadingpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\loadingpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\loadingpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\loadingpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\languagepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\languagepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\introductionpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\settingspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\settingspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -67,10 +75,6 @@
       "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\spacespage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\spacespage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|c:\\reserveparkingspace\\reserveparkingspace(mobile)\\reserveparkingspace(mobile)\\themepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{8C26D2F5-0E23-407F-BEA0-72FF19AE1CBF}|ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile).csproj|solutionrelative:reserveparkingspace(mobile)\\themepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -94,11 +98,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": ".NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
               "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\obj\\Debug\\net8.0-android\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
               "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\obj\\Debug\\net8.0-android\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
@@ -111,12 +115,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "LoadingPage.xaml.cs",
               "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\LoadingPage.xaml.cs",
               "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\LoadingPage.xaml.cs",
-              "ToolTip": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\LoadingPage.xaml.cs*",
-              "RelativeToolTip": "ReserveParkingSpace(Mobile)\\LoadingPage.xaml.cs*",
+              "ToolTip": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\LoadingPage.xaml.cs",
+              "RelativeToolTip": "ReserveParkingSpace(Mobile)\\LoadingPage.xaml.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAAAC8AAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-12T10:58:57.699Z",
@@ -125,7 +129,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "AccountPage.xaml",
               "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\AccountPage.xaml",
               "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\AccountPage.xaml",
@@ -155,7 +159,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "SpacesPage.xaml.cs",
+              "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\SpacesPage.xaml.cs",
+              "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\SpacesPage.xaml.cs",
+              "ToolTip": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\SpacesPage.xaml.cs*",
+              "RelativeToolTip": "ReserveParkingSpace(Mobile)\\SpacesPage.xaml.cs*",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAADQAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T21:17:47.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "IntroductionPage.xaml.cs",
               "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\IntroductionPage.xaml.cs",
               "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\IntroductionPage.xaml.cs",
@@ -168,7 +185,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "IntroductionPage.xaml",
               "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\IntroductionPage.xaml",
               "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\IntroductionPage.xaml",
@@ -181,7 +198,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "LoadingPage.xaml",
               "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\LoadingPage.xaml",
               "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\LoadingPage.xaml",
@@ -194,7 +211,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "LoginPage.xaml",
               "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\LoginPage.xaml",
               "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\LoginPage.xaml",
@@ -207,7 +224,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "LanguagePage.xaml.cs",
               "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\LanguagePage.xaml.cs",
               "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\LanguagePage.xaml.cs",
@@ -220,7 +237,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "AccountPage.xaml.cs",
               "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\AccountPage.xaml.cs",
               "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\AccountPage.xaml.cs",
@@ -233,7 +250,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\App.xaml",
               "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\App.xaml",
@@ -246,7 +263,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "SettingsPage.xaml",
               "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\SettingsPage.xaml",
               "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\SettingsPage.xaml",
@@ -259,20 +276,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 1,
               "Title": "SpacesPage.xaml",
               "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\SpacesPage.xaml",
               "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\SpacesPage.xaml",
-              "ToolTip": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\SpacesPage.xaml",
-              "RelativeToolTip": "ReserveParkingSpace(Mobile)\\SpacesPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\SpacesPage.xaml*",
+              "RelativeToolTip": "ReserveParkingSpace(Mobile)\\SpacesPage.xaml*",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACAAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-07-14T19:13:11.181Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "SettingsPage.xaml.cs",
               "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\SettingsPage.xaml.cs",
               "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\SettingsPage.xaml.cs",
@@ -285,7 +302,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "ThemePage.xaml",
               "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\ThemePage.xaml",
               "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\ThemePage.xaml",
@@ -298,7 +315,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "AppShell.xaml",
               "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\AppShell.xaml",
               "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\AppShell.xaml",
@@ -311,7 +328,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "MainPage.xaml.cs",
               "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\MainPage.xaml.cs",
               "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\MainPage.xaml.cs",
@@ -324,7 +341,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "MainPage.xaml",
               "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\MainPage.xaml",
               "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\MainPage.xaml",
@@ -337,7 +354,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "ThemePage.xaml.cs",
               "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\ThemePage.xaml.cs",
               "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\ThemePage.xaml.cs",
@@ -350,7 +367,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "MainPageController.cs",
               "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\Controllers\\MainPageController.cs",
               "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\Controllers\\MainPageController.cs",
@@ -363,7 +380,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "LanguagePage.xaml",
               "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\LanguagePage.xaml",
               "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\LanguagePage.xaml",
@@ -376,7 +393,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\ReserveParkingSpace\\ReserveParkingSpace(Mobile)\\ReserveParkingSpace(Mobile)\\Data\\Models\\User.cs",
               "RelativeDocumentMoniker": "ReserveParkingSpace(Mobile)\\Data\\Models\\User.cs",
