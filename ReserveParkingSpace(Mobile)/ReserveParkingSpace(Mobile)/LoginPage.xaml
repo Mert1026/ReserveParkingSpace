@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ReserveParkingSpace_Mobile_.LoginPage"
+             Title="LoginPage"
+             Background="White">
+    <NavigationPage.TitleView>
+        <Grid ColumnDefinitions="Auto, *" VerticalOptions="Center" Padding="0,0,10,0">
+            <Image Source="logo.png"
+                 HeightRequest="40"
+                 WidthRequest="40"
+                 VerticalOptions="Center"
+                 Grid.Column="0"
+                 HorizontalOptions="Start"
+                 Margin="0,0,10,0"/>
+            <Label x:Name="MainText_Label" Text="Reserve Parking Space"
+                 FontSize="20"
+                 Grid.Column="1"
+                 VerticalOptions="Center"
+                 TextColor="White"
+                 FontFamily="Poppins"
+                 FontAttributes="Bold"/>
+        </Grid>
+    </NavigationPage.TitleView>
+    
+    <!--Login Form-->
+        <Grid Grid.Row="1" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+            <ScrollView HorizontalOptions="Center" VerticalOptions="Center">
+                <VerticalStackLayout x:Name="MainLayout" Spacing="20">
+                    
+                    <Border Stroke="Transparent" 
+                    StrokeThickness="0"
+                    
+                    HeightRequest="550"
+                    StrokeShape="RoundRectangle 15"
+                    Margin="20,0,20,0">
+                        <Border.Shadow>
+                            <Shadow
+                                Brush="#80000000"
+                                Offset="5,5"
+                                Radius="10"
+                                Opacity="0.6" />
+                        </Border.Shadow>
+
+                        <Border.Background>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                <GradientStop Color="#B23AC7" Offset="0.0" />
+                                <GradientStop Color="#1E90FF" Offset="1.0" />
+                            </LinearGradientBrush>
+                        </Border.Background>
+
+                        <VerticalStackLayout>
+                            <Label x:Name="Login_Label" Text="Login"
+                           HorizontalOptions="Center"
+                           FontAttributes="Bold"
+                           FontSize="35"
+                           Margin="0,50,0,0"
+                                   FontFamily="Poppins"
+                                   TextColor="White"/>
+
+
+                            <!--Login credentials-->
+                            <Grid Margin="0,50,0,0" WidthRequest="300" HorizontalOptions="Center">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+
+                                <Label x:Name="Email_Label" Text="Email" Grid.Row="0" Grid.Column="0"    FontFamily="Poppins" TextColor="White" />
+                                <Entry x:Name="EmailEntry" Grid.Row="1" Grid.Column="0"    FontFamily="Poppins" TextColor="White"/>
+                                <Label x:Name="Password_Label"  Text="Password: " Grid.Row="2" Grid.Column="0"    FontFamily="Poppins" TextColor="White"/>
+                                <Entry x:Name="PasswordEntry" Grid.Row="3" Grid.Column="0"    FontFamily="Poppins" IsPassword="True" TextColor="White"/>
+                            </Grid>
+
+
+                            <Grid Margin="0,0,15,0" WidthRequest="300" HorizontalOptions="Center">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                
+                                <CheckBox x:Name="CheckBox_Main" Grid.Column="0"></CheckBox>
+                                <Label Text="Remember me" Grid.Column="1"  VerticalTextAlignment="Center" HorizontalOptions="Start" FontFamily="Poppins" TextColor="White" />
+                                
+                            </Grid>
+
+                            <Button x:Name="LoginBtn" Text="Login"
+                            WidthRequest="300"
+                            Margin="0,0,0,20"
+                            BackgroundColor="#f5f9ff"
+                            TextColor="Black"
+                            CornerRadius="25"
+                            FontAttributes="Bold"   FontFamily="Poppins" Clicked="OnLoginClicked" />
+
+
+
+
+                        <Label HorizontalOptions="Center" FontFamily="Poppins">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span x:Name="DontHaveAcc_Span" Text="Don't have an account yet? " TextColor="White" />
+                                    <Span x:Name="Register_Span" Text="Register"
+                                        FontAttributes="Bold"
+                                        TextColor="White"
+                                        TextDecorations="Underline">
+                                        <Span.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="OnRegisterTapped" />
+                                        </Span.GestureRecognizers>
+                                    </Span>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                    </VerticalStackLayout>
+
+                    </Border>
+                </VerticalStackLayout>
+            </ScrollView>
+        </Grid>
+
+
+</ContentPage>

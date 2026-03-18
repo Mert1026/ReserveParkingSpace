@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ReserveParkingSpace_Mobile_.LanguagePage"
+             Title="Language"
+                             Shell.TitleColor="White"
+   Shell.ForegroundColor="White"
+     Shell.BackgroundColor="#3a6bc8"
+   BackgroundColor="White">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem 
+     Text="Save" 
+     IconImageSource="check.png" 
+     Priority="0"
+     Order="Primary"
+     Clicked="OnSaveClicked" />
+    </ContentPage.ToolbarItems>
+    <VerticalStackLayout Margin="0,20,0,0" Spacing="20">
+
+
+        <!--English-->
+        <Border x:Name="Border_1"
+             StrokeThickness="1"
+             Stroke="Black"
+             StrokeShape="RoundRectangle 10"
+             Padding="10,0,10,0"
+             Margin="20,0,20,0">
+
+            <VerticalStackLayout>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Source="uk.png" Grid.Column="0" Margin="0,0,5,0"/>
+                    <Label x:Name="English_Label" Text="English" VerticalTextAlignment="Center" TextColor="Black" Grid.Column="1" FontFamily="Poppins" FontSize="20"/>
+                    <CheckBox x:Name="EnglishCheckBox" CheckedChanged="OnEnglishCheckedChanged" Color="Black" Grid.Column="2" />
+                </Grid>
+            </VerticalStackLayout>
+        </Border>
+        
+        <!--Bugarian-->
+        <Border x:Name="Border_2"
+             StrokeThickness="1"
+             Stroke="Black"
+             StrokeShape="RoundRectangle 10"
+             Padding="10,0,10,0"
+             Margin="20,0,20,0">
+
+            <VerticalStackLayout>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Source="bulgaria.png" Grid.Column="0" Margin="0,0,5,0"/>
+                    <Label x:Name="Bulgarian_Label" Text="Bulgarian" VerticalTextAlignment="Center" TextColor="Black" Grid.Column="1" FontFamily="Poppins"  FontSize="20"/>
+                    <CheckBox x:Name="BulgarianCheckBox" CheckedChanged="OnBulgarianCheckedChanged" Color="Black" Grid.Column="2"/>
+
+                </Grid>
+            </VerticalStackLayout>
+        </Border>
+       
+
+        
+    </VerticalStackLayout>
+</ContentPage>

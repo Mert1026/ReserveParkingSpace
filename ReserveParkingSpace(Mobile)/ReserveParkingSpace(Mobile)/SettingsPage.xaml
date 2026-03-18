@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ReserveParkingSpace_Mobile_.SettingsPage"
+             Title="Settings"
+             Shell.TitleColor="White"
+             Shell.ForegroundColor="White"
+               Shell.BackgroundColor="#3a6bc8"
+             BackgroundColor="White"
+             x:Name="NavBar"
+             >
+ 
+    <Grid RowDefinitions="*,Auto">
+        <ScrollView Grid.Row="0">
+            <VerticalStackLayout Padding="10" Spacing="20">
+
+                <Grid Margin="0,0,10,0" RowSpacing="20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Border x:Name="Border_1" Stroke="Transparent" Grid.Row="0">
+                        <!--Dark Mode-->
+                        <Border.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnThemeTapped" />
+                        </Border.GestureRecognizers>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="50"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Image x:Name="Image1"  Source="dark_mode.png" HeightRequest="30" WidthRequest="30" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start"/>
+                            <Label x:Name="DarkMode_Label" Text="Dark Mode" TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Start" FontSize="20" />
+                            <Label x:Name="Arrow_Label1" Text=">" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="End" TextColor="Black" FontSize="24">
+                            </Label>
+                        </Grid>
+                    </Border>
+                    
+                    
+                    <!--Account-->
+                    <Border x:Name="Border_2" Stroke="Transparent" Grid.Row="1">
+                        <Border.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnAccountTapped" />
+                        </Border.GestureRecognizers>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="50"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Image x:Name="Image2" Source="account.png" HeightRequest="30" WidthRequest="30" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start"/>
+                            <Label x:Name="Account_Label"  Text="Account" TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Start" FontSize="20" />
+                            <Label x:Name="Arrow_Label2" Text=">" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="End" TextColor="Black" FontSize="24">
+                               
+                            </Label>
+                        </Grid>
+                    </Border>
+                    <!--Language-->
+                    <Border x:Name="Border_3" Stroke="Transparent" Grid.Row="2">
+                        <Border.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnLanguageTapped" />
+                        </Border.GestureRecognizers>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="50"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Image x:Name="Image3" Source="language.png" HeightRequest="30" WidthRequest="30" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start"/>
+                            <Label x:Name="Language_Label" Text="Language" TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Start" FontSize="20" />
+                            <Label x:Name="Arrow_Label3" Text=">" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="End" TextColor="Black" FontSize="24">
+                                
+                            </Label>
+                        </Grid>
+                    </Border>
+
+
+                    <!--Your Spaces-->
+                    <Border x:Name="Border_4" Stroke="Transparent" Grid.Row="3">
+                        <Border.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSpacesTapped" />
+                        </Border.GestureRecognizers>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="50"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Image x:Name="Image4" Source="car_logo.png" HeightRequest="30" WidthRequest="30" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start"/>
+                            <Label x:Name="YourSpaces_Label" Text="Your Spaces" TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Start" FontSize="20" />
+                            <Label x:Name="Arrow_Label4" Text=">" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="End" TextColor="Black" FontSize="24">
+                            </Label>
+                        </Grid>
+                    </Border>
+                </Grid>
+
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

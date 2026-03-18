@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ReserveParkingSpace_Mobile_.AccountPage"
+             Title="Account Page"
+                          Shell.TitleColor="White"
+             Shell.ForegroundColor="White"
+               Shell.BackgroundColor="#3a6bc8"
+             BackgroundColor="White">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem
+         Text="Save" 
+         IconImageSource="check.png" 
+         Priority="0"
+         Order="Primary"
+         Clicked="OnSaveClicked" />
+    </ContentPage.ToolbarItems>
+    <VerticalStackLayout>
+            <!--UserName-->
+        <Border
+            x:Name="Border1"
+        StrokeThickness="1"
+        Stroke="Black"
+        StrokeShape="RoundRectangle 10"
+        Padding="0"
+        Margin="20,20,20,0">    
+
+            <VerticalStackLayout>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Label x:Name="UserName_Label" Text="Username" Margin="10,5,0,0" TextColor="Black" Grid.Row="0" FontFamily="Poppins" FontSize="14"/>
+                    <Entry x:Name="UserName_Entry" Placeholder="Username" Margin="5,0,0,0" TextColor="Black" Grid.Row="1" FontFamily="Poppins" FontSize="16" FontAttributes="Bold">
+                        <Entry.Keyboard>
+                            <Keyboard x:FactoryMethod="Create">
+                                <x:Arguments>
+                                    <KeyboardFlags>CapitalizeWord</KeyboardFlags>
+                                </x:Arguments>
+                            </Keyboard>
+                        </Entry.Keyboard>
+                    </Entry>
+                </Grid>
+            </VerticalStackLayout>
+        </Border>
+        <!--First Name-->
+        <Border
+                 x:Name="Border2"
+            StrokeThickness="1"
+            Stroke="Black"
+            StrokeShape="RoundRectangle 10"
+            Padding="0"
+            Margin="20,20,20,0">
+
+            <VerticalStackLayout>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Label x:Name="FirstName_Label" Text="First Name" Margin="10,5,0,0" TextColor="Black" Grid.Row="0" FontFamily="Poppins" FontSize="14"/>
+                    <Entry x:Name="FirstName_Entry" Placeholder="First Name" Margin="5,0,0,0" TextColor="Black" Grid.Row="1" FontFamily="Poppins" FontSize="16" FontAttributes="Bold">
+                        <Entry.Keyboard>
+                            <Keyboard x:FactoryMethod="Create">
+                                <x:Arguments>
+                                    <KeyboardFlags>CapitalizeWord</KeyboardFlags>
+                                </x:Arguments>
+                            </Keyboard>
+                        </Entry.Keyboard>
+                    </Entry>
+                </Grid>
+            </VerticalStackLayout>
+        </Border>
+
+        <!--Surname-->
+        <Border
+                 x:Name="Border3"
+            StrokeThickness="1"
+            Stroke="Black"
+            StrokeShape="RoundRectangle 10"
+            Padding="0"
+            Margin="20,20,20,0">
+
+            <VerticalStackLayout>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Label x:Name="Surname_Label" Text="Surname" Margin="10,5,0,0" TextColor="Black" Grid.Row="0" FontFamily="Poppins" FontSize="14"/>
+                    <Entry x:Name="Surname_Entry" Placeholder="Surname" Margin="5,0,0,0" TextColor="Black" Grid.Row="1" FontFamily="Poppins" FontSize="16" FontAttributes="Bold">
+                        <Entry.Keyboard>
+                            <Keyboard x:FactoryMethod="Create">
+                                <x:Arguments>
+                                    <KeyboardFlags>CapitalizeWord</KeyboardFlags>
+                                </x:Arguments>
+                            </Keyboard>
+                        </Entry.Keyboard>
+                    </Entry>
+                </Grid>
+            </VerticalStackLayout>
+        </Border>
+
+        <!--Department-->
+        <Border
+                 x:Name="Border4"
+            StrokeThickness="1"
+            Stroke="Black"
+            StrokeShape="RoundRectangle 10"
+            Padding="0"
+            Margin="20,20,20,0">
+
+            <VerticalStackLayout>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Label x:Name="Department_Label" Text="Department" Margin="10,5,0,0" TextColor="Black" Grid.Row="0" FontFamily="Poppins" FontSize="14"/>
+                    <Picker 
+                        x:Name="Departmnet_Picker"
+                        SelectedIndex="1"
+                        Grid.Row="1"
+                        TitleColor="#000001"
+                        FontFamily="Poppins"
+                        FontSize="16"
+                        TextColor="Black"
+                        Margin="5,0,0,0"
+                        VerticalOptions="Center"
+                        FontAttributes="Bold">      
+                        <Picker.Items>
+                            <x:String>Frontend</x:String>
+                            <x:String>Backend</x:String>
+                            <x:String>Mobile</x:String>
+                            <x:String>QA</x:String>
+                        </Picker.Items>
+                    </Picker>
+                </Grid>
+            </VerticalStackLayout>
+        </Border>
+        <!--Member since-->
+        <Border
+                 x:Name="Border5"
+                 StrokeThickness="1"
+                 Stroke="Black"
+                 StrokeShape="RoundRectangle 10"
+                 Padding="0"
+                 Margin="20,20,20,0">
+            <VerticalStackLayout>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Label x:Name="MemberSinceTitle_Label" Text="Member since" Margin="10,5,0,0" TextColor="Black" Grid.Row="0" FontFamily="Poppins" FontSize="14"/>
+                    <Label x:Name="MemberSince_Label" Text="7.07.2025" Margin="10,5,0,10"  Grid.Row="1" TextColor="Black" FontAttributes="Bold" FontFamily="Poppins" FontSize="16"/>
+                </Grid>
+            </VerticalStackLayout>
+        </Border>
+        <!--Last Changed-->
+        <Border
+                 x:Name="Border6"
+             StrokeThickness="1"
+             Stroke="Black"
+             StrokeShape="RoundRectangle 10"
+             Padding="0"
+             Margin="20,20,20,0">
+            <VerticalStackLayout>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Label x:Name="LastChangedTitle_Label" Text="Last changed" Margin="10,5,0,0" TextColor="Black" Grid.Row="0" FontFamily="Poppins" FontSize="14"/>
+                    <Label x:Name="LastChanged_Label" Text="7.07.2025" Margin="10,5,0,10"  Grid.Row="1" TextColor="Black" FontAttributes="Bold" FontFamily="Poppins" FontSize="16"/>
+                </Grid>
+            </VerticalStackLayout>
+        </Border>
+
+        
+        <Button Text="Log Out" Background="#FB1230" FontAttributes="Bold" TextColor="White" FontFamily="Poppins" CornerRadius="10"  Margin="50" Clicked="Button_Clicked"/> 
+
+
+
+
+    </VerticalStackLayout>
+</ContentPage>
