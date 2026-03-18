@@ -13,8 +13,7 @@ The goal of **ReserveParkingSpace** is to provide a system where users can:
 - View available parking spaces  
 - Reserve a parking spot  
 - Manage or cancel reservations  
-- Potentially integrate with real‑world parking sensors or APIs  
-- Presentation: https://docs.google.com/presentation/d/1INis95daPD5XgsVDeR_5wNqwAz_42fY-/edit?slide=id.p5#slide=id.p5
+- Potentially integrate with real‑world parking sensors or APIs
 
 This README serves as a starting point for documenting the project as it grows.
 
